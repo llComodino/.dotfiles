@@ -1,20 +1,14 @@
 #!/bin/sh
 
-# Script to copy the wallpaper (argument) to all the dirs in ~/.config/swww/cache
+[[ -z $1 ]] && echo "Usage: $0 <wallpaper>" && exit 1
+[[ ! -f $1 ]] && echo "File not found: $1" && exit 1
+
+file --mime-type -b $1 | grep -q image || echo "Not an image: $1" && exit 1
+
+for dir in ~/.config/swww/*; do
  
-# Check if file exists
-[[ -z $1 ]] && echo "No file specified" && exit 1
-[[ ! -f $1 ]] && echo "File does not exist" && exit 1
-
-# Check if file is an image
-[[ ! $(file -b --mime-type $1) =~ ^image/ ]] && echo "File is not an image" && exit 1
-
-# Copy the file to all the dirs in ~/.config/swww/cache
-# There are also some files in the cache dir, we need to copy only to the dirs
-for dir in ~/.config/swww/cache/*; do
-    # If file is already in the dir, skip
-    [[ -f $dir/$(basename $1) ]] && echo "File is already there" && continue
-
-    # Copy the file to the dir
+    [[ -d $dir ]] || continue
+    [[ -f $dir/$(basename $1) ]] && echo "File already exists: $dir/$(basename $1)" && continue
+    
     cp $1 $dir
 done

@@ -2,7 +2,7 @@
 # I am using zsh instead of bash.  I was having some troubles using bash with
 # arrays.  Didn't want to investigate, so I just did zsh
 pushd $HOME/.dotfiles
-for folder in $(exa -1)
+for folder in $(exa -1 | grep -v install)
 do
     echo "stow $folder"
     stow -D $folder
