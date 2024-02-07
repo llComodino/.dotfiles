@@ -1,8 +1,0 @@
-#!/bin/bash
-
-[[ -z $1 ]] && echo "Usage: wallpaper-add <wallpaper>" && exit 1
-[[ ! -f $1 ]] && echo "Error: $1 does not exist" && exit 1
-
-for dir in $(find ~/.config/swww/ -type d); do
-    cp $1 $dir
-done
