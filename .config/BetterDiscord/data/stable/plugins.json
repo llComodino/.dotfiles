@@ -1,0 +1,10 @@
+{
+    "PluginRepo": true,
+    "ThemeRepo": true,
+    "ImageUtilities": true,
+    "FriendNotifications": true,
+    "BDFDB": true,
+    "BetterSearchPage": true,
+    "ZeresPluginLibrary": false,
+    "BetterAudioPlayer": false
+}

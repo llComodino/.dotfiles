@@ -1,0 +1,340 @@
+[2024-02-06 16:32:25.112] [4185] (engine.cpp:541): Created native Engine, time: Tue Feb  6 16:32:25 2024 CET, logPath: /home/comodino/.config/discord/0.0.42/modules/discord_voice/, logLevel: 2
+[2024-02-06 16:32:25.113] [4185] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-02-06 16:32:25.113] [4185] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2024-02-06 16:32:25.113] [4185] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-02-06 16:32:25.113] [4185] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:143): current platform is Linux
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-02-06 16:32:25.113] [4185] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2024-02-06 16:32:25.113] [4185] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2024-02-06 16:32:25.113] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2024-02-06 16:32:25.113] [4185] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2024-02-06 16:32:25.113] [4185] (audio_device_impl.cc:354): ActiveAudioLayer
+[2024-02-06 16:32:25.113] [4185] (audio_device_buffer.cc:66): AudioDeviceBuffer::ctor
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:143): current platform is Linux
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:162): CreatePlatformSpecificObjects
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:991): PlatformAudioLayer
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:298): PulseAudio support is enabled.
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:303): Linux PulseAudio APIs will be utilized
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:344): AttachAudioBuffer
+[2024-02-06 16:32:25.114] [4185] (audio_device_buffer.cc:183): SetRecordingSampleRate(0)
+[2024-02-06 16:32:25.114] [4185] (audio_device_buffer.cc:189): SetPlayoutSampleRate(0)
+[2024-02-06 16:32:25.114] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(0)
+[2024-02-06 16:32:25.114] [4185] (audio_device_buffer.cc:209): SetPlayoutChannels(0)
+[2024-02-06 16:32:25.114] [4185] (audio_processing_impl.cc:295): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2024-02-06 16:32:25.114] [4185] (audio_processing_impl.cc:304): Denormal disabler: supported
+[2024-02-06 16:32:25.114] [4185] (audio_engine.cpp:400): Creating audio engine: standard
+[2024-02-06 16:32:25.114] [4185] (audio_device_impl.cc:364): Init
+[2024-02-06 16:32:25.119] [4185] (audio_device_impl.cc:364): Init
+[2024-02-06 16:32:25.122] [4185] (audio_coding.cpp:149): Using software Opus decoder
+[2024-02-06 16:32:25.122] [4185] (audio_coding.cpp:166): Using software Opus encoder
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:547): SetMicrophoneVolume(100)
+[2024-02-06 16:32:25.122] [4185] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:895): RegisterAudioCallback
+[2024-02-06 16:32:25.122] [4185] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-02-06 16:32:25.122] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:573): output: 0
+[2024-02-06 16:32:25.122] [4185] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-02-06 16:32:25.122] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2024-02-06 16:32:25.122] [4185] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-02-06 16:32:25.123] [4185] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-02-06 16:32:25.123] [4185] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:619): output: 1
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-02-06 16:32:25.123] [4185] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:911): BuiltInAECIsAvailable
+[2024-02-06 16:32:25.123] [4185] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2024-02-06 16:32:25.123] [4185] (audio_device_impl.cc:914): output: 0
+[2024-02-06 16:32:25.123] [4185] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-02-06 16:32:25.123] [4185] (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+[2024-02-06 16:32:25.123] [4185] (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+[2024-02-06 16:32:25.123] [4185] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-02-06 16:32:25.123] [4185] (clipping_predictor.cc:357): [agc] Clipping prediction disabled.
+[2024-02-06 16:32:25.123] [4185] (agc_manager_direct.cc:500): [agc] analog controller enabled: yes
+[2024-02-06 16:32:25.123] [4185] (agc_manager_direct.cc:503): [agc] Min mic level: 12 (overridden: no)
+[2024-02-06 16:32:25.123] [4185] (agc_manager_direct.cc:507): [agc] Startup min volume: 0
+[2024-02-06 16:32:25.123] [4185] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
+[2024-02-06 16:32:25.123] [4185] (audio_processing_impl.cc:511): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, dry_run: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, vad_reset_period_ms: 1500, adjacent_speech_frames_threshold: 12, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50}}
+[2024-02-06 16:32:25.123] [4185] (field_trial.cc:141): Setting field trial string:WebRTC-Audio-NetEqDecisionLogicConfig/reinit_after_expands:100/
+[2024-02-06 16:32:25.259] [4185] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-02-06 16:32:25.259] [4185] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-02-06 16:32:25.259] [4185] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-02-06 16:32:25.259] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-02-06 16:32:25.259] [4185] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-02-06 16:32:25.259] [4185] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-02-06 16:32:25.260] [4130] (discord.cpp:755): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 264109, Version Hash: 2fa377325656e6d251ffe2617e17c7995accab69"]
+[2024-02-06 16:32:25.260] [4185] (audio_device_impl.cc:573): output: 0
+[2024-02-06 16:32:25.260] [4185] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-02-06 16:32:25.260] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2024-02-06 16:32:25.260] [4185] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-02-06 16:32:25.260] [4185] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-02-06 16:32:25.260] [4185] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-02-06 16:32:25.260] [4185] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-02-06 16:32:25.260] [4185] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-02-06 16:32:25.260] [4185] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-02-06 16:32:25.260] [4185] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-02-06 16:32:25.261] [4185] (audio_device_impl.cc:619): output: 1
+[2024-02-06 16:32:25.261] [4185] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-02-06 16:32:25.261] [4185] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2024-02-06 16:32:25.261] [4185] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-02-06 16:32:25.261] [4185] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-02-06 16:32:25.261] [4185] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-02-06 16:32:25.305] [4130] (discord.cpp:755): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2024-02-06 16:32:25.346] [4130] (discord.cpp:755): JS console: ["%c[default]","[NATIVE INFO] host 0.0.42, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 2, discord_krisp: 1, discord_game_utils: 1, discord_rpc: 1, build: null"]
+[2024-02-06 16:32:25.384] [4185] (audio_engine.cpp:151): Setting audio input device: 'default'
+[2024-02-06 16:32:25.384] [4185] (audio_device_impl.cc:826): RecordingIsInitialized
+[2024-02-06 16:32:25.384] [4185] (audio_device_impl.cc:578): SetStereoRecording(1)
+[2024-02-06 16:32:25.384] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(2)
+[2024-02-06 16:32:25.384] [4185] (audio_device_impl.cc:776): SetRecordingDevice(0)
+[2024-02-06 16:32:25.385] [4185] (audio_device_impl.cc:566): StereoRecordingIsAvailable
+[2024-02-06 16:32:25.385] [4185] (audio_device_impl.cc:573): output: 0
+[2024-02-06 16:32:25.385] [4185] (audio_device_impl.cc:578): SetStereoRecording(0)
+[2024-02-06 16:32:25.385] [4185] (audio_device_buffer.cc:203): SetRecordingChannels(1)
+[2024-02-06 16:32:25.385] [4185] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2024-02-06 16:32:25.385] [4185] (audio_device_impl.cc:547): SetMicrophoneVolume(255)
+[2024-02-06 16:32:25.385] [4185] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2024-02-06 16:32:25.385] [4185] (audio_engine.cpp:168): Setting audio output device: 'default'
+[2024-02-06 16:32:25.385] [4185] (audio_device_impl.cc:820): PlayoutIsInitialized
+[2024-02-06 16:32:25.385] [4185] (audio_device_impl.cc:708): SetPlayoutDevice(0)
+[2024-02-06 16:32:25.386] [4185] (audio_device_impl.cc:612): StereoPlayoutIsAvailable
+[2024-02-06 16:32:25.386] [4185] (audio_device_impl.cc:619): output: 1
+[2024-02-06 16:32:25.386] [4185] (audio_device_impl.cc:624): SetStereoPlayout(1)
+[2024-02-06 16:32:25.386] [4185] (audio_device_buffer.cc:209): SetPlayoutChannels(2)
+[2024-02-06 16:32:25.395] [4130] (discord.cpp:755): JS console: ["Initializing krisp module"]
+[2024-02-06 16:32:25.732] [4130] (discord.cpp:755): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2024-02-06 16:32:25.814] [4130] (discord.cpp:755): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2024-02-06 16:32:28.691] [4130] (discord.cpp:755): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2024-02-06 16:32:28.772] [4130] (discord.cpp:755): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2024-02-06 16:32:28.772] [4130] (discord.cpp:755): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2024-02-06 16:32:28.772] [4130] (discord.cpp:755): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 0 ms"]
+[2024-02-06 16:32:28.796] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2024-02-06 16:32:28.833] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2024-02-06 16:32:29.063] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Remote~Require]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","The \"request\" module is marked as deprecated. Use BdApi.Net.fetch instead."]
+[2024-02-06 16:32:29.106] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Injecting BD Styles"]
+[2024-02-06 16:32:29.107] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing DataStore"]
+[2024-02-06 16:32:29.120] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing LocaleManager"]
+[2024-02-06 16:32:29.142] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Settings"]
+[2024-02-06 16:32:29.143] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing DOMManager"]
+[2024-02-06 16:32:29.143] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Waiting for connection..."]
+[2024-02-06 16:32:29.741] [4130] (discord.cpp:755): JS console: ["%c[GatewaySocket]","[READY] took 969ms, as 7200817e9cefeddc04cc30b1598f673a"]
+[2024-02-06 16:32:29.791] [4130] (discord.cpp:755): JS console: ["%c[Flux]","Dispatching CONNECTION_OPEN"]
+[2024-02-06 16:32:29.792] [4130] (discord.cpp:755): JS console: ["%c[DatabaseManager]","removing database (user: 449899258796179457, database: undefined)"]
+[2024-02-06 16:32:29.807] [4130] (discord.cpp:755): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2024-02-06 16:32:29.840] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","WS Connecting"]
+[2024-02-06 16:32:29.842] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","Added account: x2duyfc8l3g8fl755dsvs6vmb"]
+[2024-02-06 16:32:29.874] [4130] (discord.cpp:755): JS console: ["%c[MessageActionCreators]","Fetching messages for 684341968993910814 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2024-02-06 16:32:29.879] [4130] (discord.cpp:755): JS console: ["%c[GatewaySocket]","Dispatched 1 messages in 138ms"]
+[2024-02-06 16:32:29.879] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Editor"]
+[2024-02-06 16:32:29.909] [4130] (discord.cpp:755): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1136ms"]
+[2024-02-06 16:32:30.203] [4130] (discord.cpp:755): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 684341968993910814 isBefore:false isAfter:false"]
+[2024-02-06 16:32:30.210] [4130] (discord.cpp:755): JS console: ["%c[ChannelMessages]","loadComplete: resetting state for channelId=684341968993910814, sending.length=0"]
+[2024-02-06 16:32:30.253] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Modals]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Missing ModalActions module!"]
+[2024-02-06 16:32:30.284] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Builtins"]
+[2024-02-06 16:32:30.284] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Custom CSS]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Enabled"]
+[2024-02-06 16:32:30.284] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Custom CSS]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch content."]
+[2024-02-06 16:32:30.285] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Loading Plugins"]
+[2024-02-06 16:32:30.300] [4130] (discord.cpp:755): JS console: ["%c[BDFDB] %c(v3.5.9)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Loading Library"]
+[2024-02-06 16:32:30.510] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Remote~Require]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","The \"request\" module is marked as deprecated. Use BdApi.Net.fetch instead."]
+[2024-02-06 16:32:30.529] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Remote~Require]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","The \"https\" module is marked as deprecated. Use BdApi.Net.fetch instead."]
+[2024-02-06 16:32:30.550] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [PluginManager]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch plugin addons."]
+[2024-02-06 16:32:30.550] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Loading Themes"]
+[2024-02-06 16:32:30.555] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [ThemeManager]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Starting to watch theme addons."]
+[2024-02-06 16:32:30.556] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Initializing Updater"]
+[2024-02-06 16:32:30.557] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Removing Loading Icon"]
+[2024-02-06 16:32:30.557] [4130] (discord.cpp:755): JS console: ["%c[BetterDiscord]%c [Startup]%c","color: #3E82E5; font-weight: 700;","color: #3a71c1;","","Collecting Startup Errors"]
+[2024-02-06 16:32:30.644] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","WS Connected"]
+[2024-02-06 16:32:30.791] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","Devices updated for x2duyfc8l3g8fl755dsvs6vmb:","[object Object]"]
+[2024-02-06 16:32:30.926] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","Profile updated for x2duyfc8l3g8fl755dsvs6vmb: isPremium = false"]
+[2024-02-06 16:32:31.296] [4130] (discord.cpp:755): JS console: ["Error: Menu API only allows Items and groups of Items as children. Received function m(e){return null} (object) instead"]
+[2024-02-06 16:32:33.384] [4130] (discord.cpp:755): JS console: ["%c[BDFDB] %c(v3.5.9)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Finished loading Library"]
+[2024-02-06 16:32:33.649] [4130] (discord.cpp:755): JS console: ["%c[BetterSearchPage] %c(v1.2.4)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","has been started"]
+[2024-02-06 16:32:33.764] [4130] (discord.cpp:755): JS console: ["%c[FriendNotifications] %c(v1.9.9)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","has been started"]
+[2024-02-06 16:32:33.952] [4130] (discord.cpp:755): JS console: ["%c[ImageUtilities] %c(v5.4.0)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","has been started"]
+[2024-02-06 16:32:34.390] [4130] (discord.cpp:755): JS console: ["%c[PluginRepo] %c(v2.5.5)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","has been started"]
+[2024-02-06 16:32:34.618] [4130] (discord.cpp:755): JS console: ["%c[ThemeRepo] %c(v2.5.5)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","has been started"]
+[2024-02-06 16:32:36.067] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:32:45.303] [4130] (discord.cpp:755): JS console: ["%c[PluginRepo] %c(v2.5.5)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Finished fetching Plugins"]
+[2024-02-06 16:32:45.331] [4130] (discord.cpp:755): JS console: ["%c[ThemeRepo] %c(v2.5.5)","color: #3a71c1; font-weight: 700;","color: #666; font-weight: 600; font-size: 11px;","Finished fetching Themes"]
+[2024-02-06 16:32:58.077] [4405] (region_latency_tester.cpp:72): Sending 5 latency test pings to region milan
+[2024-02-06 16:32:58.077] [4405] (region_latency_tester.cpp:72): Sending 5 latency test pings to region frankfurt
+[2024-02-06 16:32:58.077] [4405] (region_latency_tester.cpp:72): Sending 5 latency test pings to region rotterdam
+[2024-02-06 16:32:58.077] [4405] (region_latency_tester.cpp:72): Sending 5 latency test pings to region madrid
+[2024-02-06 16:32:58.077] [4405] (region_latency_tester.cpp:72): Sending 5 latency test pings to region bucharest
+[2024-02-06 16:32:58.151] [4405] (region_latency_tester.cpp:283): Average RTT for region milan is 13.5
+[2024-02-06 16:32:58.151] [4405] (region_latency_tester.cpp:283): Average RTT for region frankfurt is 23.5
+[2024-02-06 16:32:58.151] [4405] (region_latency_tester.cpp:283): Average RTT for region rotterdam is 33
+[2024-02-06 16:32:58.151] [4405] (region_latency_tester.cpp:283): Average RTT for region madrid is 36.5
+[2024-02-06 16:32:58.151] [4405] (region_latency_tester.cpp:283): Average RTT for region bucharest is 61.5
+[2024-02-06 16:34:06.094] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:34:21.106] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:34:31.113] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:35:06.139] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:35:16.139] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:35:26.145] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:36:06.155] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:36:16.169] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:36:46.205] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:37:01.230] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:37:11.234] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:37:16.234] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:37:36.237] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:37:56.273] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:38:11.285] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:38:16.286] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:40:46.320] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:40:51.322] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:42:26.357] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:42:31.375] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:42:36.386] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:42:39.285] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Opened: 53"]
+[2024-02-06 16:42:39.524] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 53","[object Object]"]
+[2024-02-06 16:42:39.535] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Message: 53","[object Object]"]
+[2024-02-06 16:42:39.593] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 53","[object Object]"]
+[2024-02-06 16:42:41.391] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:43:23.153] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Message: 53","[object Object]"]
+[2024-02-06 16:43:23.160] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 53","[object Object]"]
+[2024-02-06 16:43:23.161] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Error: write EPIPE"]
+[2024-02-06 16:43:23.161] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Close: 53"]
+[2024-02-06 16:43:46.534] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:43:51.545] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:44:06.580] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:44:16.601] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:44:17.914] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Opened: 54"]
+[2024-02-06 16:44:18.666] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 54","[object Object]"]
+[2024-02-06 16:44:18.675] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Message: 54","[object Object]"]
+[2024-02-06 16:44:18.678] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 54","[object Object]"]
+[2024-02-06 16:44:21.613] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:44:35.276] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Message: 54","[object Object]"]
+[2024-02-06 16:44:35.283] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 54","[object Object]"]
+[2024-02-06 16:44:35.283] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Error: write EPIPE"]
+[2024-02-06 16:44:35.283] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Close: 54"]
+[2024-02-06 16:44:36.643] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:44:40.083] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Opened: 55"]
+[2024-02-06 16:44:40.294] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 55","[object Object]"]
+[2024-02-06 16:44:40.304] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Message: 55","[object Object]"]
+[2024-02-06 16:44:40.307] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 55","[object Object]"]
+[2024-02-06 16:44:41.654] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:45:46.705] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:47:46.782] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:51:18.063] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","Updated account access token: x2duyfc8l3g8fl755dsvs6vmb"]
+[2024-02-06 16:51:18.129] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","Devices updated for x2duyfc8l3g8fl755dsvs6vmb:","[object Object],[object Object]"]
+[2024-02-06 16:51:18.308] [4130] (discord.cpp:755): JS console: ["%c[Spotify]","Updated account access token: x2duyfc8l3g8fl755dsvs6vmb"]
+[2024-02-06 16:54:18.050] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Message: 55","[object Object]"]
+[2024-02-06 16:54:18.056] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Emit: 55","[object Object]"]
+[2024-02-06 16:54:18.057] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Error: write EPIPE"]
+[2024-02-06 16:54:18.057] [4130] (discord.cpp:755): JS console: ["%c[RPCServer:IPC]","Socket Close: 55"]
+[2024-02-06 16:54:32.418] [4130] (discord.cpp:755): JS console: ["%c[RunningGameStore]","games","[object Object]"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.219] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.220] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.221] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.222] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]
+[2024-02-06 16:55:08.229] [4130] (discord.cpp:755): JS console: ["Window state not initialized","window-1"]

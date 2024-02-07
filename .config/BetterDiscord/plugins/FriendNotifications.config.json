@@ -1,0 +1,155 @@
+{
+	"449899258796179457": {
+		"amounts": {
+			"toastTime": 5,
+			"checkInterval": 10
+		},
+		"dates": {
+			"logDate": {}
+		},
+		"general": {
+			"addOnlineCount": true,
+			"showDiscriminator": false,
+			"showTimestamp": false,
+			"muteOnDND": false,
+			"openOnClick": false
+		},
+		"notificationSounds": {
+			"toastonline": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktoponline": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toastidle": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktopidle": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toastdnd": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktopdnd": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toastplaying": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktopplaying": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toastlistening": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktoplistening": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toaststreaming": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktopstreaming": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toastscreensharing": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktopscreensharing": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"toastoffline": {
+				"url": null,
+				"song": null,
+				"mute": false
+			},
+			"desktopoffline": {
+				"url": null,
+				"song": null,
+				"mute": false
+			}
+		},
+		"notificationStrings": {
+			"online": "$user changed status to '$status'",
+			"idle": "$user changed status to '$status'",
+			"dnd": "$user changed status to '$status'",
+			"playing": "$user started playing '$game'",
+			"listening": "$user started listening to '$song'",
+			"streaming": "$user started streaming '$game'",
+			"screensharing": "$user started screensharing",
+			"offline": "$user changed status to '$status'",
+			"login": "$user just logged in '$status'",
+			"custom": "$user changed status to '$custom'"
+		},
+		"observed": {
+			"friends": {
+				"294128322034794496": {},
+				"321310617820725248": {},
+				"340815693895434250": {},
+				"344889326146158592": {},
+				"354211870674124800": {},
+				"379312568763678722": {},
+				"397738371079864320": {},
+				"431430515594362881": {},
+				"432133629921984524": {},
+				"460066660406132736": {},
+				"530710986806657025": {},
+				"540912364606980102": {},
+				"564395700616429597": {},
+				"566558789063540747": {},
+				"603619716690477057": {},
+				"655392244635009024": {},
+				"656587912569159681": {},
+				"667046250817781768": {},
+				"667347407855681537": {},
+				"722724602828161074": {},
+				"727165224133853265": {},
+				"727623454358110250": {},
+				"745001070014759043": {},
+				"765206759634763778": {},
+				"769943434663428116": {},
+				"773494201144442900": {},
+				"788335686205571085": {},
+				"799924724855078936": {},
+				"847873714937790464": {},
+				"894035150600548363": {},
+				"951205628762812517": {},
+				"969299710886178816": {},
+				"1011717000533381293": {},
+				"1013891378121556001": {},
+				"1026118908849160232": {},
+				"1079846690313469953": {},
+				"1083042912230723664": {},
+				"1159469422868713552": {}
+			},
+			"strangers": {}
+		}
+	}
+}
