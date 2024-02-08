@@ -20,15 +20,15 @@ nvim-find () {
 
     cd $selected
 
-    if [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; then
-        selected=$(find $selected -mindepth 1 -maxdepth 1 | fzf)
+    # Continue recursively until a file is selected
+    while [[ -d $selected ]]; do
+        selected=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
         if [[ -z $selected ]]; then
             echo "No directory selected"
             return 1
         fi
-    fi
-
-    nvim $selected
+        cd $selected
+    done
 }
 
 tmux-sessionizer () {
@@ -41,6 +41,14 @@ tmux-sessionizer () {
 
     if [[ -z $selected ]]; then
         exit 0
+    fi
+
+    # If any subdirectories are found prompt them in fzf
+    if [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; then
+        selected=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
+        if [[ -z $selected ]]; then
+            exit 0
+        fi
     fi
 
     selected_name=$(basename "$selected" | tr . _)
