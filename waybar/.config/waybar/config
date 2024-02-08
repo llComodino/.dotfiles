@@ -26,13 +26,13 @@
 
 	"modules-center": [
         "custom/ll_end",
-        "clock",
+        "custom/spotify",
         "custom/rr_end"
     ],
 
 	"modules-right": [
         "custom/ll_end",
-        "custom/spotify",
+        "clock",
         "custom/r_end",
         "custom/l_end",
         "battery",
