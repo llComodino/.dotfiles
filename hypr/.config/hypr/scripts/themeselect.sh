@@ -9,15 +9,15 @@ ThemeSet="$HOME/.config/hypr/themes/theme.conf"
 
 
 # scale for monitor x res
-x_monres=`cat /sys/class/drm/*/modes | head -1 | cut -d 'x' -f 1`
-x_monres=$(( x_monres*17/100 ))
+#x_monres=`cat /sys/class/drm/*/modes | head -1 | cut -d 'x' -f 1`
+#x_monres=$(( x_monres*17/100 ))
 
 
 # set rofi override
-hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $ThemeSet | sed 's/ //g'`
-elem_border=$(( hypr_border * 5 ))
-icon_border=$(( elem_border - 5 ))
-r_override="element{border-radius:${elem_border}px;} element-icon{border-radius:${icon_border}px;size:${x_monres}px;}"
+# hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $ThemeSet | sed 's/ //g'`
+# elem_border=$(( hypr_border * 5 ))
+# icon_border=$(( elem_border - 5 ))
+r_override="element{border-radius:30px;} element-icon{border-radius:30px;size:200px;}"
 
 
 # launch rofi menu

@@ -10,11 +10,11 @@ fi
 # set file variables
 ScrDir=`dirname $(realpath $0)`
 source $ScrDir/globalcontrol.sh
-wLayout="$HOME/.config/wlogout/layout_$1"
-wlTmplt="$HOME/.config/wlogout/style_$1.css"
+wLayout="$HOME/.config/wlogout/layout"
+wlTmplt="$HOME/.config/wlogout/style.css"
 
 if [ ! -f $wLayout ] || [ ! -f $wlTmplt ] ; then
-    echo "ERROR: Config $1 not found..."
+    echo "ERROR: Config not found..."
     exit 1;
 fi
 
@@ -24,16 +24,11 @@ y_mon=$( echo $x_mon | cut -d 'x' -f 2 )
 x_mon=$( echo $x_mon | cut -d 'x' -f 1 )
 
 # scale config layout and style
-case $1 in
-    1)  wlColms=6
-        export mgn=$(( y_mon * 28 / 100 ))
-        export hvr=$(( y_mon * 23 / 100 )) ;;
-    2)  wlColms=2
-        export x_mgn=$(( x_mon * 35 / 100 ))
-        export y_mgn=$(( y_mon * 25 / 100 ))
-        export x_hvr=$(( x_mon * 32 / 100 ))
-        export y_hvr=$(( y_mon * 20 / 100 )) ;;
-esac
+wlColms=2
+export x_mgn=$(( x_mon * 35 / 100 ))
+export y_mgn=$(( y_mon * 25 / 100 ))
+export x_hvr=$(( x_mon * 32 / 100 ))
+export y_hvr=$(( y_mon * 20 / 100 ))
 
 # scale font size
 export fntSize=$(( y_mon * 2 / 100 ))
@@ -56,9 +51,5 @@ hypr_border=`awk -F '=' '{if($1~" rounding ") print $2}' $hyprTheme | sed 's/ //
 export active_rad=$(( hypr_border * 5 ))
 export button_rad=$(( hypr_border * 8 ))
 
-# eval config files
-wlStyle=`envsubst < $wlTmplt`
-
 # launch wlogout
-wlogout -b $wlColms -c 0 -r 0 -m 0 --layout $wLayout --css <(echo "$wlStyle") --protocol layer-shell
-
+wlogout -b $wlColms -c 0 -r 0 -m 0 -l $wLayout -c $wlTmplt --protocol layer-shell
