@@ -24,11 +24,14 @@ export EDITOR=nvim
 export RSPOTIFY_CLIENT_ID=fbb59443f9ae488caecc97f898f607f5
 export RSPOTIFY_CLIENT_SECRET=20f4c1a82aff44b19cb7469b33153e84
 
+export OS3=/home/comodino/code/OS3-blog
+
 # GPG variables
 export GPG_TTY=$(tty)
 
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$OS3/src/restest:$PATH"
 
 # Ruby
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
@@ -63,8 +66,12 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 
 alias bdiscord='~/.comoappimages/betterdiscord' # run betterdiscord
+alias ida64='~/idafree-8.3/ida64' # ida-free
 
 alias emacs='emacs -nw' # run emacs in terminal
+
+alias cmodules='cd /home/comodino/code/OS3-blog/test/server/server/modules'
+alias flowmanager='cd $OS3/src/flowmanager ; yarn start'
 
 # Keybindings
 bindkey -s ^n "tmux-sessionizer\n"
@@ -72,9 +79,6 @@ bindkey -s ^g "git-sync\n"
 bindkey -s ^f "nvim-find\n"
 
 # Functions
-cx () {
-    cd $1 ; l;
-}
 
 # Function to print an ascii art (10 lines) of `stocazzo`
 cosa\? () {

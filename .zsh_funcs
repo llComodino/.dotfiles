@@ -1,6 +1,6 @@
 nvim-find () {
 
-    local sel_dir=$(echo -e "code\nvault" | fzf)
+    local sel_dir=$(echo -e "code\nvault\nOS3" | fzf)
 
     if [[ -z $sel_dir ]]; then
         echo "No directory selected"
@@ -8,7 +8,21 @@ nvim-find () {
     fi
 
     if [[ $sel_dir == "code" ]]; then
-        selected=$(find ~/code -mindepth 1 -maxdepth 1 -type d | fzf)
+        selected=$(find ~/code -type d | fzf)
+    elif [[ $sel_dir == "OS3" ]]; then
+        selected=$(echo -e "docker\nserver\nmodules\ntest" | fzf)
+        
+        case $selected in
+            
+            "docker")
+                cd "$OS3/docker";;
+            "server")
+                cd "$OS3/test/server";;
+            "modules")
+                cd "$OS3/test/server/server/modules";;
+        esac
+
+        return 0
     else
         selected=$(find ~/Documents/ComoVault -mindepth 1 -maxdepth 1 -type d | fzf)
     fi
@@ -19,16 +33,6 @@ nvim-find () {
     fi
 
     cd $selected
-
-    # Continue recursively until a file is selected
-    while [[ -d $selected ]]; do
-        selected=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
-        if [[ -z $selected ]]; then
-            echo "No directory selected"
-            return 1
-        fi
-        cd $selected
-    done
 }
 
 tmux-sessionizer () {
@@ -87,8 +91,22 @@ git-sync () {
     [[ -z "$msg" ]] && msg="Sync $(date)"
 
     git add -A;
-    git commit -m "$msg" ;
-    git push ;
+    if [[ $? -ne 0 ]]; then
+        echo "Error during `git add -A`"
+        return 1
+    fi
+
+    git commit -S -m "$msg" ;
+    if [[ $? -ne 0 ]]; then
+        echo "Error in commit\nPossibily pinentry not working (?)"
+        return 2
+    fi
+
+    git push
+    if [[ $? -ne 0 ]]; then
+        echo "Error pushing to origin"
+        return 3
+    fi
 }
 
 schoolpkg () {

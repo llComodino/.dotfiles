@@ -106,25 +106,9 @@ sed -i "/^gtk-theme-name=/c\gtk-theme-name=${ThemeSet}" $ConfDir/gtk-3.0/setting
 sed -i "/^gtk-icon-theme-name=/c\gtk-icon-theme-name=${IconSet}" $ConfDir/gtk-3.0/settings.ini
 
 
-# flatpak GTK
-flatpak --user override --env=GTK_THEME="${ThemeSet}"
-flatpak --user override --env=ICON_THEME="${IconSet}"
-
-
 # hyprland
 ln -fs $ConfDir/hypr/themes/${ThemeSet}.conf $ConfDir/hypr/themes/theme.conf
 hyprctl reload
-
-
-# send notification
-gtkMode=`gsettings get org.gnome.desktop.interface color-scheme | sed "s/'//g" | awk -F '-' '{print $2}'`
-ncolor="-h string:bgcolor:#191724 -h string:fgcolor:#faf4ed -h string:frcolor:#56526e"
-
-if [ "${gtkMode}" == "light" ] ; then
-    ncolor="-h string:bgcolor:#f4ede8 -h string:fgcolor:#9893a5 -h string:frcolor:#908caa"
-fi
-
-dunstify $ncolor "theme" -a " ${ThemeSet}" -i "~/.config/dunst/icons/hyprdots.png" -r 91190 -t 2200
 
 
 # rofi & waybar

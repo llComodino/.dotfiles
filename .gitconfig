@@ -1,9 +1,12 @@
 [user]
 	email = comodinocode@proton.me
 	name = llComodino
+	signingkey = F4F6E059186BC971C9F9C4F9261B2A6719786BCA
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[commit]
+	gpgsign = true
