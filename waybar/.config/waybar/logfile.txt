@@ -41,23 +41,23 @@
 ** (waybar:12184): WARNING **: 13:15:48.442: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
 ** (waybar:12184): WARNING **: 13:15:48.442: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
-46.203: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:08:39.361: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:16:55.629: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:08:39.371: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:16:55.630: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:08:45.374: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:17:01.109: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:08:45.374: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:17:01.110: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:09:37.002: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:17:09.148: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:09:37.002: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:17:09.148: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:09:43.482: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:17:15.178: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
-** (waybar:5924): WARNING **: 13:09:43.482: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+** (waybar:12184): WARNING **: 13:17:15.178: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
+Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
 ** (waybar:5924): WARNING **: 13:10:40.623: Status Notifier Item with bus name ':1.80' and object path '/org/ayatana/NotificationItem/ROG_Control_Center' is already registered
 
