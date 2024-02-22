@@ -72,6 +72,7 @@ alias emacs='emacs -nw' # run emacs in terminal
 
 alias cmodules='cd /home/comodino/code/OS3-blog/test/server/server/modules'
 alias flowmanager='cd $OS3/src/flowmanager ; yarn start'
+alias docker-arango='cd $OS3/docker ; bash docker-compose -f arangodb.yaml up -d ; exit'
 
 # Keybindings
 bindkey -s ^n "tmux-sessionizer\n"
