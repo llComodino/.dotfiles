@@ -18,6 +18,8 @@ source $ZSH/oh-my-zsh.sh
 # Functions
 source ~/.zsh_funcs
 
+# ============================================================================== #
+
 export EDITOR=nvim
 
 # Spotifatius variables
@@ -41,12 +43,9 @@ export PATH="$HOME/.gems/bin:$PATH"
 # rbenv
 eval "$(rbenv init - zsh)"
 
-# Detect the AUR wrapper
-if pacman -Qi yay &>/dev/null ; then
-   aurhelper="yay"
-elif pacman -Qi paru &>/dev/null ; then
-   aurhelper="paru"
-fi
+# ============================================================================== #
+
+aurhelper="yay"
 
 function in {
 
@@ -58,6 +57,8 @@ function in {
         "$aurhelper" -S "$pkg"
     fi
 }
+
+# ============================================================================== #
 
 # Helpful aliases
 alias  l='eza -lh  --icons=auto' # long list
@@ -72,12 +73,15 @@ alias emacs='emacs -nw' # run emacs in terminal
 
 alias cmodules='cd /home/comodino/code/OS3-blog/test/server/server/modules'
 alias flowmanager='cd $OS3/src/flowmanager ; yarn start'
-alias docker-arango='cd $OS3/docker ; bash docker-compose -f arangodb.yaml up -d ; exit'
+
+# ============================================================================== #
 
 # Keybindings
 bindkey -s ^n "tmux-sessionizer\n"
 bindkey -s ^g "git-sync\n"
 bindkey -s ^f "nvim-find\n"
+
+# ============================================================================== #
 
 # Functions
 
