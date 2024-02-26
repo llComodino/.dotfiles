@@ -96,11 +96,18 @@ git-sync () {
         return 1
     fi
 
-    git commit -S -m "$msg" ;
-    if [[ $? -ne 0 ]]; then
-        echo "Error in commit\nPossibily pinentry not working (?)"
-        return 2
-    fi
+    while true; do
+        git commit -S -m "$msg";
+        if [[ $? -eq 0 ]]; then
+            break
+        else
+            echo "Please re-enter your GPG passphrase: "
+            read -s gpg_passphrase
+            export GPG_TTY=$(zsh)
+            export GPG_AGENT_INFO
+            export GPG_PASSPHRASE="$gpg_passphrase"
+        fi
+    done
 
     git push
     if [[ $? -ne 0 ]]; then
