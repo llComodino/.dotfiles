@@ -47,13 +47,17 @@ tmux-sessionizer () {
         exit 0
     fi
 
-    # If any subdirectories are found prompt them in fzf
-    if [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; then
-        selected=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
-        if [[ -z $selected ]]; then
-            exit 0
+    local sel=$selected;
+    while [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; do
+        
+        sel=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
+        
+        if [[ -z $sel ]]; then
+            break
         fi
-    fi
+
+        selected=$sel
+    done
 
     selected_name=$(basename "$selected" | tr . _)
     tmux_running=$(pgrep tmux)
@@ -96,18 +100,11 @@ git-sync () {
         return 1
     fi
 
-    while true; do
-        git commit -S -m "$msg";
-        if [[ $? -eq 0 ]]; then
-            break
-        else
-            echo "Please re-enter your GPG passphrase: "
-            read -s gpg_passphrase
-            export GPG_TTY=$(zsh)
-            export GPG_AGENT_INFO
-            export GPG_PASSPHRASE="$gpg_passphrase"
-        fi
-    done
+    git commit -S -m "$msg";
+    if [[ $? -ne 0 ]]; then
+        echo "Error during `git commit`\nProbably wrong passphrase"
+        return 1
+    fi
 
     git push
     if [[ $? -ne 0 ]]; then
