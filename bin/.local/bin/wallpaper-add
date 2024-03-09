@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 [[ -z $1 ]] && echo "Usage: $0 <wallpaper>" && exit 1
 [[ ! -f $1 ]] && echo "File not found: $1" && exit 1
