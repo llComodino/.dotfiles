@@ -107,7 +107,7 @@
     },
 
     "network": {
-        "interface": "wlp5s0",
+        "interface": "wlan0",
         "max-length": 30,
         "format-wifi": "{bandwidthUpBytes}   {bandwidthDownBytes}",
         "tooltip": true,

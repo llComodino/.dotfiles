@@ -5,9 +5,8 @@
 
 file --mime-type -b $1 | grep -q image || echo "Not an image: $1" && exit 1
 
-for dir in ~/.config/swww/*; do
+for dir in $(find ~/.config/swww/ -mindepth 1 -maxdepth 1 -type d; do
  
-    [[ -d $dir ]] || continue
     [[ -f $dir/$(basename $1) ]] && echo "File already exists: $dir/$(basename $1)" && continue
     
     cp $1 $dir
