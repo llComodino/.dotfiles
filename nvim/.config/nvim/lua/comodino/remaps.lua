@@ -18,3 +18,15 @@ vim.keymap.set ("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left
 vim.keymap.set ("n", "<leader>y", "\"+y")
 vim.keymap.set ("n", "<leader>Y", "\"+Y")
 vim.keymap.set ("v", "<leader>y", "\"+y")
+
+
+------- The Most Important Ones ---------
+vim.keymap.set ("n", "<left>",  ":echoe \"Use h\"\n")
+vim.keymap.set ("n", "<right>", ":echoe \"Use l\"\n")
+vim.keymap.set ("n", "<up>",    ":echoe \"Use k\"\n")
+vim.keymap.set ("n", "<down>",  ":echoe \"Use j\"\n")
+
+vim.keymap.set ("i", "<left>",  "<ESC>:echoe \"Use h\"\n")
+vim.keymap.set ("i", "<right>", "<ESC>:echoe \"Use l\"\n")
+vim.keymap.set ("i", "<up>",    "<ESC>:echoe \"Use k\"\n")
+vim.keymap.set ("i", "<down>",  "<ESC>:echoe \"Use j\"\n")

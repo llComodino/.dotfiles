@@ -18,6 +18,9 @@ source $ZSH/oh-my-zsh.sh
 # Functions
 source ~/.zsh_funcs
 
+# The Fuck?
+eval "$(thefuck --alias)"
+
 # Zoxide init
 eval "$(zoxide init zsh)"
 
