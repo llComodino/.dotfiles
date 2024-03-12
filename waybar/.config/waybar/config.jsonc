@@ -21,6 +21,7 @@
         "custom/r_end",
         "custom/l_end",
         "network",
+        "network#2",
         "custom/rr_end"
     ],
 
@@ -113,6 +114,14 @@
         "tooltip": true,
         "tooltip-format": "{ifname}"
     },
+    
+    "network#2": {
+        "interface": "enp7s0f4u1",
+        "max-length": 30,
+        "format-ethernet": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip": true,
+        "tooltip-format": "{ifname}"
+    },
 
     "battery": {
         "states": {
@@ -200,6 +209,6 @@
         "format": " ",
         "interval" : "once",
         "tooltip": false
-    },
+    }
 
 }

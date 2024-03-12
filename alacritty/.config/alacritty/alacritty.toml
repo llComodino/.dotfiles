@@ -15,6 +15,7 @@ opacity = 0.75
 
 [font]
 
+normal = { family = "Blexmono Nerd Font", style = "Light" }
 size = 14.0
 
 [colors.primary]
