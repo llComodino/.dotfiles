@@ -91,7 +91,8 @@
             "(.*)Brave": "Brave 󰏚",
             "(.*) — Dolphin": "$1 󰉋",
             "(.*)Spotify": "Spotify 󰓇",
-            "(.*)Steam": "Steam 󰓓"
+            "(.*)Zathura": "Zathura 󰈦",
+            "(.*)nvim(.*)": "Vimming "
         }
     },
 

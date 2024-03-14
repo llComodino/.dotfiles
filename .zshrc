@@ -77,6 +77,7 @@ alias ida64='~/idafree-8.3/ida64' # ida-free
 
 alias emacs='emacs -nw' # run emacs in terminal
 
+alias kat-ai='ollama run llama2-uncensored'
 alias cmodules='cd /home/comodino/code/OS3-blog/test/server/server/modules'
 alias flowmanager='cd $OS3/src/flowmanager ; yarn start'
 
@@ -103,3 +104,6 @@ cosa\? () {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
+[[ ! -f ~/.dotfiles/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
