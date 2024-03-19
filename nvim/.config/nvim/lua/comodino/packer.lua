@@ -2,7 +2,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  	
+
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     use (
         'nvim-treesitter/playground'
     )
-    
+
     use (
         'thePrimeagen/harpoon'
     )
@@ -28,15 +28,15 @@ return require('packer').startup(function(use)
     use (
         'APZelos/blamer.nvim'
     )
-    
+
     -- use (
     --     'github/copilot.vim'
     -- )
-    
+
     use (
         'xiyaowong/transparent.nvim'
     )
-    
+
     use ({
         'numToStr/Comment.nvim',
         config = function()
@@ -52,10 +52,10 @@ return require('packer').startup(function(use)
         "epwalsh/obsidian.nvim",
         tag = "*",
         requires = { "nvim-lua/plenary.nvim" },
-        
+
         config = function()
         require("obsidian").setup({
-        
+
             workspaces = {
                 {
                     name = "ComoVault",
@@ -81,7 +81,7 @@ return require('packer').startup(function(use)
     use (
         'ThePrimeagen/git-worktree.nvim'
     )
-    
+
     use (
         'neovim/nvim-lspconfig'
     )
@@ -89,11 +89,15 @@ return require('packer').startup(function(use)
     use (
         'hrsh7th/nvim-cmp'
     )
-    
+
     use (
-        'hrsh7th/cmp-nvim-lsp' 
+        'mfussenegger/nvim-jdtls'
     )
-    
+
+    use (
+        'hrsh7th/cmp-nvim-lsp'
+    )
+
     use (
         'saadparwaiz1/cmp_luasnip'
     )
@@ -101,15 +105,15 @@ return require('packer').startup(function(use)
     use (
         'L3MON4D3/LuaSnip'
     )
-    
+
     use (
         'williamboman/mason-lspconfig.nvim'
     )
-    
+
     use (
         'williamboman/mason.nvim'
     )
-    
+
     use (
         'mbbill/undotree'
     )

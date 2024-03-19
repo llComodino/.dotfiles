@@ -40,6 +40,7 @@ export GPG_TTY=$(tty)
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$OS3/src/restest:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 # Ruby
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
@@ -107,3 +108,7 @@ cosa\? () {
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
 [[ ! -f ~/.dotfiles/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
