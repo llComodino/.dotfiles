@@ -73,10 +73,14 @@ alias ls='eza -1   --icons=auto' # short list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
 
+alias updb='sudo updatedb'
+
 alias bdiscord='~/.comoappimages/betterdiscord' # run betterdiscord
 alias ida64='~/idafree-8.3/ida64' # ida-free
 
 alias emacs='emacs -nw' # run emacs in terminal
+alias ani-cli='ani-cli -N' # get next episode countdown
+alias anishchk='shellcheck -s sh -o all -e 2250' # shellcheck flags used for https://github.com/pystardust/ani-cli
 
 alias kat-ai='ollama run llama2-uncensored'
 alias cmodules='cd /home/comodino/code/OS3-blog/test/server/server/modules'

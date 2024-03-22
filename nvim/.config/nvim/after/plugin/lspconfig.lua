@@ -1,21 +1,5 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pyright.setup {}
-lspconfig.jdtls.setup {}
-lspconfig.tsserver.setup {}
-lspconfig.clangd.setup {}
-lspconfig.texlab.setup {}
-lspconfig.jsonls.setup {}
-lspconfig.lua_ls.setup {}
-lspconfig.bashls.setup {}
-lspconfig.svelte.setup {}
-lspconfig.html.setup {}
-lspconfig.rust_analyzer.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
-  settings = {
-    ['rust-analyzer'] = {},
-  },
-}
 
 
 -- Global mappings.
