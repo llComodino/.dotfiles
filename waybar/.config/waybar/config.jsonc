@@ -1,0 +1,215 @@
+{
+
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "height": 15,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+
+	"modules-left": [
+        "custom/ll_end",
+        "hyprland/workspaces",
+        "hyprland/window",
+        "custom/r_end",
+        "custom/l_end",
+        "cpu",
+        "memory",
+        "temperature",
+        "custom/r_end",
+        "custom/l_end",
+        "network",
+        "network#2",
+        "custom/rr_end"
+    ],
+
+	"modules-center": [
+        "custom/ll_end",
+        "custom/spotify",
+        "custom/rr_end"
+    ],
+
+	"modules-right": [
+        "custom/ll_end",
+        "clock",
+        "custom/r_end",
+        "custom/l_end",
+        "battery",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "custom/updates",
+        "custom/r_end",
+        "custom/l_end",
+        "tray",
+        "custom/rr_end"
+    ],
+
+
+    "cpu": {
+        "interval": 10,
+        "format": "󰍛  {usage}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "󰾆  {percentage}%",
+        "format-alt": "󰾅  {used}GB",
+        "max-length": 30,
+        "tooltip": true,
+        "tooltip-format": "  {used:0.1f}GB/{total:0.1f}GB"
+    },
+
+    "temperature": {
+       "format": "  {temperatureC}°C"
+    },
+
+    "clock": {
+        "interval": 60,
+        "format": "    {:%I:%M   󰃭  %a %d}",
+        "format-alt": "󰥔   {:%H:%M     %b %Y}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+
+    "hyprland/window": {
+        "format": "  {}",
+        "max-length": 30,
+        "separate-outputs": true,
+        "rewrite": {
+            "comodino@katalinux:(.*)": "$1 ",
+            "(.*) — Mozilla Firefox": "$1 󰈹",
+            "(.*)Mozilla Firefox": "Firefox 󰈹",
+            "(.*) - Brave": "$1 󰏚",
+            "(.*)Brave": "Brave 󰏚",
+            "(.*) — Dolphin": "$1 󰉋",
+            "(.*)Spotify": "Spotify 󰓇",
+            "(.*)Zathura": "Zathura 󰈦",
+            "(.*)nvim(.*)": "Vimming "
+        }
+    },
+
+    "custom/spotify": {
+        "format": "󰓇  {}",
+        "return-type": "json",
+        "max-length": 30,
+        "on-click": "playerctl play-pause -p spotify",
+        "on-click-right": "playerctl next -p spotify",
+        "on-click-middle": "playerctl previous -p spotify",
+        "on-scroll-up": "playerctl volume 0.1+ -p spotify",
+        "on-scroll-down": "playerctl volume 0.1- -p spotify",
+        "exec": "spotifatius monitor"
+    },
+
+    "network": {
+        "interface": "wlan0",
+        "max-length": 30,
+        "format-wifi": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip": true,
+        "tooltip-format": "{ifname}"
+    },
+    
+    "network#2": {
+        "interface": "enp7s0f4u1",
+        "max-length": 30,
+        "format-ethernet": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip": true,
+        "tooltip-format": "{ifname}"
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%  :  {time}",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}",
+        "format-muted": "婢",
+        "on-click": "pavucontrol -t 3",
+        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
+        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -o i",
+        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -o d",
+        "tooltip-format": "{icon} {desc} // {volume}%",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", " "]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "on-click": "pavucontrol -t 4",
+        "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -i m",
+        "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -i i",
+        "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -i d",
+        "tooltip-format": "{format_source} {source_desc} // {source_volume}%",
+        "scroll-step": 5
+    },
+
+    "tray": {
+      "icon-size": 20,
+        "spacing": 9
+    },
+
+// modules for padding //
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/ll_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    }
+
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=Nvim Usage
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/docker-compose up -d
+WorkingDirectory=/home/comodino/.config/nvim/usage
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
