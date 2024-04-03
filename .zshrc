@@ -80,7 +80,6 @@ alias bdiscord='~/.comoappimages/betterdiscord' # run betterdiscord
 alias ida64='~/idafree-8.3/ida64' # ida-free
 
 alias emacs='emacs -nw' # run emacs in terminal
-alias ani-cli='ani-cli -N' # get next episode countdown
 alias anishchk='shellcheck -s sh -o all -e 2250' # shellcheck flags used for https://github.com/pystardust/ani-cli
 
 alias kat-ai='ollama run llama2-uncensored'

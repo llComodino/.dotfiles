@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
                     path = "~/Documents/ComoVault",
                 }
             },
+
         })
         end,
     })
