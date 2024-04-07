@@ -1,6 +1,10 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 
+lspconfig.hls.setup({
+  cmd = { "haskell-language-server", "--lua" },
+  filetypes = { "hs" },
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

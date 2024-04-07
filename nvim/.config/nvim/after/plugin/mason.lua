@@ -15,5 +15,11 @@ require("mason-lspconfig").setup_handlers {
     end,
     ["rust_analyzer"] = function ()
         require("rust-tools").setup {}
+    end,
+    ["hls"] = function ()
+        require("lspconfig")["hls"].setup{
+            cmd = { "/home/comodino/.local/share/nvim/mason/bin/haskell-language-server-9.2.8", "--lsp" },
+            filetypes = { "haskell", "lhaskell", "cabal" }
+        }
     end
 }

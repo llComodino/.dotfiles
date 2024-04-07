@@ -38,10 +38,12 @@ export OS3=/home/comodino/code/OS3-blog
 # GPG variables
 export GPG_TTY=$(tty)
 
-export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$OS3/src/restest:$PATH"
+export PATH="$HOME/.cabal/bin:$PATH"
+export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 # Ruby
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
