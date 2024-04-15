@@ -6,6 +6,16 @@ g.mapleader = " "
 g.blamer_enabled = true
 g.vimtex_view_method = 'zathura'
 
+--------------------- Show full errors ------------
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  update_in_insert = false,
+  severity_sort = true,
+  underline = true,
+  virtual_lines = true,
+})
+
 --------------------- Options ---------------------
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
@@ -16,10 +26,10 @@ opt.mouse = ""
 opt.wrap = false
 
 opt.expandtab = true
-opt.shiftwidth = 4
+opt.shiftwidth = 2
 opt.smartindent = true
-opt.tabstop = 4
-opt.softtabstop = 4
+opt.tabstop = 2
+opt.softtabstop = 2
 
 opt.swapfile = false
 opt.backup = false

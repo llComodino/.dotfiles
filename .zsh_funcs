@@ -1,184 +1,192 @@
-nvim-find () {
+nvim-find() {
 
-    local sel_dir=$(echo -e "code\nvault\nOS3" | fzf)
+	local sel_dir=$(echo -e "code\nvault\nOS3" | fzf)
 
-    if [[ -z $sel_dir ]]; then
-        echo "No directory selected"
-        return 1
-    fi
+	if [[ -z $sel_dir ]]; then
+		echo "No directory selected"
+		return 1
+	fi
 
-    if [[ $sel_dir == "code" ]]; then
-        selected=$(find ~/code -type d | fzf)
-    elif [[ $sel_dir == "OS3" ]]; then
-        selected=$(echo -e "docker\nserver\nmodules\ntest" | fzf)
-        
-        case $selected in
-            
-            "docker")
-                cd "$OS3/docker";;
-            "server")
-                cd "$OS3/test/server";;
-            "modules")
-                cd "$OS3/test/server/server/modules";;
-        esac
+	if [[ $sel_dir == "code" ]]; then
+		selected=$(find ~/code -type d | fzf)
+	elif [[ $sel_dir == "OS3" ]]; then
+		selected=$(echo -e "docker\nserver\nmodules\ntest" | fzf)
 
-        return 0
-    else
-        selected=$(find ~/Documents/ComoVault -mindepth 1 -maxdepth 1 -type d | fzf)
-    fi
+		case $selected in
 
-    if [[ -z $selected ]]; then
-        echo "No directory selected"
-        return 1
-    fi
+		"docker")
+			cd "$OS3/docker"
+			;;
+		"server")
+			cd "$OS3/test/server"
+			;;
+		"modules")
+			cd "$OS3/test/server/server/modules"
+			;;
+		esac
 
-    cd $selected
+		return 0
+	else
+		selected=$(find ~/Documents/ComoVault -mindepth 1 -maxdepth 1 -type d | fzf)
+	fi
+
+	if [[ -z $selected ]]; then
+		echo "No directory selected"
+		return 1
+	fi
+
+	cd $selected
 }
 
-tmux-sessionizer () {
+tmux-sessionizer() {
 
-    if [[ $# -eq 1 ]]; then
-        selected=$1
-    else
-        selected=$(find ~/code -mindepth 1 -maxdepth 1 -type d | fzf)
-    fi
+	if [[ $# -eq 1 ]]; then
+		selected=$1
+	else
+		selected=$(find ~/code -mindepth 1 -maxdepth 1 -type d | fzf)
+	fi
 
-    if [[ -z $selected ]]; then
-        exit 0
-    fi
+	if [[ -z $selected ]]; then
+		exit 0
+	fi
 
-    local sel=$selected;
-    while [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; do
-        
-        sel=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
-        
-        if [[ -z $sel ]]; then
-            break
-        fi
+	local sel=$selected
+	while [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; do
 
-        selected=$sel
-    done
+		sel=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
 
-    selected_name=$(basename "$selected" | tr . _)
-    tmux_running=$(pgrep tmux)
+		if [[ -z $sel ]]; then
+			break
+		fi
 
-    if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-        tmux new-session -s $selected_name -c $selected
-        exit 0
-    fi
+		selected=$sel
+	done
 
-    if ! tmux has-session -t=$selected_name 2> /dev/null; then
-        tmux new-session -ds $selected_name -c $selected
-    fi
+	selected_name=$(basename "$selected" | tr . _)
+	tmux_running=$(pgrep tmux)
 
-    tmux switch-client -t $selected_name
+	if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+		tmux new-session -s $selected_name -c $selected
+		exit 0
+	fi
+
+	if ! tmux has-session -t=$selected_name 2>/dev/null; then
+		tmux new-session -ds $selected_name -c $selected
+	fi
+
+	tmux switch-client -t $selected_name
 }
 
-git-sync () {
+git-sync() {
 
-    dir="$PWD"
+	dir="$PWD"
 
-    while [[ "$dir" != "/" ]] ; do
-        [[ -d "$dir/.git" ]] && break
-        dir="$(dirname "$dir")"
-    done
+	while [[ "$dir" != "/" ]]; do
+		[[ -d "$dir/.git" ]] && break
+		dir="$(dirname "$dir")"
+	done
 
-    [[ "$dir" == "/" ]] && echo "Not in a git repo" && return 1
+	[[ "$dir" == "/" ]] && echo "Not in a git repo" && return 1
 
-    [[ ! -z "$@" ]] && echo "No arguments allowed" && return 1
+	[[ ! -z "$@" ]] && echo "No arguments allowed" && return 1
 
-    echo "Commit message \n[default: Sync <date>] (0 to cancel)"
-    read -r msg
+	echo "Commit message \n[default: Sync <date>] (0 to cancel)"
+	read -r msg
 
-    [[ "$msg" == "0" ]] && return 1
- 
-    [[ -z "$msg" ]] && msg="Sync $(date)"
+	[[ "$msg" == "0" ]] && return 1
 
-    git add -A;
-    if [[ $? -ne 0 ]]; then
-        echo "Error during `git add -A`"
-        return 1
-    fi
+	[[ -z "$msg" ]] && msg="Sync $(date)"
 
-    git commit -S -m "$msg";
-    if [[ $? -ne 0 ]]; then
-        echo "Error during `git commit`\nProbably wrong passphrase"
-        return 1
-    fi
+	git add -A
+	if [[ $? -ne 0 ]]; then
+		echo "Error during $(git add -A)"
+		return 1
+	fi
 
-    git push
-    if [[ $? -ne 0 ]]; then
-        echo "Error pushing to origin"
-        return 3
-    fi
+	git commit -S -m "$msg"
+	if [[ $? -ne 0 ]]; then
+		echo "Error during $(git commit)\nProbably wrong passphrase"
+		return 1
+	fi
+
+	git push
+	if [[ $? -ne 0 ]]; then
+		echo "Error pushing to origin"
+		return 3
+	fi
 }
 
-schoolpkg () {
-    
-    [[ -z "$@" ]] && echo "Usage: schoolpkg <dir1> <dir2> ..." && return 1
- 
-    local dir="$HOME/archives/tarballs/school"
-    local zip="$HOME/archives/zips/school"
- 
-    for d in "$@" ; do
-        local name="$(basename "$d")"
-        tar -cJf "$name.tar.xz" "$d" && mv "$name.tar.xz" "$dir"
-        zip -r -9 "$name.zip" "$d" && mv "$name.zip" "$zip"
-    done
+schoolpkg() {
+
+	[[ -z "$@" ]] && echo "Usage: schoolpkg <dir1> <dir2> ..." && return 1
+
+	local dir="$HOME/archives/tarballs/school"
+	local zip="$HOME/archives/zips/school"
+
+	for d in "$@"; do
+		local name="$(basename "$d")"
+		tar -cJf "$name.tar.xz" "$d" && mv "$name.tar.xz" "$dir"
+		zip -r -9 "$name.zip" "$d" && mv "$name.zip" "$zip"
+	done
 }
 
-comoserver () {
+comoserver() {
 
-    if [ $# -ne 1 ]; then
- 
-        echo "No username provided, trying to log in as root"
-        ssh -i $HOME/.ssh/server-root -p 16420 root@comodino-server.servebeer.com
+	if [ $# -ne 1 ]; then
 
-        return 2
-    fi
+		echo "No username provided, trying to log in as root"
+		ssh -i $HOME/.ssh/server-root -p 16420 root@comodino-server.servebeer.com
 
-    if [[ $1 =~ ^[a-zA-Z0-9_-]+$ ]]; then
-        
-        ssh -i ~/.ssh/server-$1 -p 16420 $1@comodino-server.servebeer.com
-    
-    else
-    
-        echo "Invalid username format. Please use only letters, numbers, hyphens, and underscores."
-        return 1
-    
-    fi
+		return 2
+	fi
+
+	if [[ $1 =~ ^[a-zA-Z0-9_-]+$ ]]; then
+
+		ssh -i ~/.ssh/server-$1 -p 16420 $1@comodino-server.servebeer.com
+
+	else
+
+		echo "Invalid username format. Please use only letters, numbers, hyphens, and underscores."
+		return 1
+
+	fi
 
 }
 
-comoscp () {
+comoscp() {
 
-    if [[ $# -ne 2 ]]; then
+	if [[ $# -ne 2 ]]; then
 
-        echo "Usage: comoscp [file] [remote_user]"
+		echo "Usage: comoscp [file] [remote_user]"
 
-        return 1
-    
-    fi
+		return 1
 
-    local_file=$1
-    remote_user=$2
+	fi
 
-    if [ ! -f "$local_file" ]; then
-        
-        echo "Error: File '$local_file' not found."
-        return 1
-    
-    fi
+	local_file=$1
+	remote_user=$2
 
-    if [[ $remote_user =~ ^[a-zA-Z0-9_-]+$ ]]; then
+	if [ ! -f "$local_file" ]; then
 
-        scp -i $HOME/.ssh/server-$remote_user -P 16420 $local_file $remote_user@comodino-server.servebeer.com:~/
+		echo "Error: File '$local_file' not found."
+		return 1
 
-    else
-        
-        echo "Error: Invalid remote user format. Please use only letters, numbers, hyphens, and underscores."
-        return 1
- 
-    fi
+	fi
 
+	if [[ $remote_user =~ ^[a-zA-Z0-9_-]+$ ]]; then
+
+		scp -i $HOME/.ssh/server-$remote_user -P 16420 $local_file $remote_user@comodino-server.servebeer.com:~/
+
+	else
+
+		echo "Error: Invalid remote user format. Please use only letters, numbers, hyphens, and underscores."
+		return 1
+
+	fi
+
+}
+
+c-fmt () {
+  cfmt $(find . -type f -name "*.c")
+  find . -type f -name "*.c" -exec dos2unix {} \;
 }

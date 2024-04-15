@@ -209,8 +209,9 @@ client.background       $bg
 
 # ======================================================================= #
 
-# Polybar launch script
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# Polybar launch unit
+exec_always --no-startup-id systemctl --user start polybar_top.service
+exec_always --no-startup-id systemctl --user start polybar_bottom.service
 
 # Automatically lock the screen after 3 minutes of inactivity
 #exec xautolock -detectsleep -time 3 -locker \"i3lock -c 000000\"
@@ -219,8 +220,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # exec_always feh --bg-fill --randomize $HOME/.local/share/wallpapers/lain
 exec_always feh --bg-fill --randomize $HOME/.local/share/wallpapers/lain/lain_2.jpg
 
-# nm-applet
-exec_always --no-startup-id nm-applet
+# iwgtk tray icon
+exec_always --no-startup-id iwgtk -i
 
 # ScreenShot tool
 exec_always --no-startup-id flameshot

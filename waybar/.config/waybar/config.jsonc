@@ -3,7 +3,7 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "height": 15,
+    "height": 20,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -118,7 +118,7 @@
     },
     
     "network#2": {
-        "interface": "enp7s0f4u1",
+        "interface": "eth0",
         "max-length": 30,
         "format-ethernet": "{bandwidthUpBytes}   {bandwidthDownBytes}",
         "tooltip": true,
@@ -170,8 +170,8 @@
     },
 
     "tray": {
-      "icon-size": 20,
-        "spacing": 9
+      "icon-size": 14,
+        "spacing": 10
     },
 
 // modules for padding //

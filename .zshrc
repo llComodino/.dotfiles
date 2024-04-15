@@ -78,11 +78,12 @@ alias ld='eza -lhD --icons=auto' # long list dirs
 
 alias updb='sudo updatedb'
 
-alias bdiscord='~/.comoappimages/betterdiscord' # run betterdiscord
+alias bdiscord='~/.comoappimages/bdiscord' # run betterdiscord
 alias ida64='~/idafree-8.3/ida64' # ida-free
 
 alias emacs='emacs -nw' # run emacs in terminal
 alias anishchk='shellcheck -s sh -o all -e 2250' # shellcheck flags used for https://github.com/pystardust/ani-cli
+
 
 alias kat-ai='ollama run llama2-uncensored'
 alias cmodules='cd /home/comodino/code/OS3-blog/test/server/server/modules'
@@ -124,3 +125,11 @@ ccompile () {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# pnpm
+export PNPM_HOME="/home/comodino/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

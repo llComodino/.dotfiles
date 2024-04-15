@@ -22,6 +22,10 @@ return require('packer').startup(function(use)
     )
 
     use (
+        'mrcjkb/rustaceanvim'
+    )
+
+    use (
         'thePrimeagen/harpoon'
     )
 

@@ -1,0 +1,10 @@
+[Unit]
+Description=Polybar Bottom Bar
+After=xorg.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/polybar --reload bar_bottom
+
+[Install]
+WantedBy=default.target

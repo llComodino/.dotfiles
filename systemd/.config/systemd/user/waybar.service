@@ -5,7 +5,6 @@ ConditionEnvironment=WAYLAND_DISPLAY
 
 [Service]
 Type=simple
-ExecStartPre=/usr/bin/sleep 3
 ExecStart=/usr/local/bin/waybar
 Environment="RSPOTIFY_CLIENT_ID=fbb59443f9ae488caecc97f898f607f5"
 Environment="RSPOTIFY_CLIENT_SECRET=20f4c1a82aff44b19cb7469b33153e84"
