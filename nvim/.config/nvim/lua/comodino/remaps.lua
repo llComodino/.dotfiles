@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 
-vim.keymap.set ("n", "<leader>ex", vim.cmd.Ex)
+vim.keymap.set ("n", "<leader>ex", vim.cmd.Oil)
 vim.keymap.set ("n", "<leader>psy", vim.cmd.PackerSync)
 
 vim.keymap.set ("n", "<leader>of", vim.cmd.ObsidianFollowLink)

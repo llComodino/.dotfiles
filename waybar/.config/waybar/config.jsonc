@@ -1,9 +1,9 @@
-{
+[{
 
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "height": 20,
+    "height": 10,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -18,10 +18,6 @@
         "cpu",
         "memory",
         "temperature",
-        "custom/r_end",
-        "custom/l_end",
-        "network",
-        "network#2",
         "custom/rr_end"
     ],
 
@@ -69,8 +65,8 @@
 
     "clock": {
         "interval": 60,
-        "format": "    {:%I:%M   󰃭  %a %d}",
-        "format-alt": "󰥔   {:%H:%M     %b %Y}",
+        "format": "  {:%I:%M  󰃭  %a %d}",
+        "format-alt": "󰥔  {:%H:%M    %b %Y}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
@@ -106,23 +102,7 @@
         "on-click-middle": "playerctl previous -p spotify",
         "on-scroll-up": "playerctl volume 0.1+ -p spotify",
         "on-scroll-down": "playerctl volume 0.1- -p spotify",
-        "exec": "playerctl metadata --format \"{{title}} - {{artist}}\""
-    },
-
-    "network": {
-        "interface": "wlan0",
-        "max-length": 30,
-        "format-wifi": "{bandwidthUpBytes}   {bandwidthDownBytes}",
-        "tooltip": true,
-        "tooltip-format": "{ifname}"
-    },
-    
-    "network#2": {
-        "interface": "eth0",
-        "max-length": 30,
-        "format-ethernet": "{bandwidthUpBytes}   {bandwidthDownBytes}",
-        "tooltip": true,
-        "tooltip-format": "{ifname}"
+        "exec": "playerctl metadata --format \"{{title}} - {{artist}}\" -p spotify"
     },
 
     "battery": {
@@ -131,7 +111,8 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%  :  {time}",
+        "format": "{icon} {time}",
+        "format-alt": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
@@ -212,4 +193,116 @@
         "tooltip": false
     }
 
-}
+},
+
+{
+
+    "layer": "bottom",
+    "position": "bottom",
+    "mod": "dock",
+    "height": 10,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+
+
+	"modules-left": [
+        "custom/ll_end",
+        "disk#root",
+        "disk#home",
+        "custom/rr_end"
+    ],
+
+	"modules-center": [
+        "custom/ll_end",
+        "custom/player",
+        "custom/rr_end"
+    ],
+
+	"modules-right": [
+        "custom/ll_end",
+        "network#wlan",
+        "network#eth",
+        "custom/rr_end"
+    ],
+
+
+    "disk#root": {
+        "interval": 30,
+        "path": "/",
+        "format": "/: {used}/{total}"
+    },
+
+    "disk#home": {
+        "interval": 30,
+        "path": "/home",
+        "format": "/home: {used}/{total}"
+    },
+
+    "custom/player": {
+        "format": "󰏚 {}",
+        "interval": 1,
+        "max-length": 60,
+        "on-click": "playerctl play-pause -p brave",
+        "on-click-right": "playerctl next -p brave",
+        "on-click-middle": "playerctl previous -p brave",
+        "on-scroll-up": "playerctl volume 0.1+ -p brave",
+        "on-scroll-down": "playerctl volume 0.1- -p brave",
+        "exec": "playerctl metadata --format \"{{title}} - {{artist}}\" -p brave"
+    },
+
+    "network#wlan": {
+        "interface": "wlan0",
+        "max-length": 30,
+        "format-wifi": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip": true,
+        "tooltip-format": "{ifname}"
+    },
+    
+    "network#eth": {
+        "interface": "eth0",
+        "max-length": 30,
+        "format-ethernet": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+        "tooltip": true,
+        "tooltip-format": "{ifname}"
+    },
+
+// modules for padding //
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/ll_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    }
+
+}]

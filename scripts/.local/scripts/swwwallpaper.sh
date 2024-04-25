@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 # define functions
+eval "$(swww-daemon)"
 
 Wall_Update()
 {

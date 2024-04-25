@@ -5,8 +5,6 @@
     font-size: 12px;
 }
 
-@import "themes/transparent.css";
-
 #cpu,
 #memory,
 #temperature,
@@ -19,7 +17,7 @@
 #bluetooth,
 #pulseaudio,
 #custom-spotify,
-#custom-updates,
+#disk,
 #tray {
     margin: 4px 0px 4px 0px;
     padding-left: 4px;
@@ -29,7 +27,6 @@
 
 #custom-spotify {
     color: #aaff00;
-    font-size: 16px;
 }
 
 window#waybar {
@@ -39,18 +36,18 @@ window#waybar {
 
 #workspaces {
     background: transparent;
-    margin: 5px 5px;
-    padding: 8px 5px;
+    margin: 2px 2px;
+    padding: 4px 2px;
     border-radius: 16px;
     color: #0096ff;
 }
 
 #workspaces button {
-    padding: 0px 5px;
-    margin: 0px 3px;
-    border-radius: 16px;
+    padding: 0px 2px;
+    margin: 0px 1px;
+    border-radius: 18px;
     color: transparent;
-    background: rgba(17,17,27,1);
+    background: #fff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -58,7 +55,7 @@ window#waybar {
     background-color: #89b4fa;
     color: #11111B;
     border-radius: 16px;
-    min-width: 20px;
+    min-width: 18px;
 /*    background-size: 200% 200%; */
     transition: all 0.3s ease-in-out;
 }
@@ -74,21 +71,18 @@ window#waybar {
 #tray, #pulseaudio, #network, #battery {
     background: transparent;
     font-weight: bold;
-    margin: 5px 0px;
+    margin: 2px 0px;
     color: #89b4fa;
     border-radius: 10px 16px 10px 16px;
-    padding: 0 10px;
+    padding: 0 6px;
     margin-left: 6px;
 }
 
 #clock {
     color: #89b4fa;
     background: transparent;
-    border-radius: 0px 0px 0px 40px;
-    padding: 10px 10px 10px 10px;
     margin-left: 7px;
     font-weight: bold;
-    font-size: 12px;
 }
 
 #window{
@@ -97,8 +91,6 @@ window#waybar {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
     font-weight: normal;
     font-style: normal;
 }
@@ -107,4 +99,8 @@ window#waybar {
 #memory,
 #temperature {
     color: #89b4fa;
+}
+
+#disk {
+  color: #89b4fa;
 }

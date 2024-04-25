@@ -37,6 +37,13 @@ return require('packer').startup(function(use)
         'gaborvecsei/usage-tracker.nvim'
     )
 
+    use({
+        'stevearc/oil.nvim',
+        config = function()
+            require("oil").setup()
+        end,
+    })
+
     -- use (
     --     'github/copilot.vim'
     -- )
