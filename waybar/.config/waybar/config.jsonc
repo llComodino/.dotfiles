@@ -209,6 +209,8 @@
 	"modules-left": [
         "custom/ll_end",
         "disk#root",
+        "custom/r_end",
+        "custom/l_end",
         "disk#home",
         "custom/rr_end"
     ],

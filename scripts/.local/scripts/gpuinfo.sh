@@ -18,9 +18,9 @@ get_intel_gpu_temperature() {
 get_temperature_emoji() {
   local temperature="$1"
   if [ "$temperature" -lt 60 ]; then
-    echo "❄️"  # Ice emoji for less than 60°C
+    echo "❄️" # Ice emoji for less than 60°C
   else
-    echo "🔥"  # Fire emoji for 60°C or higher
+    echo "🔥" # Fire emoji for 60°C or higher
   fi
 }
 
