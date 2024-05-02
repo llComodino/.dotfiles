@@ -31,7 +31,7 @@ eval "$(fzf --zsh)"
 # ============================================================================== #
 
 # GPG variables
-export GPG_TTY=$(tty)
+# export GPG_TTY=$(tty)
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$CODE/restest:$PATH"
