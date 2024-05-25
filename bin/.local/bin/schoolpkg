@@ -1,0 +1,94 @@
+#!/usr/bin/env bash
+
+pushd "$(pwd)" || exit 3
+[[ -z "$1" ]] || [[ ! -d "$1" ]] && echo "Usage: schoolpkg [dirs]" && exit 1
+
+read_name () {
+  read -r name
+  printf "%s" "$name"
+}
+
+read_path () {
+  read -r path
+  printf "%s" "$path"
+}
+
+compress_zip () {
+  while [ -z "$name" ]; do
+    echo "Enter archive name no extension: "
+    name="$(read_name)"
+    printf "\n"
+  done
+
+  while [ -z "$path" ] || [ ! -d "$path" ]; do
+    echo "Enter absolute path: "
+    path="$(read_path)"
+    printf "\n"
+  done
+
+  if find "$path" -mindepth 1 -maxdepth 1 -type f | grep -q -w "$name.zip"; then
+    echo "File already exists" && exit 2 
+  fi
+
+  if zip -9 -r "$name.zip" "$@"; then
+    mv "$name.zip" "$path"
+  fi
+}
+
+compress_tar () {
+  while [ -z "$name" ]; do
+    echo "Enter archive name no extension: "
+    name="$(read_name)"
+    printf "\n"
+  done
+
+  while [ -z "$path" ] || [ ! -d "$path" ]; do
+    echo "Enter absolute path: "
+    path="$(read_path)"
+    printf "\n"
+  done
+
+  if find "$path" -mindepth 1 -maxdepth 1 -type f | grep -q -w "$name.tar.xz"; then
+    echo "File already exists" && exit 2 
+  fi
+
+  if tar -cJf "$name.tar.xz" "$@"; then
+    mv "$name.tar.xz" "$path"
+  fi
+}
+
+echo "You passed:"
+
+for dir in "$@"; do
+  printf "%s" "$dir"
+done
+
+printf "\nConfirm (y/N)"
+read -r confirm
+
+[[ -z $confirm ]] && exit 1
+
+printf "\n\n%s\n%s\n%s" "What kind of archive do you need?" "1. tar.xz" "2. zip"
+read -r archive_type
+
+printf "\n\nDo you want all files in separate archives? (y/N)"
+read -r separate
+
+if [ -z "$separate" ]; then
+
+  case $archive_type in
+    1) compress_tar "$@" ;;
+    2) compress_zip "$@" ;;
+  esac
+
+else
+
+  for dir in "$@"; do
+    case $archive_type in
+      1) compress_tar "$dir" ;;
+      2) compress_zip "$dir" ;;
+    esac
+  done
+
+fi
+popd || exit 3

@@ -116,20 +116,6 @@ git-sync() {
 	fi
 }
 
-schoolpkg() {
-
-	[[ -z "$@" ]] && echo "Usage: schoolpkg <dir1> <dir2> ..." && return 1
-
-	local dir="$HOME/archives/tarballs/school"
-	local zip="$HOME/archives/zips/school"
-
-	for d in "$@"; do
-		local name="$(basename "$d")"
-		tar -cJf "$name.tar.xz" "$d" && mv "$name.tar.xz" "$dir"
-		zip -r -9 "$name.zip" "$d" && mv "$name.zip" "$zip"
-	done
-}
-
 comoserver() {
 
 	if [ $# -ne 1 ]; then
