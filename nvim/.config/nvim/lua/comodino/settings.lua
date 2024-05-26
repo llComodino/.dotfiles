@@ -17,7 +17,7 @@ vim.diagnostic.config({
 })
 
 --------------------- Options ---------------------
-opt.laststatus = 3 -- global statusline
+opt.laststatus = 3
 opt.showmode = false
 
 opt.guicursor = ""

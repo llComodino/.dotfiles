@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # wallpaper var
-EnableWallDcol=1
+EnableWallDcol=0
 cacheDir="$HOME/.config/swww/.cache"
 
 # theme var

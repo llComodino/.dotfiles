@@ -18,5 +18,7 @@ require("mason-lspconfig").setup_handlers {
             cmd = { "/home/comodino/.local/share/nvim/mason/bin/haskell-language-server-9.2.8", "--lsp" },
             filetypes = { "haskell", "lhaskell", "cabal" }
         }
+    end,
+    ["jdtls"] = function ()
     end
 }

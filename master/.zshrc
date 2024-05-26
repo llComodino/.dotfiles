@@ -64,6 +64,10 @@ alias emacs='emacs -nw' # run emacs in terminal
 
 alias kat-ai='ollama run llama2-uncensored'
 
+# sadly, your time has come too my friend (rip neofetch)
+# t the very least I will remember you for as long as I live
+alias neofetch='fastfetch'
+
 # ============================================================================== #
 
 # Keybindings

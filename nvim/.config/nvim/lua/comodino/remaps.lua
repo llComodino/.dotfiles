@@ -5,9 +5,6 @@ vim.keymap.set ("n", "<leader>psy", vim.cmd.PackerSync)
 
 vim.keymap.set ("n", "<leader>of", vim.cmd.ObsidianFollowLink)
 
-vim.keymap.set ("n", "<leader>ut", vim.cmd.UndotreeToggle)
-vim.keymap.set ("n", "<leader>uf", vim.cmd.UndotreeFocus)
-
 vim.keymap.set ("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set ("v", "K", ":m '<-2<CR>gv=gv")
 

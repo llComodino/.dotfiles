@@ -1,0 +1,656 @@
+May 26 16:17 : exception: Failed to access /home/comodino/music: No such file or directory
+May 26 16:17 : exception: inotify_add_watch() has failed: No such file or directory
+May 26 16:38 : state_file: Loading state file /home/comodino/.config/mpd/state
+May 26 16:38 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 26 16:38 : inotify: initializing inotify
+May 26 16:38 : inotify: watching music directory
+May 26 16:40 : state_file: Saving state file /home/comodino/.config/mpd/state
+May 26 16:40 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 26 16:40 : state_file: Loading state file /home/comodino/.config/mpd/state
+May 26 16:40 : inotify: initializing inotify
+May 26 16:40 : inotify: watching music directory
+May 26 16:40 : state_file: Saving state file /home/comodino/.config/mpd/state
+May 26 16:51 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+May 26 16:53 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 16:55 : state_file: Loading state file /home/comodino/.config/mpd/state
+May 26 16:55 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 26 16:55 : inotify: initializing inotify
+May 26 16:55 : inotify: watching music directory
+May 26 16:56 : client: [0] opened from local
+May 26 16:56 : client: [0] process command "status"
+May 26 16:56 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 16:56 : client: [0] command returned 0
+May 26 16:56 : client: [0] process command "plchanges "0""
+May 26 16:56 : client: [0] command returned 0
+May 26 16:56 : client: [0] process command "outputs"
+May 26 16:56 : client: [0] command returned 0
+May 26 16:56 : client: [0] process command "decoders"
+May 26 16:56 : client: [0] command returned 0
+May 26 16:56 : client: [0] process command "outputs"
+May 26 16:56 : client: [0] command returned 0
+May 26 16:56 : client: [0] process command "outputs"
+May 26 16:56 : client: [0] command returned 0
+May 26 16:56 : client: [0] process command "idle"
+May 26 16:56 : client: [0] command returned 1
+May 26 16:56 : client: [0] closed
+May 26 17:04 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:05 : exception: Failed to open /home/comodino/music: Permission denied
+May 26 17:05 : exception: Failed to open /home/comodino/music: Permission denied
+May 26 17:07 : update: added /Aerials.wav
+May 26 17:07 : update: added /The Unforgiven.wav
+May 26 17:07 : update: added /Nirvana - Heart Shaped Box.wav
+May 26 17:07 : update: added /toxicity.wav
+May 26 17:07 : update: added /Nirvana - Smells Like Teen Spirit.wav
+May 26 17:07 : update: added /Metallica - Fade To Black.wav
+May 26 17:07 : update: added /Chop_Suey.wav
+May 26 17:07 : update: added /Nirvana-Lake Of Fire.wav
+May 26 17:07 : update: added /Nothing Else Matters.wav
+May 26 17:07 : update: added /Iron Maiden - Phantom Of The Opera.wav
+May 26 17:07 : update: added /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 17:07 : update: added /The Man Who Sold The World - Nirvana.wav
+May 26 17:07 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:09 : update: spawned thread for update job id 1
+May 26 17:09 : update: starting
+May 26 17:09 : inotify: updating '' job=1
+May 26 17:09 : update: finished
+May 26 17:09 : update: removing Chop_Suey.wav
+May 26 17:09 : update: removing Aerials.wav
+May 26 17:09 : update: removing Nirvana - Heart Shaped Box.wav
+May 26 17:09 : update: removing Metallica - Fade To Black.wav
+May 26 17:09 : update: removing Iron Maiden - Phantom Of The Opera.wav
+May 26 17:09 : update: removing Hallowed Be Thy Name (2015 Remaster).wav
+May 26 17:09 : update: removing Nothing Else Matters.wav
+May 26 17:09 : update: removing Nirvana-Lake Of Fire.wav
+May 26 17:09 : update: removing Nirvana - Smells Like Teen Spirit.wav
+May 26 17:09 : update: removing toxicity.wav
+May 26 17:09 : update: removing The Unforgiven.wav
+May 26 17:09 : update: removing The Man Who Sold The World - Nirvana.wav
+May 26 17:09 : state_file: Saving state file /home/comodino/.config/mpd/state
+May 26 17:11 : state_file: Loading state file /home/comodino/.config/mpd/state
+May 26 17:11 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 26 17:11 : inotify: initializing inotify
+May 26 17:11 : inotify: watching music directory
+May 26 17:11 : client: [0] opened from local
+May 26 17:11 : client: [0] process command "status"
+May 26 17:11 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "plchanges "0""
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "outputs"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "decoders"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "outputs"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "outputs"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : client: [0] process command "update "/""
+May 26 17:11 : update: spawned thread for update job id 1
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : update: starting
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : client: [0] process command "status"
+May 26 17:11 : update: finished
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : client: [0] process command "status"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : client: [0] process command "update "/""
+May 26 17:11 : update: spawned thread for update job id 2
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : update: starting
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : update: finished
+May 26 17:11 : client: [0] process command "status"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : client: [0] process command "status"
+May 26 17:11 : client: [0] command returned 0
+May 26 17:11 : client: [0] process command "idle"
+May 26 17:11 : client: [0] command returned 1
+May 26 17:11 : client: [0] closed
+May 26 17:12 : client: [1] opened from local
+May 26 17:12 : client: [1] process command "status"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "plchanges "0""
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "outputs"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "decoders"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "outputs"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "outputs"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "lsinfo """
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "list Artist"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "listplaylists"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "listplaylists"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "lsinfo """
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "lsinfo """
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "lsinfo """
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "listplaylists"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "list Artist"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "list Artist"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "listplaylists"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "lsinfo """
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "lsinfo """
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "listplaylists"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "list Artist"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "urlhandlers"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "tagtypes"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:12 : client: [1] process command "urlhandlers"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "tagtypes"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "stats"
+May 26 17:12 : client: [1] command returned 0
+May 26 17:12 : client: [1] process command "idle"
+May 26 17:12 : client: [1] command returned 1
+May 26 17:14 : client: [1] closed
+May 26 17:14 : client: [2] opened from local
+May 26 17:14 : client: [2] process command "status"
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "plchanges "0""
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "outputs"
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "decoders"
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "outputs"
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "outputs"
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "idle"
+May 26 17:14 : client: [2] command returned 1
+May 26 17:14 : client: [2] process command "lsinfo """
+May 26 17:14 : client: [2] command returned 0
+May 26 17:14 : client: [2] process command "idle"
+May 26 17:14 : client: [2] command returned 1
+May 26 17:14 : client: [2] closed
+May 26 17:15 : client: [3] opened from local
+May 26 17:15 : client: [3] process command "status"
+May 26 17:15 : client: [3] command returned 0
+May 26 17:15 : client: [3] process command "plchanges "0""
+May 26 17:15 : client: [3] command returned 0
+May 26 17:15 : client: [3] process command "outputs"
+May 26 17:15 : client: [3] command returned 0
+May 26 17:15 : client: [3] process command "decoders"
+May 26 17:15 : client: [3] command returned 0
+May 26 17:15 : client: [3] process command "outputs"
+May 26 17:15 : client: [3] command returned 0
+May 26 17:15 : client: [3] process command "outputs"
+May 26 17:15 : client: [3] command returned 0
+May 26 17:15 : client: [3] process command "idle"
+May 26 17:15 : client: [3] command returned 1
+May 26 17:15 : client: [3] closed
+May 26 17:15 : client: [4] opened from local
+May 26 17:15 : client: [4] process command "status"
+May 26 17:15 : client: [4] command returned 0
+May 26 17:15 : client: [4] process command "plchanges "0""
+May 26 17:15 : client: [4] command returned 0
+May 26 17:15 : client: [4] process command "outputs"
+May 26 17:15 : client: [4] command returned 0
+May 26 17:15 : client: [4] process command "decoders"
+May 26 17:15 : client: [4] command returned 0
+May 26 17:15 : client: [4] process command "outputs"
+May 26 17:15 : client: [4] command returned 0
+May 26 17:15 : client: [4] process command "outputs"
+May 26 17:15 : client: [4] command returned 0
+May 26 17:15 : client: [4] process command "idle"
+May 26 17:15 : client: [4] command returned 1
+May 26 17:15 : client: [4] closed
+May 26 17:15 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:15 : update: added /Aerials.wav
+May 26 17:15 : update: added /The Unforgiven.wav
+May 26 17:15 : update: added /Nirvana - Heart Shaped Box.wav
+May 26 17:15 : update: added /toxicity.wav
+May 26 17:15 : update: added /Nirvana - Smells Like Teen Spirit.wav
+May 26 17:15 : update: added /Metallica - Fade To Black.wav
+May 26 17:15 : update: added /Chop_Suey.wav
+May 26 17:15 : update: added /Nirvana-Lake Of Fire.wav
+May 26 17:15 : update: added /Nothing Else Matters.wav
+May 26 17:15 : update: added /Iron Maiden - Phantom Of The Opera.wav
+May 26 17:15 : update: added /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 17:15 : update: added /The Man Who Sold The World - Nirvana.wav
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Aerials.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/The Unforgiven.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana - Heart Shaped Box.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/toxicity.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana - Smells Like Teen Spirit.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Metallica - Fade To Black.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Chop_Suey.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana-Lake Of Fire.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nothing Else Matters.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Iron Maiden - Phantom Of The Opera.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Hallowed Be Thy Name (2015 Remaster).wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/The Man Who Sold The World - Nirvana.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Aerials.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/The Unforgiven.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana - Heart Shaped Box.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/toxicity.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana - Smells Like Teen Spirit.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Metallica - Fade To Black.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Chop_Suey.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana-Lake Of Fire.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nothing Else Matters.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Iron Maiden - Phantom Of The Opera.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Hallowed Be Thy Name (2015 Remaster).wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/The Man Who Sold The World - Nirvana.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Aerials.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/The Unforgiven.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana - Heart Shaped Box.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/toxicity.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana - Smells Like Teen Spirit.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Metallica - Fade To Black.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Chop_Suey.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nirvana-Lake Of Fire.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Nothing Else Matters.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Iron Maiden - Phantom Of The Opera.wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/Hallowed Be Thy Name (2015 Remaster).wav: Permission denied
+May 26 17:16 : exception: Failed to access /home/comodino/comomusic/The Man Who Sold The World - Nirvana.wav: Permission denied
+May 26 17:17 : update: spawned thread for update job id 3
+May 26 17:17 : update: starting
+May 26 17:17 : inotify: updating '' job=3
+May 26 17:17 : update: reading /Aerials.wav
+May 26 17:17 : update: added /Aerials.wav
+May 26 17:17 : update: reading /The Unforgiven.wav
+May 26 17:17 : update: added /The Unforgiven.wav
+May 26 17:17 : update: reading /Nirvana - Heart Shaped Box.wav
+May 26 17:17 : update: added /Nirvana - Heart Shaped Box.wav
+May 26 17:17 : update: reading /toxicity.wav
+May 26 17:17 : update: added /toxicity.wav
+May 26 17:17 : update: reading /Nirvana - Smells Like Teen Spirit.wav
+May 26 17:17 : update: added /Nirvana - Smells Like Teen Spirit.wav
+May 26 17:17 : update: reading /Metallica - Fade To Black.wav
+May 26 17:17 : update: added /Metallica - Fade To Black.wav
+May 26 17:17 : update: reading /Chop_Suey.wav
+May 26 17:17 : update: added /Chop_Suey.wav
+May 26 17:17 : update: reading /Nirvana-Lake Of Fire.wav
+May 26 17:17 : update: added /Nirvana-Lake Of Fire.wav
+May 26 17:17 : update: reading /Nothing Else Matters.wav
+May 26 17:17 : update: added /Nothing Else Matters.wav
+May 26 17:17 : update: reading /Iron Maiden - Phantom Of The Opera.wav
+May 26 17:17 : update: added /Iron Maiden - Phantom Of The Opera.wav
+May 26 17:17 : update: reading /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 17:17 : update: added /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 17:17 : update: reading /The Man Who Sold The World - Nirvana.wav
+May 26 17:17 : update: added /The Man Who Sold The World - Nirvana.wav
+May 26 17:17 : simple_db: removing empty directories from DB
+May 26 17:17 : simple_db: sorting DB
+May 26 17:17 : simple_db: writing DB
+May 26 17:17 : update: finished
+May 26 17:24 : update: added /Nirvana - Heart Shaped Box.mp3
+May 26 17:24 : update: added /The Man Who Sold The World - Nirvana.mp3
+May 26 17:24 : update: added /Hallowed Be Thy Name (2015 Remaster).mp3
+May 26 17:24 : update: added /toxicity.mp3
+May 26 17:24 : update: added /Nirvana - Smells Like Teen Spirit.mp3
+May 26 17:24 : update: added /Nothing Else Matters.mp3
+May 26 17:24 : update: added /Aerials.mp3
+May 26 17:24 : update: added /The Unforgiven.mp3
+May 26 17:24 : update: added /Metallica - Fade To Black.mp3
+May 26 17:24 : update: added /Iron Maiden - Phantom Of The Opera.mp3
+May 26 17:24 : update: added /Chop_Suey.mp3
+May 26 17:24 : update: added /Nirvana-Lake Of Fire.mp3
+May 26 17:25 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:25 : update: removing Aerials.mp3
+May 26 17:25 : update: removing Nirvana - Heart Shaped Box.mp3
+May 26 17:25 : update: removing Metallica - Fade To Black.mp3
+May 26 17:25 : update: removing Iron Maiden - Phantom Of The Opera.mp3
+May 26 17:25 : update: removing Hallowed Be Thy Name (2015 Remaster).mp3
+May 26 17:25 : update: removing Chop_Suey.mp3
+May 26 17:25 : update: removing The Man Who Sold The World - Nirvana.mp3
+May 26 17:25 : update: removing Nothing Else Matters.mp3
+May 26 17:25 : update: removing Nirvana-Lake Of Fire.mp3
+May 26 17:25 : update: removing Nirvana - Smells Like Teen Spirit.mp3
+May 26 17:25 : update: removing toxicity.mp3
+May 26 17:25 : update: removing The Unforgiven.mp3
+May 26 17:37 : update: updating /Aerials.wav
+May 26 17:37 : update: updating /The Unforgiven.wav
+May 26 17:37 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 17:37 : update: updating /toxicity.wav
+May 26 17:37 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 17:37 : update: updating /Metallica - Fade To Black.wav
+May 26 17:37 : update: updating /Chop_Suey.wav
+May 26 17:37 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 17:37 : update: updating /Nothing Else Matters.wav
+May 26 17:37 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 17:37 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 17:37 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 17:39 : event: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+May 26 17:39 : state_file: Loading state file /home/comodino/.config/mpd/state
+May 26 17:39 : inotify: initializing inotify
+May 26 17:39 : inotify: watching music directory
+May 26 17:39 : client: [0] opened from local
+May 26 17:39 : client: [0] process command "listall """
+May 26 17:39 : client: [0] command returned 0
+May 26 17:39 : client: [0] closed
+May 26 17:40 : client: [1] opened from local
+May 26 17:40 : client: [1] process command "play"
+May 26 17:40 : client: [1] command returned 0
+May 26 17:40 : client: [1] process command list
+May 26 17:40 : client: process command "status"
+May 26 17:40 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:40 : client: command returned 0
+May 26 17:40 : client: process command "currentsong"
+May 26 17:40 : client: command returned 0
+May 26 17:40 : client: [1] process command list returned 0
+May 26 17:40 : client: [1] closed
+May 26 17:40 : state_file: Saving state file /home/comodino/.config/mpd/state
+May 26 17:40 : state_file: Saving state file /home/comodino/.config/mpd/state
+May 26 17:44 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 17:56 : mixer: Failed to read mixer for 'Comos' ALSA Device': no such mixer control: PCM
+May 26 18:00 : exception: Bad song index
+May 26 18:00 : exception: Bad song index
+May 26 18:00 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 26 18:00 : exception: Bad song index
+May 26 18:07 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 26 18:08 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:11 : player: played "Nirvana-Lake Of Fire.wav"
+May 26 18:12 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:12 : player: played "Nirvana-Lake Of Fire.wav"
+May 26 18:12 : exception: Not playing
+May 26 18:12 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:12 : player: played "Nirvana-Lake Of Fire.wav"
+May 26 18:13 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:15 : update: removing toxicity.wav
+May 26 18:15 : update: updating /Aerials.wav
+May 26 18:15 : update: updating /The Unforgiven.wav
+May 26 18:15 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:15 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:15 : update: updating /Metallica - Fade To Black.wav
+May 26 18:15 : update: updating /Chop_Suey.wav
+May 26 18:15 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:15 : update: updating /Nothing Else Matters.wav
+May 26 18:15 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:15 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:15 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:15 : update: added /Toxicity.wav
+May 26 18:16 : update: updating /Aerials.wav
+May 26 18:16 : update: updating /The Unforgiven.wav
+May 26 18:16 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:16 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:16 : update: updating /Metallica - Fade To Black.wav
+May 26 18:16 : update: updating /Chop_Suey.wav
+May 26 18:16 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:16 : update: updating /Nothing Else Matters.wav
+May 26 18:16 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:16 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:16 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:16 : update: updating /Toxicity.wav
+May 26 18:17 : update: updating /Aerials.wav
+May 26 18:17 : update: updating /The Unforgiven.wav
+May 26 18:17 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:17 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:17 : update: updating /Metallica - Fade To Black.wav
+May 26 18:17 : update: updating /Chop_Suey.wav
+May 26 18:17 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:17 : update: updating /Nothing Else Matters.wav
+May 26 18:17 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:17 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:17 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:17 : update: updating /Toxicity.wav
+May 26 18:17 : player: played "Nirvana - Heart Shaped Box.wav"
+May 26 18:18 : update: updating /Aerials.wav
+May 26 18:18 : update: updating /The Unforgiven.wav
+May 26 18:18 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:18 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:18 : update: updating /Metallica - Fade To Black.wav
+May 26 18:18 : update: updating /Chop_Suey.wav
+May 26 18:18 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:18 : update: updating /Nothing Else Matters.wav
+May 26 18:18 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:18 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:18 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:18 : update: updating /Toxicity.wav
+May 26 18:19 : update: updating /Aerials.wav
+May 26 18:19 : update: updating /The Unforgiven.wav
+May 26 18:19 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:19 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:19 : update: updating /Metallica - Fade To Black.wav
+May 26 18:19 : update: updating /Chop_Suey.wav
+May 26 18:19 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:19 : update: updating /Nothing Else Matters.wav
+May 26 18:19 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:19 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:19 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:19 : update: updating /Toxicity.wav
+May 26 18:19 : update: updating /Aerials.wav
+May 26 18:19 : update: updating /The Unforgiven.wav
+May 26 18:19 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:19 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:19 : update: updating /Metallica - Fade To Black.wav
+May 26 18:19 : update: updating /Chop_Suey.wav
+May 26 18:19 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:19 : update: updating /Nothing Else Matters.wav
+May 26 18:19 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:19 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:19 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:19 : update: updating /Toxicity.wav
+May 26 18:20 : update: updating /Aerials.wav
+May 26 18:20 : update: updating /The Unforgiven.wav
+May 26 18:20 : update: updating /Nirvana - Heart Shaped Box.wav
+May 26 18:20 : update: updating /Nirvana - Smells Like Teen Spirit.wav
+May 26 18:20 : update: updating /Metallica - Fade To Black.wav
+May 26 18:20 : update: updating /Chop_Suey.wav
+May 26 18:20 : update: updating /Nirvana-Lake Of Fire.wav
+May 26 18:20 : update: updating /Nothing Else Matters.wav
+May 26 18:20 : update: updating /Iron Maiden - Phantom Of The Opera.wav
+May 26 18:20 : update: updating /Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:20 : update: updating /The Man Who Sold The World - Nirvana.wav
+May 26 18:20 : update: updating /Toxicity.wav
+May 26 18:21 : update: removing Chop_Suey.wav
+May 26 18:21 : update: removing The Man Who Sold The World - Nirvana.wav
+May 26 18:21 : update: removing Nirvana-Lake Of Fire.wav
+May 26 18:21 : update: removing Nirvana - Smells Like Teen Spirit.wav
+May 26 18:21 : update: removing Nirvana - Heart Shaped Box.wav
+May 26 18:21 : update: updating /Aerials.wav
+May 26 18:21 : update: removing Metallica - Fade To Black.wav
+May 26 18:21 : update: removing Iron Maiden - Phantom Of The Opera.wav
+May 26 18:21 : update: removing Hallowed Be Thy Name (2015 Remaster).wav
+May 26 18:21 : update: updating /The Unforgiven.wav
+May 26 18:21 : update: added /Hallowed Be Thy Name.wav
+May 26 18:21 : update: added /Lake Of Fire.wav
+May 26 18:21 : update: added /Chop Suey.wav
+May 26 18:21 : update: added /Smells Like Teen Spirit.wav
+May 26 18:21 : update: added /The Man Who Sold The World.wav
+May 26 18:21 : update: added /Fade To Black.wav
+May 26 18:21 : update: updating /Nothing Else Matters.wav
+May 26 18:21 : update: updating /Toxicity.wav
+May 26 18:21 : update: added /Heart Shaped Box.wav
+May 26 18:21 : update: added /Phantom Of The Opera.wav
+May 26 18:22 : player: played "Nirvana - Smells Like Teen Spirit.wav"
+May 26 18:23 : update: updating /Aerials.wav
+May 26 18:23 : update: updating /The Unforgiven.wav
+May 26 18:23 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:23 : update: updating /Lake Of Fire.wav
+May 26 18:23 : update: updating /Chop Suey.wav
+May 26 18:23 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:23 : update: updating /The Man Who Sold The World.wav
+May 26 18:23 : update: updating /Fade To Black.wav
+May 26 18:23 : update: updating /Nothing Else Matters.wav
+May 26 18:23 : update: updating /Toxicity.wav
+May 26 18:23 : update: updating /Heart Shaped Box.wav
+May 26 18:23 : update: updating /Phantom Of The Opera.wav
+May 26 18:23 : update: updating /Aerials.wav
+May 26 18:23 : update: updating /The Unforgiven.wav
+May 26 18:23 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:23 : update: updating /Lake Of Fire.wav
+May 26 18:23 : update: updating /Chop Suey.wav
+May 26 18:23 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:23 : update: updating /The Man Who Sold The World.wav
+May 26 18:23 : update: updating /Fade To Black.wav
+May 26 18:23 : update: updating /Nothing Else Matters.wav
+May 26 18:23 : update: updating /Toxicity.wav
+May 26 18:23 : update: updating /Heart Shaped Box.wav
+May 26 18:23 : update: updating /Phantom Of The Opera.wav
+May 26 18:24 : update: updating /Aerials.wav
+May 26 18:24 : update: updating /The Unforgiven.wav
+May 26 18:24 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:24 : update: updating /Lake Of Fire.wav
+May 26 18:24 : update: updating /Chop Suey.wav
+May 26 18:24 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:24 : update: updating /The Man Who Sold The World.wav
+May 26 18:24 : update: updating /Fade To Black.wav
+May 26 18:24 : update: updating /Nothing Else Matters.wav
+May 26 18:24 : update: updating /Toxicity.wav
+May 26 18:24 : update: updating /Heart Shaped Box.wav
+May 26 18:24 : update: updating /Phantom Of The Opera.wav
+May 26 18:24 : update: updating /Aerials.wav
+May 26 18:24 : update: updating /The Unforgiven.wav
+May 26 18:24 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:24 : update: updating /Lake Of Fire.wav
+May 26 18:24 : update: updating /Chop Suey.wav
+May 26 18:24 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:24 : update: updating /The Man Who Sold The World.wav
+May 26 18:24 : update: updating /Fade To Black.wav
+May 26 18:24 : update: updating /Nothing Else Matters.wav
+May 26 18:24 : update: updating /Toxicity.wav
+May 26 18:24 : update: updating /Heart Shaped Box.wav
+May 26 18:24 : update: updating /Phantom Of The Opera.wav
+May 26 18:27 : player: played "The Unforgiven.wav"
+May 26 18:27 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:27 : update: updating /Aerials.wav
+May 26 18:27 : update: updating /The Unforgiven.wav
+May 26 18:27 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:27 : update: updating /Lake Of Fire.wav
+May 26 18:27 : update: updating /Chop Suey.wav
+May 26 18:27 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:27 : update: updating /The Man Who Sold The World.wav
+May 26 18:27 : update: updating /Fade To Black.wav
+May 26 18:27 : update: updating /Nothing Else Matters.wav
+May 26 18:27 : update: updating /Toxicity.wav
+May 26 18:27 : update: updating /Heart Shaped Box.wav
+May 26 18:27 : update: updating /Phantom Of The Opera.wav
+May 26 18:28 : update: updating /Aerials.wav
+May 26 18:28 : update: updating /The Unforgiven.wav
+May 26 18:28 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:28 : update: updating /Lake Of Fire.wav
+May 26 18:28 : update: updating /Chop Suey.wav
+May 26 18:28 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:28 : update: updating /The Man Who Sold The World.wav
+May 26 18:28 : update: updating /Fade To Black.wav
+May 26 18:28 : update: updating /Nothing Else Matters.wav
+May 26 18:28 : update: updating /Toxicity.wav
+May 26 18:28 : update: updating /Heart Shaped Box.wav
+May 26 18:28 : update: updating /Phantom Of The Opera.wav
+May 26 18:29 : update: updating /Aerials.wav
+May 26 18:29 : update: updating /The Unforgiven.wav
+May 26 18:29 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:29 : update: updating /Lake Of Fire.wav
+May 26 18:29 : update: updating /Chop Suey.wav
+May 26 18:29 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:29 : update: updating /The Man Who Sold The World.wav
+May 26 18:29 : update: updating /Fade To Black.wav
+May 26 18:29 : update: updating /Nothing Else Matters.wav
+May 26 18:29 : update: updating /Toxicity.wav
+May 26 18:29 : update: updating /Heart Shaped Box.wav
+May 26 18:29 : update: updating /Phantom Of The Opera.wav
+May 26 18:29 : update: updating /Aerials.wav
+May 26 18:29 : update: updating /The Unforgiven.wav
+May 26 18:29 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:29 : update: updating /Lake Of Fire.wav
+May 26 18:29 : update: updating /Chop Suey.wav
+May 26 18:29 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:29 : update: updating /The Man Who Sold The World.wav
+May 26 18:29 : update: updating /Fade To Black.wav
+May 26 18:29 : update: updating /Nothing Else Matters.wav
+May 26 18:29 : update: updating /Toxicity.wav
+May 26 18:29 : update: updating /Heart Shaped Box.wav
+May 26 18:29 : update: updating /Phantom Of The Opera.wav
+May 26 18:33 : player: played "The Unforgiven.wav"

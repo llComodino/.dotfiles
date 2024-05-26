@@ -74,7 +74,7 @@ return require('packer').startup(function(use)
             workspaces = {
                 {
                     name = "ComoVault",
-                    path = "~/Documents/ComoVault",
+                    path = "~/documents/ComoVault",
                 }
             },
 
