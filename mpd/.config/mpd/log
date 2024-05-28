@@ -654,3 +654,149 @@ May 26 18:29 : update: updating /Toxicity.wav
 May 26 18:29 : update: updating /Heart Shaped Box.wav
 May 26 18:29 : update: updating /Phantom Of The Opera.wav
 May 26 18:33 : player: played "The Unforgiven.wav"
+May 26 18:40 : player: played "Nothing Else Matters.wav"
+May 26 18:45 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:45 : update: updating /Aerials.wav
+May 26 18:45 : update: updating /The Unforgiven.wav
+May 26 18:45 : update: updating /Hallowed Be Thy Name.wav
+May 26 18:45 : update: updating /Lake Of Fire.wav
+May 26 18:45 : update: updating /Chop Suey.wav
+May 26 18:45 : update: updating /Smells Like Teen Spirit.wav
+May 26 18:45 : update: updating /The Man Who Sold The World.wav
+May 26 18:45 : update: updating /Fade To Black.wav
+May 26 18:45 : update: updating /Nothing Else Matters.wav
+May 26 18:45 : update: updating /Toxicity.wav
+May 26 18:45 : update: updating /Heart Shaped Box.wav
+May 26 18:45 : update: updating /Phantom Of The Opera.wav
+May 26 18:49 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:50 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 18:50 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 19:56 : update: added metal/Aerials.wav
+May 26 19:56 : update: added metal/The Unforgiven.wav
+May 26 19:56 : update: added metal/Hallowed Be Thy Name.wav
+May 26 19:56 : update: added metal/Lake Of Fire.wav
+May 26 19:56 : update: added metal/Chop Suey.wav
+May 26 19:56 : update: added metal/Smells Like Teen Spirit.wav
+May 26 19:56 : update: added metal/The Man Who Sold The World.wav
+May 26 19:56 : update: added metal/Fade To Black.wav
+May 26 19:56 : update: added metal/Nothing Else Matters.wav
+May 26 19:56 : update: added metal/Toxicity.wav
+May 26 19:56 : update: added metal/Heart Shaped Box.wav
+May 26 19:56 : update: added metal/Phantom Of The Opera.wav
+May 26 20:00 : update: added various/In This Shirt.wav
+May 26 20:00 : player: played "Nothing Else Matters.wav"
+May 26 20:00 : exception: Failed to decode /home/comodino/comomusic/Nothing Else Matters.wav; Failed to open '/home/comodino/comomusic/Nothing Else Matters.wav': No such file or directory
+May 26 20:00 : player: played "Nothing Else Matters.wav"
+May 26 20:00 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 26 20:01 : exception: Failed to decode /home/comodino/comomusic/Nothing Else Matters.wav; Failed to open '/home/comodino/comomusic/Nothing Else Matters.wav': No such file or directory
+May 26 20:01 : player: played "Nothing Else Matters.wav"
+May 26 20:01 : exception: Failed to decode /home/comodino/comomusic/The Unforgiven.wav; Failed to open '/home/comodino/comomusic/The Unforgiven.wav': No such file or directory
+May 26 20:01 : exception: Failed to decode /home/comodino/comomusic/Nothing Else Matters.wav; Failed to open '/home/comodino/comomusic/Nothing Else Matters.wav': No such file or directory
+May 26 20:01 : player: played "The Unforgiven.wav"
+May 26 20:01 : exception: Failed to decode /home/comodino/comomusic/Nothing Else Matters.wav; Failed to open '/home/comodino/comomusic/Nothing Else Matters.wav': No such file or directory
+May 26 20:01 : player: played "Nothing Else Matters.wav"
+May 26 20:02 : update: removing Hallowed Be Thy Name.wav
+May 26 20:02 : update: removing Chop Suey.wav
+May 26 20:02 : update: removing Aerials.wav
+May 26 20:02 : update: removing Fade To Black.wav
+May 26 20:02 : update: removing Heart Shaped Box.wav
+May 26 20:02 : update: removing Toxicity.wav
+May 26 20:02 : update: removing The Unforgiven.wav
+May 26 20:02 : update: removing The Man Who Sold The World.wav
+May 26 20:02 : update: removing Smells Like Teen Spirit.wav
+May 26 20:02 : update: removing Phantom Of The Opera.wav
+May 26 20:02 : update: removing Nothing Else Matters.wav
+May 26 20:02 : update: removing Lake Of Fire.wav
+May 26 20:02 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:02 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:02 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:02 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:02 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:08 : player: played "various/In This Shirt.wav"
+May 26 20:19 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:24 : player: played "metal/Heart Shaped Box.wav"
+May 26 20:24 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:27 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:31 : player: played "metal/Smells Like Teen Spirit.wav"
+May 26 20:32 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:39 : player: played "metal/Fade To Black.wav"
+May 26 20:43 : update: added abba/Abba - Dancing Queen.mp3
+May 26 20:44 : update: added abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3
+May 26 20:44 : update: added abba/Abba - Mamma Mia.mp3
+May 26 20:44 : update: added abba/Abba The Winner Takes It All.mp3
+May 26 20:45 : update: added abba/ABBA - Super Trouper.mp3
+May 26 20:45 : update: added abba/Abba - Chiquitita.mp3
+May 26 20:45 : update: added abba/Abba - Money, Money, Money.mp3
+May 26 20:46 : update: updating abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3
+May 26 20:46 : update: updating abba/Abba The Winner Takes It All.mp3
+May 26 20:46 : update: updating abba/Abba - Dancing Queen.mp3
+May 26 20:46 : update: updating abba/Abba - Mamma Mia.mp3
+May 26 20:46 : update: updating abba/Abba - Money, Money, Money.mp3
+May 26 20:46 : update: updating abba/ABBA - Super Trouper.mp3
+May 26 20:46 : update: updating abba/Abba - Chiquitita.mp3
+May 26 20:48 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 20:56 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 26 23:59 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 01:11 : player: played "abba/Abba The Winner Takes It All.mp3"
+May 27 02:27 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 27 10:50 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 27 21:02 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 27 21:02 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 21:07 : player: played "abba/Abba - Chiquitita.mp3"
+May 27 21:07 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 27 21:19 : update: added various/Blonde Redhead - For the Damaged Coda.mp3
+May 27 21:20 : update: updating various/In This Shirt.wav
+May 27 21:20 : update: updating various/Blonde Redhead - For the Damaged Coda.mp3
+May 27 21:20 : update: updating various/In This Shirt.wav
+May 27 21:20 : update: updating various/Blonde Redhead - For the Damaged Coda.mp3
+May 28 00:23 : player: played "abba/Abba - Dancing Queen.mp3"
+May 28 08:39 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+May 28 08:40 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 28 08:40 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 28 08:42 : update: added abba/Abba - Dancing Queen.mp3.wav
+May 28 08:42 : update: added abba/Abba - Chiquitita.mp3.wav
+May 28 08:42 : update: added abba/Abba The Winner Takes It All.mp3.wav
+May 28 08:42 : update: added abba/Abba - Mamma Mia.mp3.wav
+May 28 08:42 : update: added abba/Abba - Money, Money, Money.mp3.wav
+May 28 08:42 : update: added abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3.wav
+May 28 08:42 : update: added abba/ABBA - Super Trouper.mp3.wav
+May 28 08:42 : update: removing abba/Abba - Dancing Queen.mp3.wav
+May 28 08:42 : update: removing abba/Abba - Chiquitita.mp3.wav
+May 28 08:42 : update: removing abba/Abba The Winner Takes It All.mp3.wav
+May 28 08:42 : update: removing abba/ABBA - Super Trouper.mp3.wav
+May 28 08:42 : update: removing abba/Abba - Money, Money, Money.mp3.wav
+May 28 08:42 : update: removing abba/Abba - Mamma Mia.mp3.wav
+May 28 08:42 : update: removing abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3.wav
+May 28 08:44 : update: added abba/ABBA - Super Trouper.wav
+May 28 08:44 : update: added abba/Abba - Dancing Queen.wav
+May 28 08:44 : update: added abba/Abba The Winner Takes It All.wav
+May 28 08:44 : update: added abba/Abba - Money, Money, Money.wav
+May 28 08:44 : update: added abba/Abba - Mamma Mia.wav
+May 28 08:44 : update: added abba/Abba - Chiquitita.wav
+May 28 08:44 : update: added abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).wav
+May 28 08:45 : update: removing abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).mp3
+May 28 08:45 : update: removing abba/Abba - Dancing Queen.mp3
+May 28 08:45 : update: removing abba/Abba - Chiquitita.mp3
+May 28 08:45 : update: removing abba/Abba The Winner Takes It All.mp3
+May 28 08:45 : update: removing abba/ABBA - Super Trouper.mp3
+May 28 08:45 : update: removing abba/Abba - Money, Money, Money.mp3
+May 28 08:45 : update: removing abba/Abba - Mamma Mia.mp3
+May 28 08:46 : update: removing abba/Abba The Winner Takes It All.wav
+May 28 08:46 : update: added abba/Abba - The Winner Takes It All.wav
+May 28 08:51 : player: played "abba/Abba - Mamma Mia.mp3"
+May 28 08:51 : exception: Bad song index
+May 28 08:51 : exception: Bad song index
+May 28 08:54 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 28 08:58 : player: played "metal/Toxicity.wav"
+May 28 09:03 : player: played "metal/Smells Like Teen Spirit.wav"
+May 28 09:03 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 28 09:03 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 28 09:10 : player: played "metal/Hallowed Be Thy Name.wav"
+May 28 09:10 : output: Failed to open mixer for 'default': no such mixer control: PCM
+May 28 09:14 : player: played "abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).wav"

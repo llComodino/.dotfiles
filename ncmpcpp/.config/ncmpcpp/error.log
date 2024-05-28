@@ -321,3 +321,15 @@ writeCommonTags: couldn't write 'year' tag to 'The Unforgiven.wav' as it's not a
 writeCommonTags: couldn't write 'track' tag to 'The Unforgiven.wav' as it's not a positive integer
 writeCommonTags: couldn't write 'year' tag to 'Toxicity.wav' as it's not a positive integer
 writeCommonTags: couldn't write 'track' tag to 'Toxicity.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Aerials.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Chop Suey.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Fade To Black.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Hallowed Be Thy Name.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Heart Shaped Box.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Lake Of Fire.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Nothing Else Matters.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Phantom Of The Opera.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Smells Like Teen Spirit.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'The Man Who Sold The World.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'The Unforgiven.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'Toxicity.wav' as it's not a positive integer

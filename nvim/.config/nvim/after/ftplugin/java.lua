@@ -38,7 +38,6 @@ local config = {
   },
 
   root_dir = require("jdtls.setup").find_root { ".git", "gradlew", "build.gradle" },
-  capabilities = capabilities,
 
   settings = {
 
@@ -95,10 +94,6 @@ local config = {
 
     signatureHelp = { enabled = true },
     extendedClientCapabilities = extendedClientCapabilities,
-  },
-
-  init_options = {
-    bundles = bundles,
   },
 
 }
