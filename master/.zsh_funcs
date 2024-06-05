@@ -27,7 +27,7 @@ nvim-find() {
 
 		return 0
 	else
-		selected=$(find ~/Documents/ComoVault -mindepth 1 -maxdepth 1 -type d | fzf)
+		selected=$(find ~/documents/ComoVault -mindepth 1 -maxdepth 1 -type d | fzf)
 	fi
 
 	if [[ -z $selected ]]; then

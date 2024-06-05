@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Function to execute the AMD GPU Python script and use its output
 execute_amd_script() {
