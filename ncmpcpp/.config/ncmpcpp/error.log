@@ -366,3 +366,10 @@ writeCommonTags: couldn't write 'track' tag to 'nirvana/The Man Who Sold The Wor
 writeCommonTags: couldn't write 'year' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
 writeCommonTags: couldn't write 'track' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
 writeCommonTags: couldn't write 'track' tag to 'various/In This Shirt.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Below The Surface.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Below The Surface.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/In This Shirt.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav' as it's not a positive integer

@@ -1127,3 +1127,38 @@ Jun 04 19:21 : output: Failed to open mixer for 'default': no such mixer control
 Jun 04 19:23 : player: played "various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav"
 Jun 04 20:58 : output: Failed to open mixer for 'default': no such mixer control: PCM
 Jun 04 21:01 : player: played "various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav"
+Jun 05 21:24 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+Jun 05 21:58 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 06 01:28 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 06 14:17 : exception: Failed to open "default" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 06 14:17 : exception: Failed to open "default" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 06 14:17 : player: problems opening audio device while playing "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 06 14:17 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+Jun 06 22:43 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 07 06:49 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 15:27 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+Jun 10 16:00 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 16:03 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 18:18 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 18:24 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 21:01 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 21:12 : mixer: Failed to read mixer for 'default': no such mixer control: PCM
+Jun 10 21:12 : update: updating various/In This Shirt.wav
+Jun 10 21:12 : update: updating various/Il_Ragazzo_Confuso.wav
+Jun 10 21:12 : update: updating various/Below The Surface.wav
+Jun 10 21:12 : update: updating various/Blonde Redhead - For the Damaged Coda.mp3
+Jun 10 21:12 : update: updating various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav
+Jun 10 21:13 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 10 21:14 : player: played "various/Il_Ragazzo_Confuso.wav"
+Jun 10 21:14 : exception: Not playing
+Jun 10 21:14 : exception: Not playing
+Jun 10 21:14 : exception: Not playing
+Jun 10 21:14 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 10 21:17 : player: played "various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav"
+Jun 10 21:17 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 10 21:20 : player: played "various/Blonde Redhead - For the Damaged Coda.mp3"
+Jun 10 21:20 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 10 21:23 : player: played "sod/Chop Suey.wav"
+Jun 10 21:23 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 10 21:25 : output: Failed to open mixer for 'default': no such mixer control: PCM
+Jun 10 22:55 : player: played "iron_maiden/Phantom Of The Opera.wav"
