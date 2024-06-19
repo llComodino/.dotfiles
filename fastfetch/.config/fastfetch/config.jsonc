@@ -81,6 +81,11 @@
             "keyColor": "magenta"
         },
         {
+          "type": "media",
+          "key": "   Listening to",
+          "keyColor": "magenta"
+        },
+        {
             "type": "custom",
             "format": "└──────────────────────────────────────────┘"
         },

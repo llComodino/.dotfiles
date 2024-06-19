@@ -1,8 +1,8 @@
-sw_volume: 100
+sw_volume: 0
 audio_device_state:1:default
 state: pause
-current: 3
-time: 0.461000
+current: 0
+time: 121.951000
 random: 0
 repeat: 0
 single: 0
@@ -11,26 +11,13 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:various/Blonde Redhead - For the Damaged Coda.mp3
-1:sod/Chop Suey.wav
-2:iron_maiden/Hallowed Be Thy Name.wav
-3:iron_maiden/Phantom Of The Opera.wav
-4:metallica/The Unforgiven.wav
-5:nirvana/The Man Who Sold The World.wav
-6:nirvana/Nirvana Dumb.wav
-7:abba/Abba - Chiquitita.wav
-8:abba/Abba - Money, Money, Money.wav
-9:abba/Abba - Mamma Mia.wav
-10:metallica/Fade To Black.wav
-11:various/In This Shirt.wav
-12:nirvana/Lake Of Fire.wav
-13:metallica/Nothing Else Matters.wav
-14:abba/Abba - The Winner Takes It All.wav
-15:sod/Toxicity.wav
-16:abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).wav
-17:nirvana/Smells Like Teen Spirit.wav
-18:various/Below The Surface.wav
-19:abba/Abba - Dancing Queen.wav
-20:various/Rick and Morty Official Soundtrack Live Forever Kotomi Ryan Elder Rick and Morty.wav
-21:various/Il_Ragazzo_Confuso.wav
+0:various/Duvet.wav
+1:nirvana/Smells Like Teen Spirit.wav
+2:queen/Who Wants To Live Forever.wav
+3:various/Live Forever.wav
+4:queen/Queen The Show Must Go On Official Video.wav
+5:abba/Abba - Money, Money, Money.wav
+6:various/Below The Surface.wav
+7:nirvana/Lake Of Fire.wav
+8:sod/Chop Suey.wav
 playlist_end

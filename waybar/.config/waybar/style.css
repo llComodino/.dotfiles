@@ -17,6 +17,7 @@
 #bluetooth,
 #pulseaudio,
 #custom-spotify,
+#custom-mpd,
 #disk,
 #tray {
     margin: 4px 0px 4px 0px;
@@ -25,6 +26,7 @@
     border: 0px solid #181825;
 }
 
+#custom-mpd,
 #custom-spotify {
     color: #aaff00;
 }

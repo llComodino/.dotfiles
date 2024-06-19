@@ -61,9 +61,7 @@ alias updb='sudo updatedb'
 
 alias bdiscord='$HOME/.comoappimages/bdiscord' # run betterdiscord
 alias ida64='$HOME/idafree-8.3/ida64' # ida-free
-
 alias emacs='emacs -nw' # run emacs in terminal
-
 alias kat-ai='ollama run llama2-uncensored'
 
 # sadly, your time has come too my friend (rip neofetch)

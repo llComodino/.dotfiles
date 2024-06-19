@@ -24,6 +24,7 @@
 	"modules-center": [
         "custom/ll_end",
         "custom/spotify",
+        "custom/mpd",
         "custom/rr_end"
     ],
 
@@ -103,6 +104,18 @@
         "on-scroll-up": "playerctl volume 0.1+ -p spotify",
         "on-scroll-down": "playerctl volume 0.1- -p spotify",
         "exec": "playerctl metadata --format \"{{title}} - {{artist}}\" -p spotify"
+    },
+
+    "custom/mpd": {
+        "format": "  {}",
+        "interval": 1,
+        "max-length": 30,
+        "on-click": "playerctl play-pause -p mpd.como-music",
+        "on-click-right": "playerctl next -p mpd.como-music",
+        "on-click-middle": "playerctl previous -p mpd.como-music",
+        "on-scroll-up": "playerctl volume 0.1+ -p mpd.como-music",
+        "on-scroll-down": "playerctl volume 0.1- -p mpd.como-music",
+        "exec": "playerctl metadata --format \"{{title}} - {{artist}}\" -p mpd.como-music"
     },
 
     "battery": {

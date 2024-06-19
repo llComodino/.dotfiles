@@ -5,6 +5,7 @@ local g = vim.g
 g.mapleader = " "
 g.blamer_enabled = true
 g.vimtex_view_method = 'zathura'
+g.copilot_enabled = 0
 
 --------------------- Show full errors ------------
 vim.diagnostic.config({
