@@ -82,15 +82,16 @@
         "max-length": 30,
         "separate-outputs": true,
         "rewrite": {
-            "comodino@katalinux:(.*)": "$1 ",
-            "(.*) — Mozilla Firefox": "$1 󰈹",
-            "(.*)Mozilla Firefox": "Firefox 󰈹",
-            "(.*) - Brave": "$1 󰏚",
-            "(.*)Brave": "Brave 󰏚",
-            "(.*) — Dolphin": "$1 󰉋",
-            "(.*)Spotify": "Spotify 󰓇",
-            "(.*)Zathura": "Zathura 󰈦",
-            "(.*)nvim(.*)": "Vimming "
+            "(.*)~(.*)": "",
+            "(.*) — Mozilla Firefox": "󰈹  $1",
+            "(.*)Mozilla Firefox": "󰈹  Firefox",
+            "(.*)sb -(.*)": "󰈹  Firefox",
+            "(.*) - Brave": "󰏚  $1",
+            "(.*)Brave": "󰏚  Brave",
+            "(.*) — Dolphin": "󰉋  $1",
+            "(.*)Spotify": "󰓇  Spotify",
+            "(.*)Zathura": "󰈦  Zathura",
+            "(.*)vim(.*)": "  Vimming"
         }
     },
 
