@@ -38,7 +38,6 @@ export PATH="$CODE/restest:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
-export PATH="$HOME/.config/emacs/bin:$PATH"
 
 # Ruby
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
@@ -61,11 +60,10 @@ alias updb='sudo updatedb'
 
 alias bdiscord='$HOME/.comoappimages/bdiscord' # run betterdiscord
 alias ida64='$HOME/idafree-8.3/ida64' # ida-free
-alias emacs='emacs -nw' # run emacs in terminal
 alias kat-ai='ollama run llama2-uncensored'
 
 # sadly, your time has come too my friend (rip neofetch)
-# t the very least I will remember you for as long as I live
+# at the very least I will remember you for as long as I live
 alias neofetch='fastfetch'
 
 # ============================================================================== #
