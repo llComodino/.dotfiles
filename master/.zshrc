@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Functions
 source $HOME/.zsh_funcs
-source $HOME/.fzf_zsh
+source $HOME/.fzsh
 
 # fzf git integration
 source $SCRIPTS/fzf-git.sh
