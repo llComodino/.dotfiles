@@ -1,8 +1,8 @@
 sw_volume: 0
 audio_device_state:1:default
 state: pause
-current: 15
-time: 2.349000
+current: 2
+time: 199.968000
 random: 0
 repeat: 0
 single: 0
@@ -12,23 +12,18 @@ mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
 0:nirvana/About A Girl Remastered.wav
-1:abba/Abba - Mamma Mia.wav
-2:queen/Queen Bohemian Rhapsody Official Video Remastered.wav
-3:abba/Abba - The Winner Takes It All.wav
-4:various/Who Is She ?.wav
-5:abba/ABBA - Gimme! Gimme! Gimme! (A Man After Midnight).wav
-6:nirvana/Smells Like Teen Spirit.wav
-7:nirvana/The Man Who Sold The World.wav
-8:various/For the Damaged Coda.wav
-9:sod/Chop Suey.wav
-10:nirvana/Nirvana Dumb.wav
-11:queen/Queen I Want To Break Free Official Video.wav
-12:queen/Queen The Show Must Go On Official Video.wav
-13:various/Below The Surface.wav
-14:various/In This Shirt.wav
-15:metallica/The Unforgiven.wav
-16:abba/Abba - Chiquitita.wav
-17:abba/Abba - Dancing Queen.wav
-18:iron_maiden/Hallowed Be Thy Name.wav
-19:iron_maiden/Phantom Of The Opera.wav
+1:queen/Queen Bohemian Rhapsody Official Video Remastered.wav
+2:various/Who Is She ?.wav
+3:nirvana/Smells Like Teen Spirit.wav
+4:nirvana/The Man Who Sold The World.wav
+5:various/For the Damaged Coda.wav
+6:sod/Chop Suey.wav
+7:nirvana/Nirvana Dumb.wav
+8:queen/Queen I Want To Break Free Official Video.wav
+9:queen/Queen The Show Must Go On Official Video.wav
+10:various/Below The Surface.wav
+11:various/In This Shirt.wav
+12:metallica/The Unforgiven.wav
+13:iron_maiden/Hallowed Be Thy Name.wav
+14:iron_maiden/Phantom Of The Opera.wav
 playlist_end

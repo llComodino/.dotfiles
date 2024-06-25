@@ -6,10 +6,10 @@ export CODE="$HOME/code"
 
 export EDITOR=nvim
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="half-life"
 
 # List of plugins used
-plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting )
+plugins=( git sudo zsh-256color zsh-autosuggestions ssh-agent zsh-syntax-highlighting )
 source $ZSH/oh-my-zsh.sh
 
 # Functions
