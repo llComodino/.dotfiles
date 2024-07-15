@@ -187,5 +187,63 @@ cosa\? () {
 }
 
 osclone () {
-  git clone --recurse-submodules -j8 git@github.com:$1
+  git clone --recurse-submodules -j8 git@github.com:"$1"
+}
+
+osdocker () {
+  [[ -z $1 && -z $2 ]] && echo "Usage: osdocker <docker cmd> [config file (def: arangobd.yml)]" && exit 2
+
+  local conf=$2
+  [[ -z $2 ]] && conf="arangodb.yml"
+
+  cd "$OS3/docker"
+  docker-compose -f "$conf" "$1"
+}
+
+osdev () {
+  [[ -z $1 || -z $2 ]] && printf "Usage: osdev [ OPT ] <project name>\nOPTS: [\n\tb - backend\n\tf - frontend\n]\n" && return 2
+
+  local dir="$OS3/$2/"
+
+  [[ ! -d "$dir" ]] && printf "No project named: '$2' found" && return 2
+
+  case "$1" in;
+    'b'|'B') dir="$(printf "%s%s" "$dir" "backend")" ;;
+    'f'|'F') dir="$(printf "%s%s" "$dir" "frontend")" ;;
+    *) echo "ERROR" ;;
+  esac
+
+  echo "$dir"
+
+  [[ ! -d "$dir" ]] && printf "Project either misses backend or frontend dir" && return 2
+
+  cd $dir
+  pnpm dev
+}
+
+osstart () {
+  [[ -z $1 || -z $2 ]] && printf "Usage: osstart [ OPT ] <project name>\nOPTS: [\n\tb - backend\n\tbe - backend + empty db\n\tf - frontend\n\tfe - frontend + empty db\n]\n" && return 2
+
+  local dir="$OS3/$2/"
+  local EMPTY=0
+
+  [[ ! -d "$dir" ]] && printf "No project named: '$2' found" && return 2
+
+  case "$1" in;
+    'b'|'B') dir="$(printf "%s%s" "$dir" "backend")" ;;
+    'f'|'F') dir="$(printf "%s%s" "$dir" "frontend")" ;;
+    'be'|'BE') dir="$(printf "%s%s" "$dir" "backend")" && EMPTY=1 ;;
+    'fe'|'FE') dir="$(printf "%s%s" "$dir" "frontend")" && EMPTY=1 ;;
+    *) echo "ERROR" ;;
+  esac
+
+  [[ ! -d "$dir" ]] && printf "Project either misses backend or frontend dir" && return 2
+
+  cd $dir
+
+  if [[ EMPTY == 1 ]]; then
+    pnpm start-empty
+  else
+    pnpm start
+  fi
 }
