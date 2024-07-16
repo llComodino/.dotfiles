@@ -1,10 +1,10 @@
 sw_volume: 0
 audio_device_state:1:default
 state: pause
-current: 6
-time: 43.958000
+current: 5
+time: 8.089000
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 0
@@ -17,6 +17,4 @@ playlist_begin
 3:nirvana/Nirvana Dumb.wav
 4:nirvana/Smells Like Teen Spirit.wav
 5:nirvana/The Man Who Sold The World.wav
-6:various/Duvet.wav
-7:queen/Queen Bohemian Rhapsody Official Video Remastered.wav
 playlist_end

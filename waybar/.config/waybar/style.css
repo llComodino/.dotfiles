@@ -18,6 +18,7 @@
 #pulseaudio,
 #custom-spotify,
 #custom-mpd,
+#mpd,
 #disk,
 #tray {
     margin: 4px 0px 4px 0px;
@@ -26,6 +27,7 @@
     border: 0px solid #181825;
 }
 
+#mpd,
 #custom-mpd,
 #custom-spotify {
     color: #aaff00;
