@@ -108,7 +108,7 @@
 
   "mpd": {
     "server": "/home/comodino/.config/mpd/socket",
-    "format": " {artist} - {album} - {title} {stateIcon}",
+    "format": "  {title} - {album}, {artist}  {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}",
     "format-disconnected": "Disconnected ",
     "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
     "unknown-tag": "N/A",

@@ -1,43 +1,3 @@
-nvim-find() {
-
-	local sel_dir=$(echo -e "code\nvault\nOS3" | fzf)
-
-	if [[ -z $sel_dir ]]; then
-		echo "No directory selected"
-		return 1
-	fi
-
-	if [[ $sel_dir == "code" ]]; then
-		selected=$(find ~/code -type d | fzf)
-	elif [[ $sel_dir == "OS3" ]]; then
-		selected=$(echo -e "docker\nserver\nmodules\ntest" | fzf)
-
-		case $selected in
-
-		"docker")
-			cd "$OS3/docker"
-			;;
-		"server")
-			cd "$OS3/test/server"
-			;;
-		"modules")
-			cd "$OS3/test/server/server/modules"
-			;;
-		esac
-
-		return 0
-	else
-		selected=$(find ~/documents/ComoVault -mindepth 1 -maxdepth 1 -type d | fzf)
-	fi
-
-	if [[ -z $selected ]]; then
-		echo "No directory selected"
-		return 1
-	fi
-
-	cd $selected
-}
-
 tmux-sessionizer() {
 
 	if [[ $# -eq 1 ]]; then
@@ -201,39 +161,80 @@ osdocker () {
 }
 
 osdev () {
-  [[ -z $1 || -z $2 ]] && printf "Usage: osdev [ OPT ] <project name>\nOPTS: [\n\tb - backend\n\tf - frontend\n]\n" && return 2
+  [[ -z $1 ]] && printf "Usage: osdev [{f/b}]\nOPTS: [\n\tb - backend\n\tf - frontend\n]\n" && return 2
 
-  local dir="$OS3/$2/"
+  cd $OS3 || return 3
+  local dir=$OS3
+
+  if [ -z $2 ]; then
+    dir="$dir/$(find . -mindepth 1 -maxdepth 1 -type d -printf '%P\n' | fzf)"
+  else
+    dir="$dir/$2"
+  fi
 
   [[ ! -d "$dir" ]] && printf "No project named: '$2' found" && return 2
+  cd "$dir" || return 3
 
   case "$1" in;
-    'b'|'B') dir="$(printf "%s%s" "$dir" "backend")" ;;
-    'f'|'F') dir="$(printf "%s%s" "$dir" "frontend")" ;;
+    'b'|'B') 
+      [[ -d "backend" ]] && dir="$(printf "%s%s" "$dir" "/backend")"
+      if [ -d "server" ]; then
+        if [ -d "server/server" ]; then
+          dir="$(printf "%s%s" "$dir" "/server/server")"
+        else
+          dir="$(printf "%s%s" "$dir" "/server")"
+        fi
+      fi
+      ;;
+    'f'|'F') dir="$(printf "%s%s" "$dir" "/frontend")" ;;
     *) echo "ERROR" ;;
   esac
 
-  echo "$dir"
-
   [[ ! -d "$dir" ]] && printf "Project either misses backend or frontend dir" && return 2
 
-  cd $dir
+  cd $dir || return 3
   pnpm dev
 }
 
 osstart () {
-  [[ -z $1 || -z $2 ]] && printf "Usage: osstart [ OPT ] <project name>\nOPTS: [\n\tb - backend\n\tbe - backend + empty db\n\tf - frontend\n\tfe - frontend + empty db\n]\n" && return 2
+  [[ -z $1 ]] && printf "Usage: osstart [ OPT ] OPTIONAL[{<project name>}]\nOPTS: [\n\tb - backend\n\tbe - backend + empty db\n\tf - frontend\n\tfe - frontend + empty db\n]\n" && return 2
 
-  local dir="$OS3/$2/"
+  cd $OS3 || return 3
+  local dir=$OS3
   local EMPTY=0
 
+  if [ -z $2 ]; then
+    dir="$dir/$(find . -mindepth 1 -maxdepth 1 -type d -printf '%P\n' | fzf)"
+  else
+    dir="$dir/$2"
+  fi
+
   [[ ! -d "$dir" ]] && printf "No project named: '$2' found" && return 2
+  cd "$dir" || return 3
 
   case "$1" in;
-    'b'|'B') dir="$(printf "%s%s" "$dir" "backend")" ;;
-    'f'|'F') dir="$(printf "%s%s" "$dir" "frontend")" ;;
-    'be'|'BE') dir="$(printf "%s%s" "$dir" "backend")" && EMPTY=1 ;;
-    'fe'|'FE') dir="$(printf "%s%s" "$dir" "frontend")" && EMPTY=1 ;;
+    'b'|'B')
+      [[ -d "backend" ]] && dir="$(printf "%s%s" "$dir" "/backend")"
+      if [ -d "server" ]; then
+        if [ -d "server/server" ]; then
+          dir="$(printf "%s%s" "$dir" "/server/server")"
+        else
+          dir="$(printf "%s%s" "$dir" "/server")"
+        fi
+      fi
+      ;;
+    'f'|'F') dir="$(printf "%s%s" "$dir" "/frontend")" ;;
+    'be'|'BE')
+      [[ -d "backend" ]] && dir="$(printf "%s%s" "$dir" "/backend")"
+      if [ -d "server" ]; then
+        if [ -d "server/server" ]; then
+          dir="$(printf "%s%s" "$dir" "/server/server")"
+        else
+          dir="$(printf "%s%s" "$dir" "/server")"
+        fi
+      fi
+      ;;
+    'fe'|'FE') dir="$(printf "%s%s" "$dir" "/frontend")" && EMPTY=1 ;;
     *) echo "ERROR" ;;
   esac
 
