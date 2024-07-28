@@ -55,8 +55,8 @@ opt.termguicolors = true
 opt.timeoutlen = 400
 
 vim.cmd[[
-augroup MarkdownConceal
-  autocmd!
-  autocmd FileType markdown setlocal conceallevel=2
-augroup END
+  augroup MarkdownConceal
+    autocmd!
+    autocmd FileType markdown setlocal conceallevel=2
+  augroup END
 ]]

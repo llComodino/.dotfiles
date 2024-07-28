@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+pushd . || exit 10
+
+lyrics_dir="$HOME/.lyrics"
+
+find . -type f \( -iname "*.mp3" -o -iname "*.flac" -o -iname "*.wav" \) | while read -r file; do
+  artist="$(ffprobe -i "$file" -print_format json -show_format 2>/dev/null | jq -r '.format.tags.artist // empty')"
+  title="$(ffprobe -i "$file" -print_format json -show_format 2>/dev/null | jq -r '.format.tags.title // empty')"
+
+  if [ -z "$artist" ] || [ -z "$title" ]; then
+    echo "Error: Could not extract artist or title from the file."
+    exit 1
+  fi
+
+  filename="${artist} - ${title}.txt"
+
+  ffprobe -i "$file" -print_format json -show_format 2> /dev/null | jq -r '.format.tags | to_entries[] | select(.key | startswith("lyrics-")) .value' > "$lyrics_dir/$filename"
+
+  echo "Extracted lyrics for ${filename/.txt/}"
+done
+
+popd || exit 10

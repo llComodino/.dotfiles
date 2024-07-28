@@ -1,0 +1,41 @@
+{
+  "disk#root": {
+    "interval": 30,
+    "path": "/",
+    "format": "/: {used}/{total}"
+  },
+
+  "disk#home": {
+    "interval": 30,
+    "path": "/home",
+    "format": "/home: {used}/{total}"
+  },
+
+  "custom/player": {
+    "format": "󰏚 {}",
+    "interval": 1,
+    "max-length": 60,
+    "on-click": "playerctl play-pause -p brave",
+    "on-click-right": "playerctl next -p brave",
+    "on-click-middle": "playerctl previous -p brave",
+    "on-scroll-up": "playerctl volume 0.1+ -p brave",
+    "on-scroll-down": "playerctl volume 0.1- -p brave",
+    "exec": "playerctl metadata --format \"{{title}} - {{artist}}\" -p brave"
+  },
+
+  "network#wlan": {
+    "interface": "wlan0",
+    "max-length": 30,
+    "format-wifi": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+    "tooltip": true,
+    "tooltip-format": "{ifname}"
+  },
+  
+  "network#eth": {
+    "interface": "eth0",
+    "max-length": 30,
+    "format-ethernet": "{bandwidthUpBytes}   {bandwidthDownBytes}",
+    "tooltip": true,
+    "tooltip-format": "{ifname}"
+  }
+}

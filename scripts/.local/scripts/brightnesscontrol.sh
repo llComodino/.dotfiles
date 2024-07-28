@@ -11,15 +11,15 @@ function send_notification {
   brightness=$(brightnessctl info | grep -oP "(?<=\()\d+(?=%)" | cat)
   brightinfo=$(brightnessctl info | awk -F"'" '/Device/ {print $2}')
 
-  angle="$(((($brightness + 2) / 5) * 5))"
-  ico="~/.config/dunst/icons/vol/vol-${angle}.svg"
-  bar=$(seq -s "." $(($brightness / 15)) | sed 's/[0-9]//g')
+  angle=$((brightness + 2 / 5 * 5))
+  ico="$HOME/.config/dunst/icons/vol/vol-${angle}.svg"
+  bar=$(seq -s "." $((brightness / 15)) | sed 's/[0-9]//g')
 
-  if [ $brightness -ne 0 ]; then
-    dunstify $ncolor "brightctl" -i $ico -a "$brightness$bar" "Device: $brightinfo" -r 91190 -t 800
+  if [ "$brightness" -ne 0 ]; then
+    dunstify "$ncolor" "brightctl" -i "$ico" -a "$brightness$bar" "Device: $brightinfo" -r 91190 -t 800
 
   else
-    dunstify -i $ico "Brightness: ${brightness}%" -a "$brightinfo" -u low -r 91190 -t 800
+    dunstify -i "$ico" "Brightness: ${brightness}%" -a "$brightinfo" -u low -r 91190 -t 800
   fi
 
 }

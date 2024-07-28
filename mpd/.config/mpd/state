@@ -1,28 +1,27 @@
 sw_volume: 0
 audio_device_state:1:default
 audio_device_state:1:visualizer
-state: stop
-random: 0
-repeat: 0
+state: play
+current: 8
+time: 120.007000
+random: 1
+repeat: 1
 single: 0
 consume: 0
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:deftones/Be Quiet and Drive (Far Away).wav
-1:nirvana/Smells Like Teen Spirit.wav
-2:nirvana/Nirvana Dumb.wav
-3:various/For the Damaged Coda.wav
-4:queen/Queen I Want To Break Free Official Video.wav
-5:metallica/Metallica - Orion (Remastered).wav
-6:frank_sinatra/That's Life.wav
-7:metallica/Nothing Else Matters.wav
-8:abba/Chiquitita.wav
-9:pixies/Where Is My Mind.wav
-10:sod/Chop Suey.wav
-11:abba/Money, Money, Money.wav
-12:various/transgender.wav
-13:metallica/Metallica - Master of Puppets (Remastered).wav
-14:iron_maiden/Phantom Of The Opera.wav
+0:nirvana/Nirvana - About A Girl.wav
+1:nirvana/Nirvana - Dumb.wav
+2:nirvana/Nirvana - Heart-Shaped Box.wav
+3:nirvana/Nirvana - The Man Who Sold The World - Live.wav
+4:nirvana/Nirvana - Lake Of Fire - Live.wav
+5:nirvana/Nirvana - Smells Like Teen Spirit.wav
+6:abba/ABBA - Mamma Mia.wav
+7:abba/ABBA - Dancing Queen.wav
+8:abba/ABBA - Money, Money, Money.wav
+9:abba/ABBA - Super Trouper.wav
+10:abba/ABBA - The Winner Takes It All.wav
+11:abba/ABBA - Chiquitita.wav
 playlist_end

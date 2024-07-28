@@ -3,13 +3,29 @@ export ZSH="$HOME/.oh-my-zsh"
 export DOTFILES="$HOME/.dotfiles"
 export SCRIPTS="$HOME/.local/scripts"
 export CODE="$HOME/code"
+export OS3="$HOME/os3"
+export XDG_CONFIG_HOME="$HOME/.config"
 
+# ROCM + HIP
+export HSA_OVERRIDE_GFX_VERSION=10.3.0
+export ROCM_PATH=/opt/rocm
+export HIP_PATH=/opt/rocm/hip
+export PATH=$PATH:$ROCM_PATH/bin:$HIP_PATH/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROCM_PATH/lib
+
+# ~!IMPERATIVE!~ #
 export EDITOR=nvim
+# ~!IMPERATIVE!~ #
 
-ZSH_THEME="half-life"
+ZSH_THEME="como-steeef"
 
 # List of plugins used
-plugins=( git sudo zsh-256color zsh-autosuggestions ssh-agent zsh-syntax-highlighting )
+plugins=( git sudo zsh-256color zsh-autosuggestions ssh-agent zsh-syntax-highlighting asdf )
+
+# Give ssh-key a life-time
+zstyle :omz:plugins:ssh-agent lifetime 2h
+
+# Source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # Functions
@@ -34,7 +50,6 @@ eval "$(fzf --zsh)"
 export GPG_TTY=$(tty)
 
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$CODE/restest:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
@@ -53,10 +68,14 @@ alias  l='eza -lh  --icons=auto' # long list
 alias ls='eza -1   --icons=auto' # short list
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
+alias cd='z' # better cd
 
 alias cm='ncmpcpp' # CLI music player
 
 alias updb='sudo updatedb'
+alias v4l2probe='sudo modprobe v4l2loopback video_nr=9 card_label=Video-Loopback exclusive_caps=1'
+alias ztheme='source $SCRIPTS/ztheme.zsh'
+alias spotdl='spotdl --lyrics genius --max-retries 3 --threads 16 --bitrate 320k --format wav --print-errors download'
 
 alias bdiscord='$HOME/.comoappimages/bdiscord' # run betterdiscord
 alias ida64='$HOME/idafree-8.3/ida64' # ida-free
