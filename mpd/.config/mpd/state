@@ -1,9 +1,9 @@
 sw_volume: 0
 audio_device_state:1:default
 audio_device_state:1:visualizer
-state: play
+state: pause
 current: 11
-time: 24.081000
+time: 94.333000
 random: 1
 repeat: 1
 single: 0

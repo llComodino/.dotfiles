@@ -90,18 +90,6 @@
     "tooltip-format-disconnected": "MPD (disconnected)"
   },
 
-  // "custom/mpd": {
-  //   "format": "  {}",
-  //   "interval": 1,
-  //   "max-length": 30,
-  //   "on-click": "playerctl play-pause -p mpd.como-music",
-  //   "on-click-right": "playerctl next -p mpd.como-music",
-  //   "on-click-middle": "playerctl previous -p mpd.como-music",
-  //   "on-scroll-up": "playerctl volume 0.1+ -p mpd.como-music",
-  //   "on-scroll-down": "playerctl volume 0.1- -p mpd.como-music",
-  //   "exec": "playerctl metadata --format \"{{title}} - {{artist}}\" -p mpd.como-music"
-  // },
-
   "battery": {
     "states": {
       "good": 95,
@@ -119,9 +107,9 @@
     "format": "{icon} {volume}",
     "format-muted": "婢",
     "on-click": "pavucontrol -t 3",
-    "on-click-middle": "~/.config/hypr/scripts/volumecontrol.sh -o m",
-    "on-scroll-up": "~/.config/hypr/scripts/volumecontrol.sh -o i",
-    "on-scroll-down": "~/.config/hypr/scripts/volumecontrol.sh -o d",
+    "on-click-middle": "~/.local/scripts/volumecontrol.sh -o m",
+    "on-scroll-up": "~/.local/scripts/volumecontrol.sh -o i",
+    "on-scroll-down": "~/.local/scripts/volumecontrol.sh -o d",
     "tooltip-format": "{icon} {desc} // {volume}%",
     "scroll-step": 5,
     "format-icons": {
