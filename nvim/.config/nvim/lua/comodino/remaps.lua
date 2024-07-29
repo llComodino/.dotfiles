@@ -17,7 +17,6 @@ vim.keymap.set ("n", "<leader>Y", "\"+Y") -- clipboard
 vim.keymap.set ("v", "<leader>y", "\"+y")
 vim.keymap.set ("v", "<leader>Y", "\"+Y") -- clipboard
 
-
 ------- The Most Important Ones ---------
 vim.keymap.set ("n", "<left>",  ":echoe \"Use h\"\n")
 vim.keymap.set ("n", "<right>", ":echoe \"Use l\"\n")

@@ -20,7 +20,7 @@ export EDITOR=nvim
 ZSH_THEME="como-steeef"
 
 # List of plugins used
-plugins=( git sudo zsh-256color zsh-autosuggestions ssh-agent zsh-syntax-highlighting asdf )
+plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting ssh-agent asdf )
 
 # Give ssh-key a life-time
 zstyle :omz:plugins:ssh-agent lifetime 2h

@@ -575,7 +575,7 @@ color_schemes:
             normal:
                 black:   '#000000'
                 red:     '#C63939'
-                green:   '#00A000'
+                green:   '#00FF00'
                 yellow:  '#A0A000'
                 blue:    '#4D79FF'
                 magenta: '#FF66FF'
