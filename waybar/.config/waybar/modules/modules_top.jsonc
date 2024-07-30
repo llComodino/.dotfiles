@@ -29,8 +29,18 @@
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
-    "on-click": "activate"
+    "format": "{icon}",
+    "format-icons": {
+      "focused": "",
+      "default": ""
+    }
   },
+  
+  // "hyprland/workspaces": {
+  //   "disable-scroll": true,
+  //   "all-outputs": true,
+  //   "on-click": "activate"
+  // },
 
   "hyprland/window": {
     "format": "  {}",

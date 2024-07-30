@@ -54,37 +54,34 @@ window#waybar.BOTTOM {
 }
 
 #workspaces {
+  color: @primary-color;
   background: transparent;
-  margin-top: 2px;
-  margin-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
-  border-radius: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 4px;
+  font-size: 8px;
 }
 
 #workspaces button {
-  margin: 4px 4px;
-  padding: 2px 2px;
-  border-radius: 10px;
-  border: 1px solid #ffff11;
-  color: transparent;
-  background: @default-bg;
-  transition: all 0.3s ease-in-out;
+  color: @primary-color;
+  padding: 0;
+  margin: 0;
 }
 
 #workspaces button.active {
-  margin: 4px 4px;
-  padding: 0px 0px;
-  border-radius: 60px;
-  color: transparent;
-  background: #ffff11;
-  transition: all 0.3s ease-in-out;
+  padding: 0px;
+  margin: 0px;
 }
 
 #workspaces button:hover {
-  background-color: @default-bg;
-  border-radius: 16px;
-  min-width: 20px;
+  padding: 0;
+  border: 1px solid blue;
+  border-radius: 30px;
+  background: @primary-color;
 }
 
 #tray, #pulseaudio, #network, #battery {

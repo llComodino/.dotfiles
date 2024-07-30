@@ -18,7 +18,7 @@
 
 	"modules-left": [
     "custom/ll_end",
-    //"hyprland/workspaces",
+    "hyprland/workspaces",
     "hyprland/window",
     "custom/r_end",
     "custom/l_end",
