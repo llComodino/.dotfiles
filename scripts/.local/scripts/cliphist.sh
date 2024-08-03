@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 theme_file="$HOME/.config/hypr/themes/theme.conf"
-roconf="~/.config/rofi/clipboard.rasi"
+roconf="~/.config/rofi/theme.rasi"
 
 # set position
 

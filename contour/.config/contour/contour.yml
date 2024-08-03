@@ -714,8 +714,7 @@ input_mapping:
     - { mods: [Shift,Control]     , key: '-'                     , action: DecreaseFontSize }   
     - { mods: [Shift,Control]     , key: '_'                     , action: DecreaseFontSize }   
     - { mods: [Shift,Control]     , key: 'N'                     , action: NewTerminal }        
-    - { mods: [Alt,Control]       , key: 'V'                     , action: PasteClipboard }     
-    - { mods: [Shift,Control]     , key: 'V'                     , action: PasteClipboard }     
+    # - { mods: [Alt,Control]       , key: 'V'                     , action: PasteClipboard }     
     - { mods: [Shift,Control]     , key: 'V'                     , action: PasteClipboard }     
     - { mods: [Alt,Control]       , key: 'S'                     , action: ScreenshotVT }       
     - { mods: [Control]           , key: '0'                     , action: ResetFontSize }      

@@ -453,3 +453,38 @@ writeCommonTags: couldn't write 'year' tag to 'metallica/The Unforgiven.wav' as 
 writeCommonTags: couldn't write 'track' tag to 'metallica/The Unforgiven.wav' as it's not a positive integer
 writeCommonTags: couldn't write 'year' tag to 'pixies/Where Is My Mind.wav' as it's not a positive integer
 writeCommonTags: couldn't write 'track' tag to 'pixies/Where Is My Mind.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Below The Surface.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Below The Surface.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/For the Damaged Coda.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/For the Damaged Coda.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Foto di gruppo.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Foto di gruppo.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Il Maestro del Terminal2.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Il Maestro del Terminal2.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/In This Shirt.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Live Forever.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Live Forever.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/sas.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/transgender.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/transgender.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Who Is She ?.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Who Is She ?.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/For the Damaged Coda.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/For the Damaged Coda.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Foto di gruppo.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Foto di gruppo.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Il Maestro del Terminal2.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Il Maestro del Terminal2.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Il_Ragazzo_Confuso.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/In This Shirt.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/In This Shirt.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Live Forever.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Live Forever.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/sas.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/sas.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/transgender.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/transgender.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'year' tag to 'various/Who Is She ?.wav' as it's not a positive integer
+writeCommonTags: couldn't write 'track' tag to 'various/Who Is She ?.wav' as it's not a positive integer

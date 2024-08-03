@@ -74,7 +74,7 @@
 
   "mpd": {
     "server": "/home/comodino/.config/mpd/socket",
-    "format": "  {title} - {album}, {artist}  {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}",
+    "format": "  {title} - {artist}  {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}",
     "format-disconnected": "Disconnected ",
     "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
     "unknown-tag": "N/A",

@@ -21,15 +21,14 @@ return require('packer').startup(function(use)
         'nvim-treesitter/playground'
     )
 
-
-    use 'kyazdani42/nvim-web-devicons'
-
-    use {'neoclide/coc.nvim', {branch = 'release'} }
-
-    use {
-      'hardcoreplayers/spaceline.vim'
-      --requires = { {'neoclide/coc.nvim', {branch = 'release'} } }
-    }
+    -- use 'kyazdani42/nvim-web-devicons'
+    --
+    -- use {'neoclide/coc.nvim', {branch = 'release'} }
+    --
+    -- use {
+    --   'hardcoreplayers/spaceline.vim'
+    --   --requires = { {'neoclide/coc.nvim', {branch = 'release'} } }
+    -- }
 
     use (
         'mrcjkb/rustaceanvim'
