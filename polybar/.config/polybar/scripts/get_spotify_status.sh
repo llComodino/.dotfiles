@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # The name of polybar bar which houses the main spotify module and the control modules.
 PARENT_BAR="bar_top"
@@ -20,7 +20,7 @@ FORMAT="{{ title }} - {{ artist }}"
 update_hooks() {
     while IFS= read -r id
     do
-        polybar-msg -p "$id" hook spotify-play-pause $2 1>/dev/null 2>&1
+        polybar-msg -p "$id" hook spotify-play-pause "$2" 1>/dev/null 2>&1
     done < <(echo "$1")
 }
 

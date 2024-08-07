@@ -1,9 +1,9 @@
-sw_volume: 0
-audio_device_state:1:default
+sw_volume: 60
+audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
-state: pause
-current: 33
-time: 118.351000
+state: play
+current: 28
+time: 120.070000
 random: 1
 repeat: 1
 single: 0
@@ -15,41 +15,33 @@ playlist_begin
 0:abba/ABBA - Super Trouper.wav
 1:metallica/Metallica - Master of Puppets (Remastered).wav
 2:imagine_dragons/Imagine Dragons - Warriors.wav
-3:metallica/Metallica - Nothing Else Matters (Remastered).wav
-4:nirvana/Nirvana - The Man Who Sold The World - Live.wav
-5:various/Live Forever.wav
-6:abba/ABBA - Chiquitita.wav
-7:deftones/Deftones - Be Quiet and Drive (Far Away).wav
-8:iron_maiden/Hallowed Be Thy Name.wav
-9:nirvana/Nirvana - Lake Of Fire - Live.wav
-10:frank_sinatra/Frank Sinatra - That's Life.wav
-11:the_smiths/The Smiths - There Is a Light That Never Goes Out - 2011 Remaster.wav
-12:metallica/Metallica - Fade To Black (Remastered).wav
-13:abba/ABBA - The Winner Takes It All.wav
-14:i_monster/Daydream_in_blue.wav
-15:queen/Queen - Who Wants To Live Forever - Remastered 2011.wav
-16:nirvana/Nirvana - Smells Like Teen Spirit.wav
-17:elton_john/gybr.mp3
-18:aot/bns.mp3
-19:abba/ABBA - Dancing Queen.wav
-20:various/pas.wav
-21:metallica/Metallica - One (Remastered).wav
-22:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
-23:sod/System Of A Down - Aerials.wav
-24:queen/Queen - I Want To Break Free - Remastered 2011.wav
-25:queen/Queen - Bohemian Rhapsody - Remastered 2011.wav
-26:abba/ABBA - Money, Money, Money.wav
-27:various/transgender.wav
-28:frank_sinatra/Frank Sinatra - Strangers In The Night.wav
-29:nirvana/Nirvana - Heart-Shaped Box.wav
-30:boa/bôa - Duvet.wav
-31:various/Il_Ragazzo_Confuso.wav
-32:cranberries/Zombiw.wav
-33:pixies/Pixies - Where Is My Mind.wav
-34:metallica/Metallica - Orion (Remastered).wav
-35:frank_sinatra/Frank Sinatra - The World We Knew (Over And Over).wav
-36:metallica/Metallica - The Unforgiven (Remastered).wav
-37:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
-38:various/For the Damaged Coda.wav
-39:various/Il Maestro del Terminal2.wav
+3:nirvana/Nirvana - The Man Who Sold The World - Live.wav
+4:abba/ABBA - Chiquitita.wav
+5:iron_maiden/Hallowed Be Thy Name.wav
+6:nirvana/Nirvana - Lake Of Fire - Live.wav
+7:frank_sinatra/Frank Sinatra - That's Life.wav
+8:the_smiths/The Smiths - There Is a Light That Never Goes Out - 2011 Remaster.wav
+9:metallica/Metallica - Fade To Black (Remastered).wav
+10:abba/ABBA - The Winner Takes It All.wav
+11:i_monster/Daydream_in_blue.wav
+12:queen/Queen - Who Wants To Live Forever - Remastered 2011.wav
+13:nirvana/Nirvana - Smells Like Teen Spirit.wav
+14:abba/ABBA - Dancing Queen.wav
+15:metallica/Metallica - One (Remastered).wav
+16:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
+17:sod/System Of A Down - Aerials.wav
+18:queen/Queen - I Want To Break Free - Remastered 2011.wav
+19:queen/Queen - Bohemian Rhapsody - Remastered 2011.wav
+20:abba/ABBA - Money, Money, Money.wav
+21:frank_sinatra/Frank Sinatra - Strangers In The Night.wav
+22:nirvana/Nirvana - Heart-Shaped Box.wav
+23:boa/bôa - Duvet.wav
+24:pixies/Pixies - Where Is My Mind.wav
+25:metallica/Metallica - Orion (Remastered).wav
+26:frank_sinatra/Frank Sinatra - The World We Knew (Over And Over).wav
+27:metallica/Metallica - The Unforgiven (Remastered).wav
+28:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
+29:various/Il Maestro del Terminal2.wav
+30:nine_inch_nails/Nine Inch Nails - Hurt.wav
+31:deftones/Deftones - Be Quiet and Drive (Far Away).wav
 playlist_end

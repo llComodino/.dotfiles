@@ -218,7 +218,7 @@ exec_always --no-startup-id systemctl --user start polybar_bottom.service
 
 # Display wallpaper
 # exec_always feh --bg-fill --randomize $HOME/.local/share/wallpapers/lain
-exec_always feh --bg-fill --randomize $HOME/.local/share/wallpapers/lain/lain_2.jpg
+exec_always feh --bg-fill $HOME/.local/share/wallpapers/lain/lain_2.jpg
 
 # iwgtk tray icon
 exec_always --no-startup-id iwgtk -i
