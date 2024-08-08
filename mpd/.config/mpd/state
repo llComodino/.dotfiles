@@ -2,8 +2,8 @@ sw_volume: 60
 audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
 state: play
-current: 9
-time: 120.028000
+current: 10
+time: 119.986000
 random: 1
 repeat: 1
 single: 0
