@@ -30,8 +30,8 @@ fetch_lyrics () {
   title=$(get_title "$song")
 
   if [ -z "$artist" ] || [ -z "$title" ]; then
-    echo "Error: Could not extract artist or title from the file."
-    exit 1
+    echo "Error: Could not extract artist or title from $file."
+    return
   fi
 
   filename="${artist} - ${title}.txt"

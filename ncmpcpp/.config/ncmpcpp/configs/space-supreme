@@ -1,8 +1,12 @@
 # mpd stuff
 mpd_host = ~/.config/mpd/socket
-#mpd_port = "6600"
 mpd_music_dir = "~/comomusic"
 mpd_connection_timeout = "5"
+
+# lyrics
+lyrics_directory = "~/.lyrics"
+fetch_lyrics_for_current_song_in_background = no
+store_lyrics_in_song_dir = no
 
 # visualizer
 visualizer_data_source = /tmp/mpd.fifo
@@ -55,7 +59,6 @@ playlist_disable_highlight_delay = "3"
 message_delay_time = "4"
 default_find_mode = "wrapped" #(wrapped/normal)
 follow_now_playing_lyrics = "yes"
-store_lyrics_in_song_dir = "yes"
 jump_to_now_playing_song_at_start = "yes"
 clock_display_seconds = "yes"
 ignore_leading_the = "yes"
