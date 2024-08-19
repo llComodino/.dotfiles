@@ -1,8 +1,8 @@
-sw_volume: 60
+sw_volume: 45
 audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
 state: play
-current: 10
+current: 4
 time: 119.986000
 random: 1
 repeat: 1
@@ -44,4 +44,6 @@ playlist_begin
 29:various/Il Maestro del Terminal2.wav
 30:nine_inch_nails/Nine Inch Nails - Hurt.wav
 31:deftones/Deftones - Be Quiet and Drive (Far Away).wav
+32:sod/System Of A Down - Chop Suey!.wav
+33:sod/System Of A Down - Toxicity.wav
 playlist_end
