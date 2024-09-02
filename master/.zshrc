@@ -17,7 +17,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROCM_PATH/lib
 export EDITOR=nvim
 # ~!IMPERATIVE!~ #
 
-ZSH_THEME="como-steeef"
+ZSH_THEME="robbyrussel"
 
 # List of plugins used
 plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf )

@@ -1,6 +1,8 @@
 local opt = vim.opt
 local g = vim.g
 
+--local sline = require("statusline")
+
 --------------------- Global ----------------------
 g.mapleader = " "
 g.blamer_enabled = true
@@ -24,6 +26,8 @@ opt.showmode = false
 opt.guicursor = ""
 opt.mouse = ""
 
+--opt.statusline = sline.get()
+
 opt.wrap = false
 
 opt.expandtab = true
@@ -31,6 +35,9 @@ opt.shiftwidth = 2
 opt.smartindent = true
 opt.tabstop = 2
 opt.softtabstop = 2
+
+opt.listchars = { trail = '~', tab = '→ ', space = '·', nbsp = '␣', eol = '↵' }
+opt.list = true
 
 opt.swapfile = false
 opt.backup = false
