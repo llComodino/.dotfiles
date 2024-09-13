@@ -3,7 +3,7 @@ audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
 state: pause
 current: 9
-time: 194.535000
+time: 200.612000
 random: 1
 repeat: 1
 single: 0
