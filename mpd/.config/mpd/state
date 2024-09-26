@@ -1,9 +1,9 @@
-sw_volume: 40
+sw_volume: 100
 audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
 state: pause
-current: 9
-time: 200.612000
+current: 37
+time: 9.221000
 random: 1
 repeat: 1
 single: 0
@@ -12,41 +12,59 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:queen/Queen - Who Wants To Live Forever - Remastered 2011.wav
-1:various/Who Is She ?.wav
-2:nirvana/Nirvana - Dumb.wav
-3:metallica/Metallica - Fade To Black (Remastered).wav
-4:iron_maiden/Phantom Of The Opera.wav
-5:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
-6:imagine_dragons/Imagine Dragons - Warriors.wav
-7:deftones/Deftones - Be Quiet and Drive (Far Away).wav
-8:abba/ABBA - Voulez-Vous.wav
-9:sod/System Of A Down - Aerials.wav
-10:various/Il_Ragazzo_Confuso.wav
-11:nirvana/Nirvana - The Man Who Sold The World - Live.wav
-12:frank_sinatra/Frank Sinatra - The World We Knew (Over And Over).wav
-13:abba/ABBA - Chiquitita.wav
-14:cranberries/The Cranberries - Zombie.wav
-15:abba/ABBA - Slipping Through My Fingers.wav
-16:metallica/Metallica - One (Remastered).wav
-17:aot/bns.mp3
-18:abba/ABBA - Super Trouper.wav
-19:abba/ABBA - Mamma Mia.wav
-20:queen/Queen - The Show Must Go On - Remastered 2011.wav
-21:elton_john/Elton John - Goodbye Yellow Brick Road - Remastered 2014.wav
-22:various/Lilium - Fear & Hunger.wav
-23:abba/ABBA - Dancing Queen.wav
-24:abba/ABBA - The Winner Takes It All.wav
-25:boa/bôa - Duvet.wav
-26:i_monster/Daydream_in_blue.wav
-27:frank_sinatra/Frank Sinatra - That's Life.wav
-28:the_smiths/The Smiths - There Is a Light That Never Goes Out - 2011 Remaster.wav
+0:slipknot/Slipknot - Duality.wav
+1:the_beatles/The Beatles - Twist And Shout - Remastered 2009.wav
+2:the_rolling_stones/The Rolling Stones - Beast Of Burden - Remastered 1994.wav
+3:the_doors/The Doors - People Are Strange.wav
+4:abba/ABBA - Lay All Your Love On Me.wav
+5:metallica/Metallica - Whiskey In The Jar.wav
+6:children_of_bodom/Children Of Bodom - Are You Dead Yet.wav
+7:imagine_dragons/Imagine Dragons - Warriors.wav
+8:queen/Queen - I Want To Break Free - Remastered 2011.wav
+9:the_beatles/The Beatles - Let It Be - Remastered 2009.wav
+10:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
+11:nirvana/Nirvana - About A Girl.wav
+12:various/Who Is She ?.wav
+13:abba/ABBA - Super Trouper.wav
+14:children_of_bodom/Children Of Bodom - Everytime I Die.wav
+15:various/Lilium - Fear & Hunger.wav
+16:imagine_dragons/Imagine Dragons - Bones.wav
+17:nmd/chara_fight_-_no_more_deals.wav
+18:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
+19:the_doors/The Doors - Riders on the Storm.wav
+20:the_doors/The Doors - Light My Fire.wav
+21:queen/Queen - Bohemian Rhapsody - Remastered 2011.wav
+22:nirvana/Nirvana - Lake Of Fire - Live.wav
+23:abba/ABBA - Keep An Eye On Dan.wav
+24:metallica/Metallica - The Unforgiven (Remastered).wav
+25:nine_inch_nails/Nine Inch Nails - Hurt.wav
+26:nirvana/Nirvana - The Man Who Sold The World - Live.wav
+27:various/Il_Ragazzo_Confuso.wav
+28:bon_jovi/Bon Jovi - It's My Life.wav
 29:pixies/Pixies - Where Is My Mind.wav
-30:nirvana/Nirvana - Heart-Shaped Box.wav
-31:metallica/Metallica - The Unforgiven (Remastered).wav
-32:various/Il Maestro del Terminal2.wav
-33:various/Foto di gruppo.wav
-34:sod/System Of A Down - Chop Suey!.wav
-35:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
-36:abba/ABBA - Lay All Your Love On Me.wav
+30:sod/System Of A Down - Chop Suey!.wav
+31:boa/bôa - Duvet.wav
+32:iron_maiden/Phantom Of The Opera.wav
+33:osts/sas.wav
+34:abba/ABBA - Fernando.wav
+35:metallica/Metallica - The Unforgiven (Remastered).wav
+36:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
+37:frank_sinatra/Frank Sinatra - The World We Knew (Over And Over).wav
+38:the_beatles/The Beatles - Here Comes The Sun - Remastered 2009.wav
+39:nirvana/Nirvana - Heart-Shaped Box.wav
+40:bon_jovi/Bon Jovi - You Give Love A Bad Name.wav
+41:sod/System Of A Down - Toxicity.wav
+42:abba/ABBA - Lay All Your Love On Me.wav
+43:the_beatles/The Beatles - Eleanor Rigby - Remastered 2009.wav
+44:the_doors/The Doors - Riders on the Storm.wav
+45:the_beatles/The Beatles - Twist And Shout - Remastered 2009.wav
+46:abba/ABBA - Mamma Mia.wav
+47:the_doors/The Doors - Break on Through (To the Other Side).wav
+48:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
+49:i_monster/Daydream_in_blue.wav
+50:queen/Queen - I Want To Break Free - Remastered 2011.wav
+51:bon_jovi/Bon Jovi - Wanted Dead Or Alive.wav
+52:children_of_bodom/Children Of Bodom - Everytime I Die.wav
+53:aot/bns.mp3
+54:metallica/Metallica - One (Remastered).wav
 playlist_end
