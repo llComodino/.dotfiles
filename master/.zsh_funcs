@@ -248,3 +248,12 @@ osstart () {
     pnpm start
   fi
 }
+
+cm () {
+  if ! echo "$VIRTUAL_ENV" | grep -q "spotdl"; then
+    cd $COMOMUSIC || exit 2
+    . .spotdl/bin/activate
+  fi
+
+  ncmpcpp
+}

@@ -1,14 +1,14 @@
 {
   "cpu": {
     "interval": 10,
-    "format": "󰍛  {usage}%",
+    "format": "󰍛 {usage}% ",
     "format-alt": "{icon0}{icon1}{icon2}{icon3}",
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
   },
 
   "memory": {
     "interval": 30,
-    "format": "󰾆  {percentage}%",
+    "format": "󰾆 {percentage}% ",
     "format-alt": "󰾅  {used}GB",
     "max-length": 30,
     "tooltip": true,
@@ -16,12 +16,12 @@
   },
 
   "temperature": {
-     "format": "  {temperatureC}°C"
+     "format": " {temperatureC}°C"
   },
 
   "clock": {
     "interval": 60,
-    "format": "  {:%I:%M  󰃭  %a %d}",
+    "format": " {:%I:%M  󰃭  %a %d}",
     "format-alt": "󰥔  {:%H:%M    %b %Y}",
     "tooltip-format": "<tt><big>{calendar}</big></tt>"
   },
