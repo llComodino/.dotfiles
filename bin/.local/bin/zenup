@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+ZEN_ARCHIVE="zen.linux-specific.tar.bz2";
+
+if [ "$1" ]; then
+  ZEN_ARCHIVE=$1;
+else
+  echo "=> No archive selected, defaulting to $ZEN_ARCHIVE"
+fi
+
+if [ ! -f "$ZEN_ARCHIVE" ]; then
+  echo "ERROR: archive not found: $ZEN_ARCHIVE";
+  exit 1;
+fi
+
+echo "=> Extracting Zen archive: $ZEN_ARCHIVE";
+tar -xjf "$ZEN_ARCHIVE";
+
+echo "=> Backing up current Zen installation";
+if [ -d ~/.zen ]; then
+  if [ -d ~/.zen/src.old ]; then
+    echo "=> Removing old backup";
+    rm -rf ~/.zen/src.old;
+  fi
+else
+  echo "ERROR: Zen not found at ~/.zen";
+  exit 1;
+fi
+
+echo "=> Backing up current zen";
+if [ -d ~/.zen/src ]; then
+  mv ~/.zen/src ~/.zen/src.old;
+else
+  echo "=> No zen src at ~/.zen/src";
+fi
+
+echo "=> Installing new Zen";
+if [ -d zen ]; then
+  mv zen ~/.zen/src;
+else
+  echo "ERROR: Zen directory not found";
+  exit 1;
+fi

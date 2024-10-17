@@ -1,0 +1,95 @@
+[{
+  // TOP BAR
+  "layer": "top",
+  "position": "top",
+  "name": "TOP",
+  "mode": "dock",
+  "margin-top": 2,
+  "margin-left": 4,
+  "margin-right": 4,
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "reload-style-on-change": true,
+  "include": [
+    "modules/modules_top.jsonc",
+    "modules/modules_padding.jsonc"
+  ],
+
+	"modules-left": [
+    "custom/ll_end",
+    "hyprland/workspaces",
+    "hyprland/window",
+    "custom/r_end",
+    "custom/l_end",
+    "cpu",
+    "memory",
+    "temperature",
+    "custom/rr_end"
+  ],
+
+	"modules-center": [
+    "custom/ll_end",
+    "mpd",
+    //"custom/spotify",
+    "custom/rr_end"
+  ],
+
+	"modules-right": [
+    "custom/ll_end",
+    "clock",
+    "custom/r_end",
+    "custom/l_end",
+    "battery",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "custom/updates",
+    "custom/r_end",
+    "custom/l_end",
+    "tray",
+    "custom/rr_end"
+  ]
+}
+
+// {
+//   // BOTTOM BAR
+//   "layer": "bottom",
+//   "position": "bottom",
+//   "name": "BOTTOM",
+//   "mode": "dock",
+//   "margin-bottom": 2,
+//   "margin-left": 2,
+//   "margin-right": 2,
+//   "exclusive": true,
+//   "passthrough": false,
+//   "gtk-layer-shell": true,
+//   "reload-style-on-change": true,
+//   "include": [
+//     "modules/modules_bottom.jsonc",
+//     "modules/modules_padding.jsonc"
+//   ],
+//
+// 	"modules-left": [
+//     "custom/ll_end",
+//     "disk#root",
+//     "custom/r_end",
+//     "custom/l_end",
+//     "disk#home",
+//     "custom/rr_end"
+//   ],
+//
+// 	"modules-center": [
+//     "custom/ll_end",
+//     "custom/player",
+//     "custom/rr_end"
+//   ],
+//
+// 	"modules-right": [
+//     "custom/ll_end",
+//     "network#wlan",
+//     "network#eth",
+//     "custom/rr_end"
+//   ]
+// }
+
+]

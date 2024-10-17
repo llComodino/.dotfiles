@@ -1,0 +1,102 @@
+* {
+  border: none;
+  border-radius: 0px;
+  font-family: Blexmono Nerd Font;
+  font-size: 20px;
+}
+
+@import 'theme.css';
+
+window#waybar {
+  background: rgba(21, 18, 27, 0);
+}
+
+window#waybar.TOP {
+  border-radius: 32px;
+  background: @top-bar-bg-color;
+  color: @top-bar-color;
+  opacity: 0.8;
+}
+
+window#waybar.BOTTOM {
+  border-radius: 10px;
+}
+
+#cpu,
+#memory,
+#temperature,
+#battery,
+#clock,
+#taskbar,
+#network,
+#bluetooth,
+#pulseaudio,
+#window,
+#custom-spotify,
+#custom-mpd,
+#mpd,
+#disk,
+#tray {
+  opacity: 1;
+  margin: 4px 0px 4px 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mpd,
+#custom-mpd,
+#custom-spotify {
+  color: #ffff11;
+  font-size: 22px;
+}
+
+#window {
+  padding-right: 10px;
+}
+
+#workspaces {
+  color: @primary-color;
+  background: transparent;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 4px;
+  font-size: 8px;
+}
+
+#workspaces button {
+  color: @primary-color;
+  padding: 0;
+  margin: 0;
+}
+
+#workspaces button.active {
+  padding: 0px;
+  margin: 0px;
+  border: 1px;
+}
+
+#workspaces button:hover {
+  padding: 0;
+  border: 1px solid blue;
+  border-radius: 30px;
+  background: @primary-color;
+}
+
+#tray, #pulseaudio, #network, #battery {
+  background: transparent;
+  font-weight: bold;
+  margin: 2px 0px;
+  border-radius: 10px 16px 10px 16px;
+  padding: 0 6px;
+  margin-left: 6px;
+}
+
+#clock {
+  background: transparent;
+  margin-left: 7px;
+  font-weight: bold;
+}

@@ -1,0 +1,4 @@
+*/timers.target.wants
+*/git-maintenance*
+bin/.local/bin/arango
+*.log

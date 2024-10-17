@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+[ -z "$1" ] && echo "Usage: audiofmt -F [ format ] [ FILES ]" && exit 1
+
+if [[ $1 == "-F" || $1 == "-f" ]]; then
+  format=$2
+
+  if [[ $format == "mp3" || $format == "wav" || $format == "ogg" ]]; then
+      shift 2
+      files=("$@")
+
+      for file in "${files[@]}"; do
+          ffmpeg -i "$file" -ar 44.1k -ac 2 -ab 128k -f "$format" "${file%.*}.$format"
+      done
+  else
+      echo "Invalid audio format. Please use mp3, wav, or ogg."
+      exit 2
+  fi
+
+else
+    echo "Invalid flag. Please use -F or -f."
+    exit 1
+fi

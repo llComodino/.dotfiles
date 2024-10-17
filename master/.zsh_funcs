@@ -1,0 +1,265 @@
+tmux-sessionizer() {
+
+	if [[ $# -eq 1 ]]; then
+		selected=$1
+	else
+		selected=$(find ~/code -mindepth 1 -maxdepth 1 -type d | fzf)
+	fi
+
+	if [[ -z $selected ]]; then
+		exit 0
+	fi
+
+	local sel=$selected
+	while [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; do
+
+		sel=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
+
+		if [[ -z $sel ]]; then
+			break
+		fi
+
+		selected=$sel
+	done
+
+	selected_name=$(basename "$selected" | tr . _)
+	tmux_running=$(pgrep tmux)
+
+	if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+		tmux new-session -s $selected_name -c $selected
+		exit 0
+	fi
+
+	if ! tmux has-session -t=$selected_name 2>/dev/null; then
+		tmux new-session -ds $selected_name -c $selected
+	fi
+
+	tmux switch-client -t $selected_name
+}
+
+git-sync() {
+
+	dir="$PWD"
+
+	while [[ "$dir" != "/" ]]; do
+		[[ -d "$dir/.git" ]] && break
+		dir="$(dirname "$dir")"
+	done
+
+	[[ "$dir" == "/" ]] && echo "Not in a git repo" && return 1
+
+	[[ ! -z "$@" ]] && echo "No arguments allowed" && return 1
+
+	echo "Commit message \n[default: Sync <date>] (0 to cancel)"
+	read -r msg
+
+	[[ "$msg" == "0" ]] && return 1
+
+	[[ -z "$msg" ]] && msg="Sync $(date)"
+
+	git add -A
+	if [[ $? -ne 0 ]]; then
+		echo "Error during $(git add -A)"
+		return 1
+	fi
+
+	git commit -S -m "$msg"
+	if [[ $? -ne 0 ]]; then
+		echo "Error during $(git commit)\nProbably wrong passphrase"
+		return 1
+	fi
+
+	git push
+	if [[ $? -ne 0 ]]; then
+		echo "Error pushing to origin"
+		return 3
+	fi
+}
+
+comoserver() {
+
+	if [ $# -ne 1 ]; then
+
+		echo "No username provided, trying to log in as root"
+		ssh -i $HOME/.ssh/server-root -p 16420 root@comoserver.servebeer.com
+
+		return 2
+	fi
+
+	if [[ $1 =~ ^[a-zA-Z0-9_-]+$ ]]; then
+
+		ssh -i ~/.ssh/server-$1 -p 16420 $1@comoserver.servebeer.com
+
+	else
+
+		echo "Invalid username format. Please use only letters, numbers, hyphens, and underscores."
+		return 1
+
+	fi
+
+}
+
+comoscp() {
+
+	if [[ $# -ne 2 ]]; then
+
+		echo "Usage: comoscp [file] [remote_user]"
+
+		return 1
+
+	fi
+
+	local_file=$1
+	remote_user=$2
+
+	if [ ! -f "$local_file" ]; then
+
+		echo "Error: File '$local_file' not found."
+		return 1
+
+	fi
+
+	if [[ $remote_user =~ ^[a-zA-Z0-9_-]+$ ]]; then
+
+		scp -i $HOME/.ssh/server-$remote_user -P 16420 $local_file $remote_user@comodino-server.servebeer.com:~/
+
+	else
+
+		echo "Error: Invalid remote user format. Please use only letters, numbers, hyphens, and underscores."
+		return 1
+
+	fi
+
+}
+
+c-fmt () {
+  cfmt $(find . -type f -name "*.c")
+  find . -type f -name "*.c" -exec dos2unix {} \;
+}
+
+cosa\? () {
+    echo "███████╗████████╗ ██████╗  ██████╗ █████╗ ███████╗███████╗ ██████╗  "
+    echo "██╔════╝╚══██╔══╝██╔═══██╗██╔════╝██╔══██╗╚══███╔╝╚══███╔╝██╔═══██╗ "
+    echo "███████╗   ██║   ██║   ██║██║     ███████║  ███╔╝   ███╔╝ ██║   ██║ "
+    echo "╚════██║   ██║   ██║   ██║██║     ██╔══██║ ███╔╝   ███╔╝  ██║   ██║ "
+    echo "███████║   ██║   ╚██████╔╝╚██████╗██║  ██║███████╗███████╗╚██████╔╝ "
+    echo "╚══════╝   ╚═╝    ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝  "
+}
+
+osclone () {
+  git clone --recurse-submodules -j8 git@github.com:"$1"
+}
+
+osdocker () {
+  [[ -z $1 && -z $2 ]] && echo "Usage: osdocker <docker cmd> [config file (def: arangobd.yml)]" && exit 2
+
+  local conf=$2
+  [[ -z $2 ]] && conf="arangodb.yml"
+
+  cd "$OS3/docker"
+  docker-compose -f "$conf" "$1"
+}
+
+osdev () {
+  [[ -z $1 ]] && printf "Usage: osdev [{f/b}]\nOPTS: [\n\tb - backend\n\tf - frontend\n]\n" && return 2
+
+  cd $OS3 || return 3
+  local dir=$OS3
+
+  if [ -z $2 ]; then
+    dir="$dir/$(find . -mindepth 1 -maxdepth 1 -type d -printf '%P\n' | fzf)"
+  else
+    dir="$dir/$2"
+  fi
+
+  [[ ! -d "$dir" ]] && printf "No project named: '$2' found" && return 2
+  cd "$dir" || return 3
+
+  case "$1" in;
+    'b'|'B') 
+      [[ -d "backend" ]] && dir="$(printf "%s%s" "$dir" "/backend")"
+      if [ -d "server" ]; then
+        if [ -d "server/server" ]; then
+          dir="$(printf "%s%s" "$dir" "/server/server")"
+        else
+          dir="$(printf "%s%s" "$dir" "/server")"
+        fi
+      fi
+      ;;
+    'f'|'F') dir="$(printf "%s%s" "$dir" "/frontend")" ;;
+    *) echo "ERROR" ;;
+  esac
+
+  [[ ! -d "$dir" ]] && printf "Project either misses backend or frontend dir" && return 2
+
+  cd $dir || return 3
+  pnpm dev
+}
+
+osstart () {
+  [[ -z $1 ]] && printf "Usage: osstart [ OPT ] OPTIONAL[{<project name>}]\nOPTS: [\n\tb - backend\n\tbe - backend + empty db\n\tf - frontend\n\tfe - frontend + empty db\n]\n" && return 2
+
+  cd $OS3 || return 3
+  local dir=$OS3
+  local EMPTY=0
+
+  if [ -z $2 ]; then
+    dir="$dir/$(find . -mindepth 1 -maxdepth 1 -type d -printf '%P\n' | fzf)"
+  else
+    dir="$dir/$2"
+  fi
+
+  [[ ! -d "$dir" ]] && printf "No project named: '$2' found" && return 2
+  cd "$dir" || return 3
+
+  case "$1" in;
+    'b'|'B')
+      [[ -d "backend" ]] && dir="$(printf "%s%s" "$dir" "/backend")"
+      if [ -d "server" ]; then
+        if [ -d "server/server" ]; then
+          dir="$(printf "%s%s" "$dir" "/server/server")"
+        else
+          dir="$(printf "%s%s" "$dir" "/server")"
+        fi
+      fi
+      ;;
+    'f'|'F') dir="$(printf "%s%s" "$dir" "/frontend")" ;;
+    'be'|'BE')
+      [[ -d "backend" ]] && dir="$(printf "%s%s" "$dir" "/backend")"
+      if [ -d "server" ]; then
+        if [ -d "server/server" ]; then
+          dir="$(printf "%s%s" "$dir" "/server/server")"
+        else
+          dir="$(printf "%s%s" "$dir" "/server")"
+        fi
+      fi
+      ;;
+    'fe'|'FE') dir="$(printf "%s%s" "$dir" "/frontend")" && EMPTY=1 ;;
+    *) echo "ERROR" ;;
+  esac
+
+  [[ ! -d "$dir" ]] && printf "Project either misses backend or frontend dir" && return 2
+
+  cd $dir
+
+  if [[ EMPTY == 1 ]]; then
+    pnpm start-empty
+  else
+    pnpm start
+  fi
+}
+
+cm () {
+  if ! echo "$VIRTUAL_ENV" | grep -q "spotdl"; then
+    cd $COMOMUSIC || exit 2
+    . .spotdl/bin/activate
+  fi
+
+  ncmpcpp
+}
+
+mjzip () {
+  [[ -z $1 ]] && echo "Usage: mjzip <file>" && return 2
+
+  zip -9 -r "gila_$1.zip" "$1"
+}

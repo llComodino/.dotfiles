@@ -1,0 +1,52 @@
+#!/bin/bash
+
+if [ ! -e node_modules ];
+then
+	echo "node_modules directory doesn't exist"
+	exit 1
+fi
+
+if [ -e node_modules/.bin ];
+then
+  if [ "$1" != "--force" ];
+  then
+    echo "node_modules/.bin directory already exist"
+    exit 1
+  else
+    rm -rf "node_modules/.bin"
+  fi
+fi
+
+cd node_modules || exit 3
+mkdir .bin
+
+files="*/bin/*"
+for f in $files
+do
+	# if the file is not executable, skip it
+	if [ ! -x "$f" ]
+	then
+		continue
+	fi
+
+	# if the file ends with ".js"
+	if [[ "$f" == *.js ]]
+	then
+		# take the first directory name as the command name
+		cmd=$(echo "$f" | cut -d/ -f1)
+	else
+		# take the file name as the command name
+		cmd=$(basename "$f")
+	fi
+
+	# if cmd already exists, skip it
+	if [ -e .bin/"$cmd" ]
+	then
+		continue
+	fi
+
+	echo "Creating symlink for $f" "->" "$cmd"
+
+	ln -s ../"$f" .bin/"$cmd"
+done
+

@@ -1,0 +1,12 @@
+[Unit]
+Description=Waybar
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/waybar
+WorkingDirectory=/home/comodino/.config/waybar/
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

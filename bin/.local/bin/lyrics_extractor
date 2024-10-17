@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+
+pushd . || exit 10
+
+lyrics_dir="$HOME/.lyrics"
+
+get_artist () {
+  printf "%s" "$(ffprobe -i "$1" -print_format json -show_format 2>/dev/null | jq -r '.format.tags.artist // empty')"
+}
+
+get_title () {
+  printf "%s" "$(ffprobe -i "$1" -print_format json -show_format 2>/dev/null | jq -r '.format.tags.title // empty')"
+}
+
+fetch_lyrics () {
+  local song
+
+  if [ ! "$file" ]; then
+    if [ ! "$1" ]; then
+      echo "Error: Could not extract artist or title from the file."
+      exit 1
+    fi
+    song="$1"
+  else
+    song="$file"
+  fi
+
+  artist=$(get_artist "$song")
+  title=$(get_title "$song")
+
+  if [ -z "$artist" ] || [ -z "$title" ]; then
+    echo "Error: Could not extract artist or title from $file."
+    return
+  fi
+
+  filename="${artist} - ${title}.txt"
+
+  ffprobe -i "$song" -print_format json -show_format 2> /dev/null | \
+    jq -r '.format.tags | to_entries[] | select(.key | startswith("lyrics-")) .value' > "$lyrics_dir/$filename"
+
+  echo "Extracted lyrics for ${filename/.txt/}"
+}
+
+
+if [ ! "$1" ]; then
+  find . -type f \( -iname "*.mp3" -o -iname "*.flac" -o -iname "*.wav" \) | while read -r file; do
+    fetch_lyrics "$file"
+  done
+else
+  fetch_lyrics "$1"
+fi
+
+popd || exit 10
