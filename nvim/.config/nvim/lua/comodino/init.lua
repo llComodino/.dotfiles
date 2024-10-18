@@ -1,8 +1,8 @@
 require("comodino.remaps")
 require("comodino.packer")
 require("comodino.settings")
-require("comodino.funcs")
 require("comodino.filetypes")
+require("comodino.gpg")
 
 local use = require('packer').use
 require('packer').startup(function()
