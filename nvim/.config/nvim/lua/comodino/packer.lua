@@ -3,22 +3,24 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+  use 'wbthomason/packer.nvim'
 
-	-- Telescope fzf
-	use {
-  		'nvim-telescope/telescope.nvim', tag = '0.1.3',
-  		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+  use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.3',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
-	use (
-		'nvim-treesitter/nvim-treesitter',
-    { run = 'TSUpdate'}
+  use (
+    'nvim-treesitter/nvim-treesitter',
+  { run = 'TSUpdate'}
   )
 
   use (
     'nvim-treesitter/playground'
+  )
+
+  use (
+    'saghen/blink.cmp'
   )
 
   -- use 'kyazdani42/nvim-web-devicons'
@@ -26,9 +28,12 @@ return require('packer').startup(function(use)
   -- use {'neoclide/coc.nvim', {branch = 'release'} }
   --
   -- use {
-  --   'hardcoreplayers/spaceline.vim'
+  --     'hardcoreplayers/spaceline.vim'
   --   --requires = { {'neoclide/coc.nvim', {branch = 'release'} } }
   -- }
+  use (
+    'goolord/alpha-nvim'
+  )
 
   use (
     'mrcjkb/rustaceanvim'
@@ -67,9 +72,9 @@ return require('packer').startup(function(use)
 
   use ({
     'numToStr/Comment.nvim',
-    config = function()
-      require('Comment').setup()
-    end
+  config = function()
+    require('Comment').setup()
+  end
   })
 
   use (
@@ -85,10 +90,10 @@ return require('packer').startup(function(use)
     require("obsidian").setup({
 
       workspaces = {
-        {
-          name = "ComoVault",
-          path = "~/documents/ComoVault",
-        }
+      {
+        name = "ComoVault",
+        path = "~/documents/ComoVault",
+      }
       },
 
     })
@@ -115,21 +120,17 @@ return require('packer').startup(function(use)
     'neovim/nvim-lspconfig'
   )
 
-  use (
-    'hrsh7th/nvim-cmp'
-  )
+  -- use (
+  --   'hrsh7th/nvim-cmp'
+  -- )
 
-  use (
-    'mfussenegger/nvim-jdtls'
-  )
+  -- use (
+  --   'hrsh7th/cmp-nvim-lsp'
+  -- )
 
-  use (
-    'hrsh7th/cmp-nvim-lsp'
-  )
-
-  use (
-    'saadparwaiz1/cmp_luasnip'
-  )
+  -- use (
+  --   'saadparwaiz1/cmp_luasnip'
+  -- )
 
   use (
     'L3MON4D3/LuaSnip'

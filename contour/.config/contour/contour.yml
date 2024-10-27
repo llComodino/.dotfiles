@@ -338,8 +338,8 @@ profiles:
             # weight/slant applied automatically).
             regular:
                 # Font family defines the font family name, such as:
-                # ""Fira Code", "Courier New", or "monospace" (default).
-                family: monospace
+                # ""monospace", "Courier New", or "monospace" (default).
+                family: JetbrainsMonoNL Nerd Font
 
                 # Font weight can be one of:
                 #   thin, extra_light, light, demilight, book, normal,
