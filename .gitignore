@@ -2,3 +2,4 @@
 */git-maintenance*
 bin/.local/bin/arango
 *.log
+mpd/.config/mpd/state
