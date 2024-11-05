@@ -7,7 +7,7 @@ local g = vim.g
 g.mapleader = " "
 g.blamer_enabled = true
 g.vimtex_view_method = 'zathura'
-g.copilot_enabled = 1
+g.copilot_enabled = 0 -- I am not worthy of this plugin yet
 
 --------------------- Show full errors ------------
 vim.diagnostic.config({
