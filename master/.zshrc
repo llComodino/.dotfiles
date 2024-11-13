@@ -4,6 +4,7 @@ export DOTFILES="$HOME/.dotfiles"
 export SCRIPTS="$HOME/.local/scripts"
 export CODE="$HOME/code"
 export OS3="$HOME/os3"
+export COMOMUSIC="$HOME/comomusic"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # ROCM + HIP
@@ -17,7 +18,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROCM_PATH/lib
 export EDITOR=nvim
 # ~!IMPERATIVE!~ #
 
-ZSH_THEME="robbyrussel"
+ZSH_THEME="como-trimmed" # set by `omz`
 
 # List of plugins used
 plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf )
@@ -28,6 +29,7 @@ source $ZSH/oh-my-zsh.sh
 # Functions
 source $HOME/.zsh_funcs
 source $HOME/.fzsh
+source $HOME/.zsh_aliases
 
 # fzf git integration
 source $SCRIPTS/fzf-git.sh
@@ -47,6 +49,7 @@ eval "$(fzf --zsh)"
 export GPG_TTY=$(tty)
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin/arango/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
@@ -58,29 +61,6 @@ export PATH="$HOME/.gems/bin:$PATH"
 
 # rbenv
 eval "$(rbenv init - zsh)"
-
-# ============================================================================== #
-
-alias  l='eza -lh  --icons=auto' # long list
-alias ls='eza -1   --icons=auto' # short list
-alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
-alias ld='eza -lhD --icons=auto' # long list dirs
-alias cd='z' # better cd
-
-alias cm='ncmpcpp' # CLI music player
-
-alias updb='sudo updatedb'
-alias v4l2probe='sudo modprobe v4l2loopback video_nr=9 card_label=Video-Loopback exclusive_caps=1'
-alias ztheme='source $SCRIPTS/ztheme.zsh'
-alias spotdl='spotdl --lyrics genius --max-retries 3 --threads 16 --bitrate 320k --format wav --print-errors download'
-
-alias bdiscord='$HOME/.comoappimages/bdiscord' # run betterdiscord
-alias ida64='$HOME/idafree-8.3/ida64' # ida-free
-alias kat-ai='ollama run llama2-uncensored'
-
-# sadly, your time has come too my friend (rip neofetch)
-# at the very least I will remember you for as long as I live
-alias neofetch='fastfetch'
 
 # ============================================================================== #
 

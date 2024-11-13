@@ -1,0 +1,17 @@
+alias  l='eza -lh  --icons=auto' # long list
+alias ls='eza -1   --icons=auto' # short list
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+alias cd='z' # better cd
+
+alias updb='sudo updatedb'
+alias v4l2probe='sudo modprobe v4l2loopback video_nr=9 card_label=Video-Loopback exclusive_caps=1'
+alias ztheme='source $SCRIPTS/ztheme.zsh'
+alias spotdl='spotdl --lyrics genius --max-retries 3 --threads 16 --bitrate 320k --format wav --print-errors download'
+
+alias bdiscord='$HOME/.comoappimages/bdiscord' # run betterdiscord
+alias ida64='$HOME/idafree-8.3/ida64' # ida-free
+alias kat-ai='ollama run llama2-uncensored'
+
+alias neofetch='fastfetch'
+
+alias flowstart='cd $OS3/liweflow/flowmanager && yarn start'

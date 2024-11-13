@@ -1,5 +1,4 @@
 tmux-sessionizer() {
-
 	if [[ $# -eq 1 ]]; then
 		selected=$1
 	else
@@ -74,62 +73,6 @@ git-sync() {
 		echo "Error pushing to origin"
 		return 3
 	fi
-}
-
-comoserver() {
-
-	if [ $# -ne 1 ]; then
-
-		echo "No username provided, trying to log in as root"
-		ssh -i $HOME/.ssh/server-root -p 16420 root@comoserver.servebeer.com
-
-		return 2
-	fi
-
-	if [[ $1 =~ ^[a-zA-Z0-9_-]+$ ]]; then
-
-		ssh -i ~/.ssh/server-$1 -p 16420 $1@comoserver.servebeer.com
-
-	else
-
-		echo "Invalid username format. Please use only letters, numbers, hyphens, and underscores."
-		return 1
-
-	fi
-
-}
-
-comoscp() {
-
-	if [[ $# -ne 2 ]]; then
-
-		echo "Usage: comoscp [file] [remote_user]"
-
-		return 1
-
-	fi
-
-	local_file=$1
-	remote_user=$2
-
-	if [ ! -f "$local_file" ]; then
-
-		echo "Error: File '$local_file' not found."
-		return 1
-
-	fi
-
-	if [[ $remote_user =~ ^[a-zA-Z0-9_-]+$ ]]; then
-
-		scp -i $HOME/.ssh/server-$remote_user -P 16420 $local_file $remote_user@comodino-server.servebeer.com:~/
-
-	else
-
-		echo "Error: Invalid remote user format. Please use only letters, numbers, hyphens, and underscores."
-		return 1
-
-	fi
-
 }
 
 c-fmt () {
