@@ -1,10 +1,15 @@
--- Setup language servers.
-local lspconfig = require('lspconfig')
+-- local lspconfig_defaults = require('lspconfig').util.default_config
+-- lspconfig_defaults.capabilities = vim.tbl_deep_extend(
+--   'force',
+--   lspconfig_defaults.capabilities,
+--   require('blink.cmp').get_lsp_capabilities()
+-- )
 
-lspconfig.hls.setup({
-  cmd = { "haskell-language-server", "--lua" },
-  filetypes = { "hs" },
-})
+-- Setup language servers.
+-- lspconfig.hls.setup({
+--   cmd = { "haskell-language-server", "--lua" },
+--   filetypes = { "hs" },
+-- })
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions

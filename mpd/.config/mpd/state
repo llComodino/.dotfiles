@@ -1,9 +1,9 @@
 sw_volume: 25
 audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
-state: play
-current: 3
-time: 0.547000
+state: pause
+current: 28
+time: 65.583000
 random: 1
 repeat: 1
 single: 0
@@ -12,57 +12,60 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:boa/bôa - Twilight.wav
-1:deftones/Deftones - Sextape.wav
-2:nine_inch_nails/Nine Inch Nails - Hurt.wav
-3:various/Марія Чайковська - Целуй меня.wav
+0:kate_bush/Kate Bush - Army Dreamers.wav
+1:boa/bôa - Twilight.wav
+2:deftones/Deftones - Sextape.wav
+3:nine_inch_nails/Nine Inch Nails - Hurt.wav
 4:children_of_bodom/Children Of Bodom - Are You Dead Yet.wav
 5:abba/ABBA - Keep An Eye On Dan.wav
 6:pixies/Pixies - Where Is My Mind.wav
 7:abba/ABBA - Super Trouper.wav
 8:elton_john/Elton John - Goodbye Yellow Brick Road - Remastered 2014.wav
-9:various/Liana Flores - rises the moon.wav
-10:the_doors/The Doors - People Are Strange.wav
-11:children_of_bodom/Children Of Bodom - Downfall.wav
-12:the_beatles/The Beatles - Something - Remastered 2009.wav
-13:nirvana/Nirvana - Smells Like Teen Spirit.wav
-14:rick_and_morty/Rick and Morty - Live Forever - ft. Kotomi.wav
-15:kate_bush/Kate Bush - Army Dreamers.wav
-16:the_beatles/The Beatles - Eleanor Rigby - Remastered 2009.wav
-17:radiohead/Radiohead - Karma Police.wav
-18:imagine_dragons/Imagine Dragons - Warriors.wav
-19:metallica/Metallica - Enter Sandman (Remastered).wav
-20:osts/Hans Zimmer - Cornfield Chase.wav
-21:nirvana/Nirvana - The Man Who Sold The World - Live.wav
-22:bon_jovi/Bon Jovi - Runaway.wav
-23:abba/ABBA - Money, Money, Money.wav
-24:various/Lilium - Fear & Hunger.wav
-25:queen/Queen - Who Wants To Live Forever - Remastered 2011.wav
-26:nirvana/Nirvana - Lake Of Fire - Live.wav
-27:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
-28:the_doors/The Doors - Riders on the Storm.wav
-29:queen/Queen - The Show Must Go On - Remastered 2011.wav
-30:the_smiths/The Smiths - There Is a Light That Never Goes Out - 2011 Remaster.wav
-31:kate_bush/Kate Bush - Babooshka - 2018 Remaster.wav
-32:sod/System Of A Down - Chop Suey!.wav
-33:the_rolling_stones/The Rolling Stones - Beast Of Burden - Remastered 1994.wav
-34:nirvana/Nirvana - Dumb.wav
-35:abba/ABBA - Voulez-Vous.wav
-36:the_rolling_stones/The Rolling Stones - Under My Thumb.wav
-37:the_rolling_stones/The Rolling Stones - Brown Sugar - Remastered 2009.wav
-38:the_beatles/The Beatles - Twist And Shout - Remastered 2009.wav
-39:bon_jovi/Bon Jovi - It's My Life.wav
-40:the_rolling_stones/The Rolling Stones - Gimme Shelter.wav
-41:i_monster/I Monster - Goodbye Sun.wav
-42:sod/System Of A Down - Toxicity.wav
-43:the_beatles/The Beatles - Yesterday - Remastered 2009.wav
-44:midrift/Midrift - unrequited.wav
-45:radiohead/Radiohead - Exit Music (For A Film).wav
-46:radiohead/Radiohead - Creep.wav
-47:metallica/Metallica - Master of Puppets (Remastered).wav
-48:iron_maiden/Phantom Of The Opera.wav
-49:the_doors/The Doors - Light My Fire.wav
-50:the_rolling_stones/The Rolling Stones - (I Can't Get No) Satisfaction - Mono Version.wav
-51:abba/ABBA - Chiquitita.wav
-52:deftones/Deftones - Diamond Eyes.wav
+9:the_doors/The Doors - People Are Strange.wav
+10:children_of_bodom/Children Of Bodom - Downfall.wav
+11:the_beatles/The Beatles - Something - Remastered 2009.wav
+12:nirvana/Nirvana - Smells Like Teen Spirit.wav
+13:rick_and_morty/Rick and Morty - Live Forever - ft. Kotomi.wav
+14:kate_bush/Kate Bush - Army Dreamers.wav
+15:the_beatles/The Beatles - Eleanor Rigby - Remastered 2009.wav
+16:radiohead/Radiohead - Karma Police.wav
+17:imagine_dragons/Imagine Dragons - Warriors.wav
+18:metallica/Metallica - Enter Sandman (Remastered).wav
+19:nirvana/Nirvana - The Man Who Sold The World - Live.wav
+20:bon_jovi/Bon Jovi - Runaway.wav
+21:abba/ABBA - Money, Money, Money.wav
+22:queen/Queen - Who Wants To Live Forever - Remastered 2011.wav
+23:nirvana/Nirvana - Lake Of Fire - Live.wav
+24:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
+25:the_doors/The Doors - Riders on the Storm.wav
+26:queen/Queen - The Show Must Go On - Remastered 2011.wav
+27:the_smiths/The Smiths - There Is a Light That Never Goes Out - 2011 Remaster.wav
+28:kate_bush/Kate Bush - Babooshka - 2018 Remaster.wav
+29:sod/System Of A Down - Chop Suey!.wav
+30:the_rolling_stones/The Rolling Stones - Beast Of Burden - Remastered 1994.wav
+31:nirvana/Nirvana - Dumb.wav
+32:abba/ABBA - Voulez-Vous.wav
+33:the_rolling_stones/The Rolling Stones - Under My Thumb.wav
+34:the_rolling_stones/The Rolling Stones - Brown Sugar - Remastered 2009.wav
+35:the_beatles/The Beatles - Twist And Shout - Remastered 2009.wav
+36:bon_jovi/Bon Jovi - It's My Life.wav
+37:the_rolling_stones/The Rolling Stones - Gimme Shelter.wav
+38:i_monster/I Monster - Goodbye Sun.wav
+39:sod/System Of A Down - Toxicity.wav
+40:the_beatles/The Beatles - Yesterday - Remastered 2009.wav
+41:midrift/Midrift - unrequited.wav
+42:radiohead/Radiohead - Exit Music (For A Film).wav
+43:radiohead/Radiohead - Creep.wav
+44:metallica/Metallica - Master of Puppets (Remastered).wav
+45:iron_maiden/Phantom Of The Opera.wav
+46:the_doors/The Doors - Light My Fire.wav
+47:the_rolling_stones/The Rolling Stones - (I Can't Get No) Satisfaction - Mono Version.wav
+48:abba/ABBA - Chiquitita.wav
+49:deftones/Deftones - Diamond Eyes.wav
+50:blur/Blur - Tender.wav
+51:blur/Blur - Beetlebum - 2012 Remaster.wav
+52:blur/Blur - Song 2.wav
+53:blur/Blur - There's No Other Way - 2012 Remaster.wav
+54:blur/Blur - Parklife - 2012 Remaster.wav
+55:blur/Blur - To the End - 2012 Remaster.wav
 playlist_end
