@@ -1,11 +1,13 @@
 {
     "logo": {
-        "type": "sixel",
-        "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/pngs/\" -name \"*.png\" | sort -R | head -1)",
+        "type": "auto",
         "height": 18
     },
     "display": {
         "separator": " : "
+    },
+    "playerName": {
+      "type": "MPD"
     },
     "modules": [
         {
@@ -83,7 +85,7 @@
         },
         {
           "type": "media",
-          "key": "   Listening to",
+          "key": "    Listening to",
           "keyColor": "magenta"
         },
         {

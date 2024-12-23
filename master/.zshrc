@@ -17,8 +17,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$ROCM_PATH/lib
 # ~!IMPERATIVE!~ #
 export EDITOR=nvim
 # ~!IMPERATIVE!~ #
+export MANPAGER="nvim +Man!"
 
-ZSH_THEME="como-trimmed" # set by `omz`
+ZSH_THEME="como-russel" # set by `omz`
 
 # List of plugins used
 plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf )
@@ -82,3 +83,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc

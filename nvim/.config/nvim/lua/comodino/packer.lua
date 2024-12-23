@@ -81,25 +81,25 @@ return require('packer').startup(function(use)
     'joshdick/onedark.vim'
   )
 
-  use({
-    "epwalsh/obsidian.nvim",
-    tag = "*",
-    requires = { "nvim-lua/plenary.nvim" },
-
-    config = function()
-    require("obsidian").setup({
-
-      workspaces = {
-      {
-        name = "ComoVault",
-        path = "~/documents/ComoVault",
-      }
-      },
-
-    })
-    end,
-  })
-
+  -- use({
+  --   "epwalsh/obsidian.nvim",
+  --   tag = "*",
+  --   requires = { "nvim-lua/plenary.nvim" },
+  --
+  --   config = function()
+  --   require("obsidian").setup({
+  --
+  --     workspaces = {
+  --     {
+  --       name = "ComoVault",
+  --       path = "~/documents/ComoVault",
+  --     }
+  --     },
+  --
+  --   })
+  --   end,
+  -- })
+  --
   use (
     'lervag/vimtex'
   )
@@ -152,4 +152,7 @@ return require('packer').startup(function(use)
     'andweeb/presence.nvim'
   )
 
+  use (
+    'mfussenegger/nvim-jdtls'
+  )
 end)
