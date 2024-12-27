@@ -7,8 +7,8 @@
 
 ;; no-littering doesn't set this by default so we must place
 ;; auto save files in the same path as it uses for sessions
-;; (setq auto-save-file-name-transforms
-;;       `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
+(setq auto-save-file-name-transforms
+    `((".*" ,(no-littering-expand-var-file-name "auto-save/") t)))
 
 (setq inhibit-startup-message t)
 
@@ -52,7 +52,8 @@
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
+(set-frame-font "IosevkaTerm NFM" nil t)
+
 (set-face-attribute 'default nil :font "IosevkaTerm NFM" :height efs/default-font-size)
 (set-face-attribute 'fixed-pitch nil :font "IosevkaTerm NFM" :height efs/default-font-size)
 (set-face-attribute 'variable-pitch nil :font "Cantarell" :height efs/default-variable-font-size :weight 'regular)
-

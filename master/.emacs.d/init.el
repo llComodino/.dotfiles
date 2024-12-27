@@ -15,14 +15,14 @@
 (load "~/.emacs.d/rc/misc.el")
 (load "~/.emacs.d/rc/org.el")
 
-(unless package-archive-contents
-  (package-refresh-contents))
-
 (rc/require-theme 'gruber-darker)
 
 (rc/require 'elcord)
 (require 'elcord)
-(setq elcord-mode t)
+(use-package elcord
+  :ensure t
+  :config
+  (elcord-mode))
 
 (setq use-package-always-ensure t)
 
@@ -35,7 +35,7 @@
   (auto-package-update-maybe)
   (auto-package-update-at-time "09:00"))
 
-;;(use-package no-littering)
+(use-package no-littering)
 
 (use-package general
   :after evil
@@ -76,7 +76,8 @@
 (use-package command-log-mode
   :commands command-log-mode)
 
-(use-package all-the-icons)
+(use-package all-the-icons
+  :ensure t)
 
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
