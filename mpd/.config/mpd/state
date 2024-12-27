@@ -1,9 +1,9 @@
-sw_volume: 40
+sw_volume: 20
 audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
 state: play
-current: 10
-time: 120.172000
+current: 5
+time: 119.990000
 random: 1
 repeat: 1
 single: 0
@@ -26,4 +26,10 @@ playlist_begin
 11:cranberries/The Cranberries - Linger.wav
 12:de_andre/Fabrizio De André - Via del campo.wav
 13:osts/Geek Music - Lillium (From 'Elfen Lied').wav
+14:the_taxpayers/The Taxpayers - I Love You Like An Alcoholic.wav
+15:the_dresden_dolls/The Dresden Dolls - My Alcoholic Friends.wav
+16:roar/Roar - I Can't Handle Change.wav
+17:roar/Roar - The Comfort of a Laugh Track.wav
+18:svmuh/Sarah Cothran - As the World Caves In.wav
+19:de_andre/Fabrizio De André - S'i' fosse foco.wav
 playlist_end

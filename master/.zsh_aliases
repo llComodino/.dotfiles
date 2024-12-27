@@ -15,3 +15,5 @@ alias kat-ai='ollama run llama2-uncensored'
 alias neofetch='fastfetch'
 
 alias flowstart='cd $OS3/liweflow/flowmanager && yarn start'
+
+alias emacs='emacs -nw'

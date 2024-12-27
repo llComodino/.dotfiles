@@ -4,6 +4,11 @@ pushd $DOTFILES
 for dir in $(find . -mindepth 1 -maxdepth 1 -type d | sed "s|./||" | grep -v install | grep -v '.git')
 do
     echo "stow $dir"
+    if [[ $dir == "master" ]]; then
+      for file in $(find $dir -mindepth 1 -maxdepth 1 | sed "s|master/||"); do
+        printf "    %s\n" "master -> $file"
+      done
+    fi
     stow -D $dir
     stow $dir
 done

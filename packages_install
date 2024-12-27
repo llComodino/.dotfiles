@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ "$EUID" -ne 0 ]; then 
+    echo "Please run as root (with sudo)"
+    exit 1
+fi
+
+echo "Installing pacman packages"
+pacman -S --needed - < "./pacman_list.txt"
+
+echo "Installing yay packages"
+sudo -u "comodino" bash -c 'yay -S --needed - < "./yay_list.txt"'
