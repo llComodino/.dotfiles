@@ -10,6 +10,9 @@
 (require 'package)
 (require 'use-package)
 
+(add-to-list 'load-path "~/.emacs.d/local")
+(require 'simpc-mode)
+
 (load "~/.emacs.d/rc/rc.el")
 
 (load "~/.emacs.d/rc/settings.el")
@@ -17,13 +20,6 @@
 (load "~/.emacs.d/rc/org.el")
 
 (rc/require-theme 'gruber-darker)
-
-(rc/require 'elcord)
-(require 'elcord)
-(use-package elcord
-  :ensure t
-  :config
-  (elcord-mode))
 
 (setq use-package-always-ensure t)
 
@@ -77,9 +73,6 @@
 (use-package command-log-mode
   :commands command-log-mode)
 
-(use-package all-the-icons
-  :ensure t)
-
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
   :custom ((doom-modeline-height 15)))
@@ -128,8 +121,7 @@
   :custom
   (ivy-prescient-enable-filtering nil)
   :config
-  ;; Uncomment the following line to have sorting remembered across sessions!
-  ;(prescient-persist-mode 1)
+  (prescient-persist-mode 1)
   (ivy-prescient-mode 1))
 
 (use-package helpful
@@ -154,15 +146,10 @@
 (efs/leader-keys
   "ts" '(hydra-text-scale/body :which-key "scale text"))
 
-(defun efs/lsp-mode-setup ()
-  (setq lsp-headerline-breadcrumb-segments '(path-up-to-project file symbols))
-  (lsp-headerline-breadcrumb-mode))
-
 (use-package lsp-mode
   :commands (lsp lsp-deferred)
-  :hook (lsp-mode . efs/lsp-mode-setup)
   :init
-  (setq lsp-keymap-prefix "C-c l")  ;; Or 'C-l', 's-l'
+  (setq lsp-keymap-prefix "C-c l")
   :config
   (lsp-enable-which-key-integration t))
 
@@ -178,18 +165,15 @@
   :after lsp)
 
 (use-package dap-mode
-  ;; Uncomment the config below if you want all UI panes to be hidden by default!
   ;; :custom
   ;; (lsp-enable-dap-auto-configure nil)
   ;; :config
   ;; (dap-ui-mode 1)
   :commands dap-debug
   :config
-  ;; Set up Node debugging
   (require 'dap-node)
-  (dap-node-setup) ;; Automatically installs Node debug adapter if needed
+  (dap-node-setup)
 
-  ;; Bind `C-c l d` to `dap-hydra` for easy access
   (general-define-key
     :keymaps 'lsp-mode-map
     :prefix lsp-keymap-prefix
@@ -205,7 +189,6 @@
   :ensure t
   :hook (python-mode . lsp-deferred)
   :custom
-  ;; NOTE: Set these if Python 3 is called "python3" on your system!
   ;; (python-shell-interpreter "python3")
   ;; (dap-python-executable "python3")
   (dap-python-debugger 'debugpy)
@@ -246,7 +229,6 @@
   :bind-keymap
   ("C-c p" . projectile-command-map)
   :init
-  ;; NOTE: Set this to the folder where you keep your Git repos!
   (when (file-directory-p "~/code")
     (setq projectile-project-search-path '("~/code")))
   (setq projectile-switch-project-action #'projectile-dired))
@@ -260,12 +242,6 @@
   :custom
   (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
 
-;; NOTE: Make sure to configure a GitHub token before using this package!
-;; - https://magit.vc/manual/forge/Token-Creation.html#Token-Creation
-;; - https://magit.vc/manual/ghub/Getting-Started.html#Getting-Started
-(use-package forge
-  :after magit)
-
 (use-package evil-nerd-commenter
   :bind ("M-/" . evilnc-comment-or-uncomment-lines))
 
@@ -275,10 +251,8 @@
 (use-package term
   :commands term
   :config
-  (setq explicit-shell-file-name "zsh") ;; Change this to zsh, etc
-  ;;(setq explicit-zsh-args '())         ;; Use 'explicit-<shell>-args for shell-specific args
-
-  ;; Match the default Bash shell prompt.  Update this if you have a custom prompt
+  (setq explicit-shell-file-name "zsh")
+  ;;(setq explicit-zsh-args '())
   (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *"))
 
 (use-package eterm-256color
@@ -287,35 +261,9 @@
 (use-package vterm
   :commands vterm
   :config
-  (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")  ;; Set this to match your custom shell prompt
-  (setq vterm-shell "zsh")                       ;; Set this to customize the shell to launch
+  (setq term-prompt-regexp "^[^#$%>\n]*[#$%>] *")
+  (setq vterm-shell "zsh")
   (setq vterm-max-scrollback 10000))
-
-(defun efs/configure-eshell ()
-  (add-hook 'eshell-pre-command-hook 'eshell-save-some-history)
-  (add-to-list 'eshell-output-filter-functions 'eshell-truncate-buffer)
-
-  (evil-define-key '(normal insert visual) eshell-mode-map (kbd "C-r") 'counsel-esh-history)
-  (evil-define-key '(normal insert visual) eshell-mode-map (kbd "<home>") 'eshell-bol)
-  (evil-normalize-keymaps)
-
-  (setq eshell-history-size         10000
-        eshell-buffer-maximum-lines 10000
-        eshell-hist-ignoredups t
-        eshell-scroll-to-bottom-on-input t))
-
-(use-package eshell-git-prompt
-  :after eshell)
-
-(use-package eshell
-  :hook (eshell-first-time-mode . efs/configure-eshell)
-  :config
-
-  (with-eval-after-load 'esh-opt
-    (setq eshell-destroy-buffer-when-process-dies t)
-    (setq eshell-visual-commands '("htop" "zsh" "vim")))
-
-  (eshell-git-prompt-use-theme 'powerline))
 
 (use-package dired
   :ensure nil
@@ -326,9 +274,6 @@
   (evil-collection-define-key 'normal 'dired-mode-map
     "h" 'dired-single-up-directory
     "l" 'dired-single-buffer))
-
-(use-package all-the-icons-dired
-  :hook (dired-mode . all-the-icons-dired-mode))
 
 (use-package dired-open
   :commands (dired dired-jump)

@@ -234,7 +234,7 @@ profiles:
         # with DPI yet to be applied to these values.
         margins:
             # Horizontal (left/right) margins.
-            horizontal: 16
+            horizontal: 12
             # Vertical (top/bottom) margins.
             vertical: 8
 
@@ -291,7 +291,7 @@ profiles:
         # Font related configuration (font face, styles, size, rendering mode).
         font:
             # Initial font size in pixels.
-            size: 26
+            size: 24
 
             # Font Locator API
             # Selects an engine to use for locating font files on the system.
@@ -308,7 +308,7 @@ profiles:
                 # - native      : automatically choose the best available on the current platform.
                 # - OpenShaper  : selects OpenShaper (harfbuzz/freetype/fontconfig, available on all
                 #                 platforms)
-                engine: harfbuzz
+                engine: native
 
             # Uses builtin textures for pixel-perfect box drawing.
             # If disabled, the font's provided box drawing characters
@@ -416,8 +416,8 @@ profiles:
               # right: "{HistoryLineCount:Faint,Color=#c0c0c0} │ {Clock:Bold}"
 
         background:
-            opacity: 0.74
-            blur: true
+            opacity: 1 #0.74
+            blur: false
 
         # Specifies a colorscheme to use (alternatively the colors can be inlined).
         #
@@ -445,7 +445,7 @@ color_schemes:
             # Default colors
             default:
                 # Default background color (this can be made transparent, see above).
-                background: '#1A1716'
+                background: '#181818'
                 # Default foreground text color.
                 foreground: '#D0D0D0'
                 # Default foreground text color when bold(/bright) mode is on.

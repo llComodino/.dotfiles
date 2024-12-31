@@ -1,9 +1,9 @@
-sw_volume: 20
+sw_volume: 30
 audio_device_state:1:Pipewire Software Mixer
 audio_device_state:1:visualizer
 state: pause
-current: 63
-time: 92.593000
+current: 34
+time: 90.477000
 random: 1
 repeat: 1
 single: 0
@@ -12,104 +12,103 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:roar/Roar - The Comfort of a Laugh Track.wav
-1:various/Il_Ragazzo_Confuso.wav
-2:the_doors/The Doors - Light My Fire.wav
-3:imagine_dragons/Imagine Dragons - Warriors.wav
-4:metallica/Metallica - Master of Puppets (Remastered).wav
-5:various/Liana Flores - rises the moon.wav
-6:metallica/Metallica - Orion (Remastered).wav
-7:abba/ABBA - Keep An Eye On Dan.wav
-8:osts/sas.wav
-9:abba/ABBA - Mamma Mia.wav
-10:children_of_bodom/Children Of Bodom - Lake Bodom.wav
-11:blur/Blur - Parklife - 2012 Remaster.wav
-12:metallica/Metallica - One (Remastered).wav
-13:the_beatles/The Beatles - I'm Only Sleeping - Remastered 2009.wav
-14:bon_jovi/Bon Jovi - Wanted Dead Or Alive.wav
-15:nmd/nmd_trailer-1.wav
-16:radiohead/Radiohead - Exit Music (For A Film).wav
-17:the_rolling_stones/The Rolling Stones - (I Can't Get No) Satisfaction - Mono Version.wav
-18:nirvana/Nirvana - Lake Of Fire - Live.wav
-19:sod/System Of A Down - Aerials.wav
-20:the_rolling_stones/The Rolling Stones - Beast Of Burden - Remastered 1994.wav
-21:nmd/the_contract_is_truly_finished.wav
-22:roar/Roar - I Can't Handle Change.wav
-23:blur/Blur - There's No Other Way - 2012 Remaster.wav
-24:david_bowie/David Bowie - Starman - 2012 Remaster.wav
-25:osts/bns.wav
-26:the_beatles/The Beatles - I Want To Tell You - Remastered 2009.wav
-27:nirvana/Nirvana - Heart-Shaped Box.wav
-28:abba/ABBA - Lay All Your Love On Me.wav
-29:bon_jovi/Bon Jovi - It's My Life.wav
-30:the_beatles/The Beatles - You've Got To Hide Your Love Away - Remastered 2009.wav
-31:the_beatles/The Beatles - Twist And Shout - Remastered 2009.wav
-32:abba/ABBA - Money, Money, Money.wav
-33:the_beatles/The Beatles - Let It Be - Remastered 2009.wav
-34:blur/Blur - Tender.wav
-35:de_andre/Fabrizio De André - Un giudice.wav
-36:the_beatles/The Beatles - Here, There And Everywhere - Remastered 2009.wav
-37:iron_maiden/Phantom Of The Opera.wav
-38:cranberries/The Cranberries - Zombie.wav
-39:children_of_bodom/Children Of Bodom - Downfall.wav
-40:osts/SiM - The Rumbling.wav
-41:slipknot/Slipknot - Duality.wav
-42:nmd/start_your_game_partner.wav
-43:abba/ABBA - The Winner Takes It All.wav
-44:limp_bizkit/Limp Bizkit - Break Stuff.wav
-45:metallica/Metallica - The Unforgiven (Remastered).wav
-46:i_monster/Who Is She ?.wav
-47:cranberries/The Cranberries - Linger.wav
-48:boa/bôa - Duvet.wav
-49:rick_and_morty/Chaos Chaos - Memories.wav
-50:nmd/how-unfortunate.wav
-51:abba/ABBA - Slipping Through My Fingers.wav
-52:the_beatles/The Beatles - Here Comes The Sun - Remastered 2009.wav
-53:osts/Hans Zimmer - Cornfield Chase.wav
-54:children_of_bodom/Children Of Bodom - Everytime I Die.wav
-55:the_doors/The Doors - People Are Strange.wav
-56:nirvana/Nirvana - About A Girl.wav
-57:osts/For the Damaged Coda.wav
-58:metallica/Metallica - Fade To Black (Remastered).wav
-59:i_monster/Daydream_in_blue.wav
-60:de_andre/Fabrizio De André - Via del campo.wav
-61:the_beatles/The Beatles - She Said She Said - Remastered 2009.wav
-62:elton_john/Elton John - Goodbye Yellow Brick Road - Remastered 2014.wav
-63:sod/System Of A Down - Toxicity.wav
-64:the_beatles/The Beatles - I Want To Hold Your Hand - Remastered 2009.wav
-65:abba/ABBA - Chiquitita.wav
-66:nmd/nmd_trailah-1.wav
-67:frank_sinatra/Frank Sinatra - Strangers In The Night.wav
-68:the_beatles/The Beatles - Taxman - Remastered 2009.wav
-69:the_rolling_stones/The Rolling Stones - Brown Sugar - Remastered 2009.wav
-70:imagine_dragons/Imagine Dragons - Bones.wav
-71:frank_sinatra/Frank Sinatra - That's Life.wav
-72:various/Crystal Castles - Transgender.wav
-73:mild_high_club/Mild High Club - Homage.wav
-74:the_rolling_stones/The Rolling Stones - Under My Thumb.wav
-75:pixies/Pixies - Where Is My Mind.wav
-76:abba/ABBA - Fernando.wav
-77:beethoven/Ludwig van Beethoven, Wiener Philharmoniker, Carlos Kleiber - Symphony No. 5 in C Minor, Op. 67- I. Allegro con brio.wav
-78:queen/Queen - I Want To Break Free.wav
-79:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
-80:nmd/choose_your_name_partner_-unused-.wav
-81:queen/Queen - Who Wants To Live Forever - Remastered 2011.wav
-82:nmd/trailer1.wav
-83:beethoven/Rousseau - Moonlight Sonata (1st Movement).wav
-84:the_beatles/The Beatles - And Your Bird Can Sing - Remastered 2009.wav
-85:boa/bôa - Twilight.wav
-86:nine_inch_nails/Nine Inch Nails - Hurt.wav
-87:queen/Queen - The Show Must Go On - Remastered 2011.wav
-88:the_beatles/The Beatles - Tomorrow Never Knows - Remastered 2009.wav
-89:de_andre/Fabrizio De André - La Citta' Vecchia.wav
-90:metallica/Metallica - Nothing Else Matters (Remastered).wav
-91:the_doors/The Doors - Riders on the Storm.wav
-92:beethoven/Ludwig van Beethoven, Berliner Philharmoniker, Rafael Kubelík - Symphony No. 3 in E-Flat Major, Op. 55 'Eroica'- II. Marcia funebre - Adagio assai.wav
-93:beethoven/Ludwig van Beethoven, Nikolaus Harnoncourt, Chamber Orchestra of Europe - Beethoven- Symphony No. 9 in D Minor, Op. 125 'Choral'- II. Molto vivace - Presto.wav
-94:the_beatles/The Beatles - Yesterday - Remastered 2009.wav
-95:midrift/Midrift - unrequited.wav
-96:deftones/Deftones - Sextape.wav
-97:queen/Queen - Bohemian Rhapsody - Remastered 2011.wav
-98:the_beatles/The Beatles - Good Day Sunshine - Remastered 2009.wav
-99:abba/ABBA - Super Trouper.wav
+0:deftones/Deftones - Be Quiet and Drive (Far Away).wav
+1:the_taxpayers/The Taxpayers - I Love You Like An Alcoholic.wav
+2:abba/ABBA - Voulez-Vous.wav
+3:abba/ABBA - Fernando.wav
+4:children_of_bodom/Children Of Bodom - In Your Face.wav
+5:nine_inch_nails/Nine Inch Nails - Hurt.wav
+6:blur/Blur - Song 2.wav
+7:beethoven/Ludwig van Beethoven, Nikolaus Harnoncourt, Chamber Orchestra of Europe - Beethoven- Symphony No. 9 in D Minor, Op. 125 'Choral'- II. Molto vivace - Presto.wav
+8:frank_sinatra/Frank Sinatra - Strangers In The Night.wav
+9:midrift/Midrift - unrequited.wav
+10:the_beatles/The Beatles - Yesterday - Remastered 2009.wav
+11:the_beatles/The Beatles - I'm Only Sleeping - Remastered 2009.wav
+12:the_beatles/The Beatles - Got To Get You Into My Life - Remastered 2009.wav
+13:svmuh/Sarah Cothran - As the World Caves In.wav
+14:metallica/Metallica - Master of Puppets (Remastered).wav
+15:mild_high_club/Mild High Club - Homage.wav
+16:cranberries/The Cranberries - Linger.wav
+17:de_andre/Fabrizio De André - La guerra di Piero.wav
+18:the_rolling_stones/The Rolling Stones - Paint It, Black.wav
+19:children_of_bodom/Children Of Bodom - Downfall.wav
+20:rick_and_morty/Chaos Chaos - Memories.wav
+21:radiohead/Radiohead - Exit Music (For A Film).wav
+22:the_beatles/The Beatles - I Want To Tell You - Remastered 2009.wav
+23:blur/Blur - Tender.wav
+24:abba/ABBA - Money, Money, Money.wav
+25:deftones/Deftones - Diamond Eyes.wav
+26:abba/ABBA - Lay All Your Love On Me.wav
+27:osts/nmd/nmd_trailah-1.wav
+28:radiohead/Radiohead - No Surprises.wav
+29:blur/Blur - To the End - 2012 Remaster.wav
+30:osts/nmd/chara_fight_-_no_more_deals.wav
+31:the_beatles/The Beatles - Something - Remastered 2009.wav
+32:the_beatles/The Beatles - For No One - Remastered 2009.wav
+33:frank_sinatra/Frank Sinatra - That's Life.wav
+34:metallica/Metallica - Fade To Black (Remastered).wav
+35:the_beatles/The Beatles - Yellow Submarine.wav
+36:the_beatles/The Beatles - Taxman - Remastered 2009.wav
+37:frank_sinatra/Frank Sinatra - The World We Knew (Over And Over).wav
+38:osts/Hans Zimmer - Cornfield Chase.wav
+39:nirvana/Nirvana - Dumb.wav
+40:david_bowie/David Bowie - Starman - 2012 Remaster.wav
+41:abba/ABBA - Mamma Mia.wav
+42:abba/ABBA - Slipping Through My Fingers.wav
+43:the_smiths/The Smiths - This Night Has Opened My Eyes - 2011 Remaster.wav
+44:radiohead/Radiohead - High and Dry.wav
+45:blur/Blur - There's No Other Way - 2012 Remaster.wav
+46:the_dresden_dolls/The Dresden Dolls - My Alcoholic Friends.wav
+47:roar/Roar - I Can't Handle Change.wav
+48:metallica/Metallica - Whiskey In The Jar.wav
+49:nirvana/Nirvana - Lake Of Fire - Live.wav
+50:caparezza/Caparezza - Vengo Dalla Luna.wav
+51:iron_maiden/Hallowed Be Thy Name.wav
+52:osts/sas.wav
+53:osts/Geek Music - Lillium (From 'Elfen Lied').wav
+54:the_rolling_stones/The Rolling Stones - Brown Sugar - Remastered 2009.wav
+55:bon_jovi/Bon Jovi - You Give Love A Bad Name.wav
+56:metallica/Metallica - Nothing Else Matters (Remastered).wav
+57:cranberries/The Cranberries - Zombie.wav
+58:the_smiths/The Smiths - Pretty Girls Make Graves - 2011 Remaster.wav
+59:blur/Blur - Parklife - 2012 Remaster.wav
+60:kate_bush/Kate Bush - Babooshka - 2018 Remaster.wav
+61:kate_bush/Kate Bush - Running Up That Hill (A Deal With God).wav
+62:the_beatles/The Beatles - Eleanor Rigby - Remastered 2009.wav
+63:osts/nmd/nmd_trailer-1.wav
+64:boa/bôa - Duvet.wav
+65:sod/System Of A Down - Toxicity.wav
+66:caparezza/Caparezza - La Mia Parte Intollerante.wav
+67:beethoven/Ludwig van Beethoven, Berliner Philharmoniker, Rafael Kubelík - Symphony No. 3 in E-Flat Major, Op. 55 'Eroica'- II. Marcia funebre - Adagio assai.wav
+68:the_beatles/The Beatles - I Want To Hold Your Hand - Remastered 2009.wav
+69:metallica/Metallica - One (Remastered).wav
+70:elton_john/Elton John - Goodbye Yellow Brick Road - Remastered 2014.wav
+71:abba/ABBA - Keep An Eye On Dan.wav
+72:various/Foto di gruppo.wav
+73:caparezza/Caparezza - Campione Dei Novanta.wav
+74:abba/ABBA - Dancing Queen.wav
+75:the_beatles/The Beatles - Let It Be - Remastered 2009.wav
+76:children_of_bodom/Children Of Bodom - Lake Bodom.wav
+77:rick_and_morty/Rick and Morty - Live Forever - ft. Kotomi.wav
+78:the_rolling_stones/The Rolling Stones - Beast Of Burden - Remastered 1994.wav
+79:osts/nmd/chara_fight_-_block.wav
+80:caparezza/Caparezza - China Town.wav
+81:caparezza/Caparezza - Fuori Dal Tunnel.wav
+82:kate_bush/Kate Bush - Army Dreamers.wav
+83:various/Crystal Castles - Transgender.wav
+84:osts/SiM - The Rumbling.wav
+85:the_beatles/The Beatles - Tomorrow Never Knows - Remastered 2009.wav
+86:caparezza/Caparezza - La Scelta.wav
+87:sod/System Of A Down - Aerials.wav
+88:the_doors/The Doors - Riders on the Storm.wav
+89:the_beatles/The Beatles - She Said She Said - Remastered 2009.wav
+90:mgmt/MGMT - Little Dark Age.wav
+91:the_beatles/The Beatles - Here, There And Everywhere - Remastered 2009.wav
+92:osts/nmd/you_monster.wav
+93:i_monster/I Monster - Goodbye Sun.wav
+94:nirvana/Nirvana - Heart-Shaped Box.wav
+95:radiohead/Radiohead - Creep.wav
+96:the_beatles/The Beatles - Come Together - Remastered 2009.wav
+97:i_monster/Who Is She ?.wav
+98:imagine_dragons/Imagine Dragons - Bones.wav
 playlist_end
