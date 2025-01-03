@@ -3,3 +3,4 @@
 bin/.local/bin/arango
 *.log
 mpd/.config/mpd/state
+*.*~
