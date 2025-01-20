@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ZEN_ARCHIVE="zen.linux-specific.tar.bz2";
+ZEN_ARCHIVE="zen.linux-x86_64.tar.bz2";
 
 if [ "$1" ]; then
   ZEN_ARCHIVE=$1;

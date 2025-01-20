@@ -27,11 +27,8 @@
   :custom-face
   (blamer-face ((t :foreground "#7a88cf"
                     :background nil
-                    :height 140
-                    :italic t)))
-  :config
-  (global-blamer-mode 1))
+                    :height 140))))
 
-(setq blamer-author-formatter "  ✎ %s ")
-(setq blamer-datetime-formatter "[%s]")
-(setq blamer-commit-formatter " ● %s")
+;;(setq blamer-author-formatter "  ✎ %s ")
+;;(setq blamer-datetime-formatter "[%s]")
+;;(setq blamer-commit-formatter " ● %s")

@@ -10,6 +10,8 @@
 (require 'package)
 (require 'use-package)
 
+(load "~/.emacs.d/elcord.elc")
+
 (add-to-list 'load-path "~/.emacs.d/local")
 (require 'simpc-mode)
 
@@ -18,6 +20,7 @@
 (load "~/.emacs.d/rc/settings.el")
 (load "~/.emacs.d/rc/misc.el")
 (load "~/.emacs.d/rc/org.el")
+(load "~/.emacs.d/rc/git.el")
 
 (rc/require-theme 'gruber-darker)
 
@@ -146,71 +149,33 @@
 (efs/leader-keys
   "ts" '(hydra-text-scale/body :which-key "scale text"))
 
-(use-package lsp-mode
-  :commands (lsp lsp-deferred)
-  :init
-  (setq lsp-keymap-prefix "C-c l")
-  :config
-  (lsp-enable-which-key-integration t))
-
-(use-package lsp-ui
-  :hook (lsp-mode . lsp-ui-mode)
-  :custom
-  (lsp-ui-doc-position 'bottom))
-
-(use-package lsp-treemacs
-  :after lsp)
-
-(use-package lsp-ivy
-  :after lsp)
-
-(use-package dap-mode
-  ;; :custom
-  ;; (lsp-enable-dap-auto-configure nil)
-  ;; :config
-  ;; (dap-ui-mode 1)
-  :commands dap-debug
-  :config
-  (require 'dap-node)
-  (dap-node-setup)
-
-  (general-define-key
-    :keymaps 'lsp-mode-map
-    :prefix lsp-keymap-prefix
-    "d" '(dap-hydra t :wk "debugger")))
-
-(use-package typescript-mode
-  :mode "\\.ts\\'"
-  :hook (typescript-mode . lsp-deferred)
-  :config
-  (setq typescript-indent-level 2))
-
-(use-package python-mode
-  :ensure t
-  :hook (python-mode . lsp-deferred)
-  :custom
-  ;; (python-shell-interpreter "python3")
-  ;; (dap-python-executable "python3")
-  (dap-python-debugger 'debugpy)
-  :config
-  (require 'dap-python))
-
 (use-package pyvenv
   :after python-mode
   :config
   (pyvenv-mode 1))
 
+(use-package eglot
+  :ensure t
+  :config
+  (add-hook 'eglot-managed-mode-hook
+            (lambda () (company-mode 1))))
+  (add-to-list 'eglot-server-programs
+               '(c++-mode . ("clangd" "--completion-style=Brief" "--header-insertion=iwyu"))
+               '(c-mode . ("clangd" "--completion-style=Brief" "--header-insertion=iwyu")))
+
 (use-package company
-  :after lsp-mode
-  :hook (lsp-mode . company-mode)
+  :ensure t
+  :config
+  (global-company-mode 1)
+  (setq company-minimum-prefix-length 1)
+  (setq company-idle-delay 0.0)
+  (add-hook 'eglot-managed-mode-hook
+            (lambda () (company-mode 1)))
+  (setq company-backends '((company-capf)))
   :bind (:map company-active-map
          ("<tab>" . company-complete-selection))
-        (:map lsp-mode-map
-         ("<tab>" . company-indent-or-complete-common))
-  :custom
-  (company-minimum-prefix-length 1)
-  (company-idle-delay 0.0))
-
+)
+  
 (use-package company-box
   :hook (company-mode . company-box-mode))
 

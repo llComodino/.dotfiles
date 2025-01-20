@@ -7,6 +7,7 @@ Type=simple
 ExecStart=/usr/bin/waybar
 WorkingDirectory=/home/comodino/.config/waybar/
 Restart=on-failure
+RestartSec=10
 
 [Install]
 WantedBy=default.target

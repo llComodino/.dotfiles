@@ -39,3 +39,6 @@
                 treemacs-mode-hook
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
+(add-hook 'prog-mode-hook (lambda () (setq tab-width 2)))
+(add-hook 'prog-mode-hook (lambda () (eglot-ensure)))

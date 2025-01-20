@@ -17,3 +17,10 @@ alias neofetch='fastfetch'
 alias flowstart='cd $OS3/liweflow/flowmanager && yarn start'
 
 alias emacs='emacs -nw'
+
+alias wdroidprobe='modprobe binder-linux devices=binder,hwbinder,vndbinder'
+
+sudoq () {
+  [[ $1 == "-s" ]] && qqwing --solve --stats | sed -e "s|Number of ||" | sed -e "s|Difficulty.*||"
+  [[ $1 == "-g" ]] && qqwing --generate
+}
