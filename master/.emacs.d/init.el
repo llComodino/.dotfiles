@@ -10,8 +10,6 @@
 (require 'package)
 (require 'use-package)
 
-(load "~/.emacs.d/elcord.elc")
-
 (add-to-list 'load-path "~/.emacs.d/local")
 (require 'simpc-mode)
 

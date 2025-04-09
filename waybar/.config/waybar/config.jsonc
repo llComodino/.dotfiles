@@ -12,8 +12,8 @@
   "gtk-layer-shell": true,
   "reload-style-on-change": true,
   "include": [
-    "modules/modules_top.jsonc",
-    "modules/modules_padding.jsonc"
+    "/home/comodino/.config/waybar/modules/modules_top.jsonc",
+    "/home/comodino/.config/waybar/modules/modules_padding.jsonc"
   ],
 
 	"modules-left": [

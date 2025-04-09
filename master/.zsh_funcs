@@ -1,78 +1,78 @@
 tmux-sessionizer() {
-	if [[ $# -eq 1 ]]; then
-		selected=$1
-	else
-		selected=$(find ~/code -mindepth 1 -maxdepth 1 -type d | fzf)
-	fi
+  if [[ $# -eq 1 ]]; then
+    selected=$1
+  else
+    selected=$(find ~/code -mindepth 1 -maxdepth 1 -type d | fzf)
+  fi
 
-	if [[ -z $selected ]]; then
-		exit 0
-	fi
+  if [[ -z $selected ]]; then
+    exit 0
+  fi
 
-	local sel=$selected
-	while [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; do
+  local sel=$selected
+  while [[ $(find $selected -mindepth 1 -maxdepth 1 -type d | wc -l) -gt 0 ]]; do
 
-		sel=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
+    sel=$(find $selected -mindepth 1 -maxdepth 1 -type d | fzf)
 
-		if [[ -z $sel ]]; then
-			break
-		fi
+    if [[ -z $sel ]]; then
+      break
+    fi
 
-		selected=$sel
-	done
+    selected=$sel
+  done
 
-	selected_name=$(basename "$selected" | tr . _)
-	tmux_running=$(pgrep tmux)
+  selected_name=$(basename "$selected" | tr . _)
+  tmux_running=$(pgrep tmux)
 
-	if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
-		tmux new-session -s $selected_name -c $selected
-		exit 0
-	fi
+  if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -s $selected_name -c $selected
+    exit 0
+  fi
 
-	if ! tmux has-session -t=$selected_name 2>/dev/null; then
-		tmux new-session -ds $selected_name -c $selected
-	fi
+  if ! tmux has-session -t=$selected_name 2>/dev/null; then
+    tmux new-session -ds $selected_name -c $selected
+  fi
 
-	tmux switch-client -t $selected_name
+  tmux switch-client -t $selected_name
 }
 
 git-sync() {
 
-	dir="$PWD"
+  dir="$PWD"
 
-	while [[ "$dir" != "/" ]]; do
-		[[ -d "$dir/.git" ]] && break
-		dir="$(dirname "$dir")"
-	done
+  while [[ "$dir" != "/" ]]; do
+    [[ -d "$dir/.git" ]] && break
+    dir="$(dirname "$dir")"
+  done
 
-	[[ "$dir" == "/" ]] && echo "Not in a git repo" && return 1
+  [[ "$dir" == "/" ]] && echo "Not in a git repo" && return 1
 
-	[[ ! -z "$@" ]] && echo "No arguments allowed" && return 1
+  [[ ! -z "$@" ]] && echo "No arguments allowed" && return 1
 
-	echo "Commit message \n[default: Sync <date>] (0 to cancel)"
-	read -r msg
+  echo "Commit message \n[default: Sync <date>] (0 to cancel)"
+  read -r msg
 
-	[[ "$msg" == "0" ]] && return 1
+  [[ "$msg" == "0" ]] && return 1
 
-	[[ -z "$msg" ]] && msg="Sync $(date)"
+  [[ -z "$msg" ]] && msg="Sync $(date)"
 
-	git add -A
-	if [[ $? -ne 0 ]]; then
-		echo "Error during $(git add -A)"
-		return 1
-	fi
+  git add -A
+  if [[ $? -ne 0 ]]; then
+    echo "Error during $(git add -A)"
+    return 1
+  fi
 
-	git commit -S -m "$msg"
-	if [[ $? -ne 0 ]]; then
-		echo "Error during $(git commit)\nProbably wrong passphrase"
-		return 1
-	fi
+  git commit -S -m "$msg"
+  if [[ $? -ne 0 ]]; then
+    echo "Error during $(git commit)\nProbably wrong passphrase"
+    return 1
+  fi
 
-	git push
-	if [[ $? -ne 0 ]]; then
-		echo "Error pushing to origin"
-		return 3
-	fi
+  git push
+  if [[ $? -ne 0 ]]; then
+    echo "Error pushing to origin"
+    return 3
+  fi
 }
 
 c-fmt () {
@@ -205,4 +205,24 @@ mjzip () {
   [[ -z $1 ]] && echo "Usage: mjzip <file>" && return 2
 
   zip -9 -r "gila_$1.zip" "$1"
+}
+
+tomcanddeploy () {
+  curr=$(pwd)
+
+  while [ ! -d "WEB-INF" ]; do
+    if [ -d "home" ]; then
+      echo "Project Root not found!"
+      cd $curr
+      exit
+    fi
+    cd ..
+  done
+
+  echo "Found root at: " $(pwd)
+
+  servlet="$(basename $(pwd)).war"
+  jar cfv $servlet *
+  sudo rm -rf /var/lib/tomcat9/webapps/$servlet
+  sudo cp $servlet /var/lib/tomcat9/webapps/$servlet
 }

@@ -58,7 +58,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindcode 64 fullscreen toggle
+bindcode 108 fullscreen toggle
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -139,8 +139,6 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-bindcode 108 mode "resize"
 
 # ======================================================================= #
 

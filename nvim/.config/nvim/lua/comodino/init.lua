@@ -4,9 +4,17 @@ require("comodino.settings")
 require("comodino.filetypes")
 require("comodino.gpg")
 
+require("comodino.ostab").setup({
+  no_expand_dirs = {
+    '~/os3',
+  },
+  default_expand = true,
+  include_subdirs = true,
+  debug = false
+})
+
 local luasnip = require 'luasnip'
 
--- nvim-cmp setup
 local cmp = require 'cmp'
 cmp.setup {
   snippet = {

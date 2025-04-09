@@ -1,0 +1,3 @@
+steam
+wine
+wine-mono

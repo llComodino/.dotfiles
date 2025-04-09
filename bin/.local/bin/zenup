@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ZEN_ARCHIVE="zen.linux-x86_64.tar.bz2";
+ZEN_ARCHIVE="$(find . -mindepth 1 -maxdepth 1 -type f -name "zen*")"
 
 if [ "$1" ]; then
   ZEN_ARCHIVE=$1;
@@ -14,9 +14,8 @@ if [ ! -f "$ZEN_ARCHIVE" ]; then
 fi
 
 echo "=> Extracting Zen archive: $ZEN_ARCHIVE";
-tar -xjf "$ZEN_ARCHIVE";
+tar -xf "$ZEN_ARCHIVE";
 
-echo "=> Backing up current Zen installation";
 if [ -d ~/.zen ]; then
   if [ -d ~/.zen/src.old ]; then
     echo "=> Removing old backup";

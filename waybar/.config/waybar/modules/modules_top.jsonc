@@ -31,32 +31,27 @@
     "all-outputs": true,
     "format": "{icon}",
     "format-icons": {
-      "focused": "",
+      "active": "",
       "default": ""
     }
   },
   
-  // "hyprland/workspaces": {
-  //   "disable-scroll": true,
-  //   "all-outputs": true,
-  //   "on-click": "activate"
-  // },
-
   "hyprland/window": {
     "format": "  {}",
     "max-length": 30,
     "separate-outputs": true,
     "rewrite": {
-      "(.*)~(.*)": "",
-      "(.*) — Mozilla Firefox": "󰈹  $1",
-      "(.*)Mozilla Firefox": "󰈹  Firefox",
-      "(.*)sb -(.*)": "󰈹  Firefox",
-      "(.*) - Brave": "󰏚  $1",
-      "(.*)Brave": "󰏚  Brave",
-      "(.*) — Dolphin": "󰉋  $1",
-      "(.*)Spotify": "󰓇  Spotify",
-      "(.*)Zathura": "󰈦  Zathura",
-      "(.*)vim(.*)": "  Vimming"
+      "(.*) — Mozilla Firefox": " 󰈹  $1",
+      "(.*)Mozilla Firefox": " 󰈹  Firefox",
+      "(.*)sb -(.*)": " 󰈹  Firefox",
+      "(.*) - Zen Browser": " 󰬡  Zen",
+      "(.*)Zen": " 󰬡  Zen",
+      "(.*) — Dolphin": " 󰉋  $1",
+      "(.*)Spotify": " 󰓇  Spotify",
+      "(.*)Zathura": " 󰈦  Zathura",
+      "(.*)vim(.*)": "    Vimming",
+      "(.*)emacs -nw(.*)": "   Emacs",
+      "^(?!.*((\bemacs\b)|(\bvim\b)).*)(.*) - Contour$": "   Maestro del Terminal"
     }
   },
 
@@ -83,7 +78,7 @@
       "on": " "
     },
     "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
+      "off": " ",
       "on": " "
     },
     "repeat-icons": {

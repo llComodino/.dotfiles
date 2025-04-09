@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+usage() {
+  echo "Usage: $(basename "$0") [-p|--pull] branchname"
+  exit 2
+}
+
+PULL=false
+BRANCH=""
+
+while [[ $# -gt 0 ]];
+do
+  case $1 in
+    -p|--pull)
+      PULL=true
+      shift
+      ;;
+    *)
+      if [[ -n "$BRANCH" ]];
+      then
+        usage
+      fi
+      branch_base_name=$(echo "$1" | cut -d "/" -f2)
+      if [ "$branch_base_name" ];
+      then
+        BRANCH="origin/$branch_base_name"
+      else
+        BRANCH=origin/$1
+      fi
+      shift
+      ;;
+  esac
+done
+
+[[ -z "$BRANCH" ]] && usage
+
+echo "=== INFO ==="
+echo "Aligning branches to $BRANCH"
+echo "============"
+
+align_branches() {
+  local git_file
+  echo "=== STARTING ALIGNMENT ==="
+
+  while IFS= read -r -d '' git_file;
+  do
+    pushd . > /dev/null || exit 1
+    repo_dir=$(dirname "$git_file")
+    cd "$repo_dir" || exit 1
+    printf "\n\n=== ALIGNING: %s\n\n" "$repo_dir"
+
+    if ! current_branch=$(git branch --show-current);
+    then
+      echo "Failed to get current branch in $repo_dir"
+      return 1
+    fi
+
+    if [[ "$current_branch" == "$BRANCH" ]];
+    then
+      echo "=== ALREADY ALIGNED ==="
+    else
+      if ! git checkout -B "$BRANCH";
+      then
+        echo "Failed to checkout -B"
+        return 1
+      fi
+
+      if ! git branch --set-upstream-to="$BRANCH" "$BRANCH"
+      then
+        echo "Failed to set branch upstream tracking information"
+        return 1
+      fi
+
+      $PULL && git pull
+    fi
+    popd > /dev/null || exit 1
+  done < <(find . -type f -name ".git" -print0)
+}
+
+align_branches

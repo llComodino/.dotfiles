@@ -42,3 +42,13 @@
 
 (add-hook 'prog-mode-hook (lambda () (setq tab-width 2)))
 (add-hook 'prog-mode-hook (lambda () (eglot-ensure)))
+
+(setq-default eglot-workspace-configuration
+              '(:clangd (:fallbackFlags ["--style=GNU"])))
+
+(when (not (display-graphic-p))
+  (dolist (key '([mouse-1] [mouse-2] [mouse-3] [down-mouse-1] [down-mouse-2] [down-mouse-3]
+                 [drag-mouse-1] [drag-mouse-2] [drag-mouse-3]
+                 [double-mouse-1] [double-mouse-2] [double-mouse-3]
+                 [triple-mouse-1] [triple-mouse-2] [triple-mouse-3]))
+    (global-unset-key key)))
