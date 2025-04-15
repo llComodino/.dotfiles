@@ -6,15 +6,8 @@ then
   asusctl anime -e false
 else
   gifs=$(find ~/pictures/anime_matrix/ -name "*.gif" -type f)
-
-  # create an array of the base names of the gifs
-  basename_gifs=()
-  while IFS= read -r gif; do
-    basename_gif=$(basename "$gif")
-    basename_gifs+=("$basename_gif")
-  done <<< "$gifs"
-
-  selected_gif=$(echo "${basename_gifs[@]}" | tr ' ' '\n' | rofi \
+  basename_gifs=$(basename "$gifs")
+  selected_gif=$(echo "$basename_gifs" | rofi \
     -dmenu -theme "$HOME/.config/rofi/launchers/type-6/style-10.rasi" \
     -i -p "Select a GIF")
   if [ -z "$selected_gif" ]; then

@@ -1,4 +1,3 @@
-
 local M = {}
 
 M.config = {
@@ -69,8 +68,29 @@ local function is_in_no_expand_dir()
   return false
 end
 
+local function is_special_file()
+  local current_file = vim.fn.expand("%:p")
+  local file_name = vim.fn.fnamemodify(current_file, ":t")
+  local file_type = vim.bo.filetype or "" 
+  local special_files = {
+    ["Makefile"] = true,
+    ["CMakeLists.txt"] = true,
+    ["CMakeCache.txt"] = true,
+    ["CMakeFiles"] = true,
+    ["CMakeOutput.log"] = true,
+    ["CMakeError.log"] = true
+  }
+
+  if special_files[file_name] or special_files[file_type] then
+    debug_log("Special file detected: " .. file_name)
+    return true
+  end
+  return false
+end
+
+
 local function update_expandtab()
-  if is_in_no_expand_dir() then
+  if is_in_no_expand_dir() or is_special_file() then
     vim.opt_local.expandtab = false
     debug_log("Set expandtab = false for this buffer")
   else
